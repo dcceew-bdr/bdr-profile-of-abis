@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  html:
+    desc: Regenerate spec.html
+    cmds:
+      - asciidoctor -o spec/spec.html spec/00-master.adoc
+      - echo "HTML remade"
+  rdfcheck:
+    desc: check the validity of an RDF file
+    cmds:
+      - python scripts/validate_rdf.py {{.CLI_ARGS}}

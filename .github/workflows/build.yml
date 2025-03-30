@@ -1,0 +1,47 @@
+name: Auto-build HTML
+
+on: 
+  push: 
+      branches:
+          - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.1
+
+    - name: Build
+      working-directory: ./
+      run: |
+        echo "Making deployment dir - docs/"
+        mkdir docs
+        #
+        echo "Add README to docs/"
+        cp README.md docs/        
+        sudo apt-get install asciidoctor ruby -y
+        #
+        echo "Add profile to docs/"
+        asciidoctor profile/_profile.adoc -o docs/profile.html
+        cp -r profile/img docs/
+        sed -i 's#img src="#img src="https://ausbigg.github.io/abis/#' docs/profile.html        
+        #
+        echo "Add profile RDF to docs/"
+        cp profile.ttl docs/
+        #
+        echo "Add Specification to docs/"   
+        asciidoctor spec/00-master.adoc -o docs/specification.html
+        cp -r spec/img docs/
+        sed -i 's#img src="#img src="https://ausbigg.github.io/abis/#' docs/specification.html
+        #
+        echo "Add JSON-LD Context to docs/"
+        cp context.json docs/
+        #
+        echo "Add validator to docs/"
+        mkdir docs/validators
+        cp validators/*.ttl docs/validators
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+         BRANCH: gh-pages
+         FOLDER: docs

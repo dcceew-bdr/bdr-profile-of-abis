@@ -1,0 +1,54 @@
+= BDR Profile of ABIS
+:Title: BDR Profile of ABIS
+:titletext: {title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:table-stripes: even
+:toc: left
+:toclevels: 3
+:chapter-label:
+:sectnums:
+:sectnumlevels: 4
+:sectanchors:
+:figure-id: 0
+:table-id: 0
+:req-id: 0
+:rec-id: 0
+:per-id: 0
+:xrefstyle: short
+:source-highlighter: rouge
+
+[#models-overview,link="img/overview.svg"]
+.Models within the Profile
+image::img/models-overview.svg[NSL Model Overview,align="center",width=700]
+
+include::01-metadata.adoc[]
+
+include::02-abstract.adoc[]
+
+include::03-preamble.adoc[]
+
+include::04-intro.adoc[]
+
+include::05-models.adoc[]
+
+include::06-vocabs.adoc[]
+
+include::07-validation.adoc[]
+
+:sectnums!:
+
+include::50_annex_a.adoc[]
+
+include::51_annex_b.adoc[]
+
+include::52_annex_c.adoc[]
+
+include::53_annex_d.adoc[]
+
+include::54_annex_e.adoc[]
+
+include::55_annex_f.adoc[]
+
+include::99-references.adoc[]
