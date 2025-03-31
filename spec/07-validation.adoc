@@ -1,6 +1,39 @@
 == Validation
 
-This model both inherits existing and implements new validators for data claiming conformance to ABIS to allow testing of that claim. Since ABIS data _MUST_ be provided in RDF, only an RDF validator is available and other forms of validation are non-normative.
+Since this profile is a profile of ABIS, all data wanting to conform to this profile must conform to ABIS. Demonstration of conformance to ABIS means passing ABIS validator validation.
+
+Then, to show conformance to this profile and not just ABIS, data must also pass this Profile's validators.
+
+=== ABIS Validation
+
+ABIS requires data validation according to multiple validators:
+
+* several background model validators
+** e.g. the http://www.opengis.net/def/geosparql/validator/[https://li][GeoSPARQL Validator]
+* https://w3id.org/tern/shapes/tern/[TERN Ontology Validator]
+* https://linked.data.gov.au/def/brm[Biodiversity Record Model Validator]
+
+These multiple validators are combined into a single ABIS Validator, for ease of use:
+
+* https://linked.data.gov.au/def/abis/validator[ABIS Validator]
+
+=== BDR Profile of ABIS Validation
+
+This profile requires data validation according to multiple validators:
+
+* ABIS Validator - as above
+* Project Model Validator
+* Data Release Model Validator
+* Submission Manifest Validator
+
+The ABIS, Project Model and Data Release Model validators are combined into a single validator for ease of use:
+
+* https://linked.data.gov.au/def/bdr-pr/validator[BDR Profile of ABIS Validator]
+
+[NOTE]
+----
+The Submission Manifest Model validator is not included in the BDR Profile of ABIS Validator since data according to the BDR Profile of ABIS and Submission Manifest Model can never be present in a single file and thus cannot be validated together. This is because BDR Profile of ABIS data is stored within data files which cannot include manifest information and manifest file content only indicates data files in submissions and does not contain ABIS data.
+----
 
 === Multiple Validators
 
