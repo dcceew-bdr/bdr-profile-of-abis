@@ -108,7 +108,7 @@ image::img/key.svg[ABIS Parts,align="center"]
 
 [discrete]
 ==== Code
-Where examples of ABIS data are given in this document, <<RDFSPEC, RDF>> data serialised in the <<TURTLE, Turtle>> format is used. For example:
+Where examples of data are given in this document, <<RDFSPEC, RDF>> data serialised in the <<TURTLE, Turtle>> format is used. For example:
 
 [source,turtle]
 ----
@@ -128,6 +128,6 @@ ex:x
 .
 ----
 
-The above example data, while invalid according to the ABIS <<Validation, Validator>>, provides a simple example of a _dataset_ and a _sample_ and a relationship between them, encoded in Turtle.
+The above example ABIS data provides a simple example of a _dataset_ and a _sample_ and a relationship between them, encoded in Turtle.
 
 If prefixes - `ex:`, `schema:` and `tern:` in the example above - are not declared within the example, as they are here - lines starting `PREFIX` - then they will be found in the <<Namespaces, Namespaces>> table above.

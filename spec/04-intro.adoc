@@ -5,11 +5,11 @@ This document is the normative specification of the https://www.dcceew.gov.au/en
 The purpose of this profile is to define requirements of data that is to be sent to the BDR, above and beyond those already imposed by ABIS. ABIS essentially defines the scientific information within data set to the BDR but does not define how to package that data, when it can be made available and so on. That is covered by this Profile.
 
 [NOTE]
-----
+====
 ABIS may be used for data representation and data exchange with no reference to this this Profile _if there is to be no involvement with the BDR._ For example, it is perfectly acceptable for companies to exchange ABIS data amongst themselves.
 
 However, this Profile is freely available for any use so anyone may use this Profile to represent and excahnge data if they wish.
-----
+====
 
 The figure below, which is the same as the one at the start of this document, shows the envelope of this Profile with ABIS and the other models within it. See https://linked.data.gov.au/def/abis#_models[ABIS' Models Section] for the details of the various models inside ABIS and the models that ABIS, in turn, profiles.
 

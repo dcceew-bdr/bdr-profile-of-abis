@@ -15,11 +15,11 @@ This Profile is a profile of ABIS and also contains multiple other models used t
 
 === Model Use Example
 
-The following example data - not BDR Profile of ABIS valid, just illustrative - includes elements from some of the models:
+The following example data, which is not valida ccording to the BDR Profile of ABIS and is just for illustration purposes, includes elements from some of the models:
 
 [source, turtle]
 ----
-# an ABIS Dataset
+# An ABIS Dataset...
 # containing a Biodiversity Occurrence Model Record
 # and with attribution to a Project using the Project Model
 # and with an embargo date from the Data Release Model
@@ -30,8 +30,7 @@ ex:dataset-01
     bdrpr:embargoedUntil "2025-06-30"^^xsd:date ;
 .
 
-# the Record is of a dwc:Occurrence
-# as per standard ABIS modelling
+# The Record is of a dwc:Occurrence as per standard ABIS modelling
 ex:record-a
     schema:about ex:occurrence-x ;
 .
@@ -60,6 +59,8 @@ The above information, if in a file called `data.ttl`, could be packaged and sen
 .
 ----
 
+The example Submission Manifest data above tells us that all the data in this submission is within the file `data.ttl` and that it is "Sufficient for Validation", meaning that it can be validated as-is, without requiring any further information to be added to it, which may be the case in some submissions.
+
 === Models Overview
 
 ==== Project Model
@@ -70,9 +71,9 @@ The Project Model defines a `Project` is defined as "An Activity that requires c
 
 The joining point between this model and the rest of this Profile and ABIS is that datasets of ABIS data - instances of the https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset[`tern:Dataset`] class - are produced by instances of the `Project` class as per the figure below.
 
-[#proj-join,link="img/proj-join.svg"]
-.Basic use of the Project Model
-image::img/proj-join.svg[Basic use of the Project Model,align="center",width=400]
+[#proj-join,link="img/project-join.svg"]
+.How Projects in the Project Model relate to ABIS (TERN Ontology) Datasets
+image::img/project-join.svg[How Projects in the Project Model relate to ABIS (TERN Ontology) Datasets,align="center",width=400]
 
 ==== Data Release Model
 
@@ -85,8 +86,8 @@ The joining point between this model and the res of this Profile and ABIS is tha
 The following figure illustrates the basic use of this model.
 
 [#data-release-join,link="img/data-release-join.svg"]
-.Basic use of the Data Release Model
-image::img/data-release-join.svg[Basic use of the Data Release Model,align="center",width=350]
+.How Data Release Model elements relate to ABIS (TERN Ontology) Datasets
+image::img/data-release-join.svg[How Data Release Model elements relate to ABIS (TERN Ontology) Datasets,align="center",width=350]
 
 === Submission Manifest Model
 
