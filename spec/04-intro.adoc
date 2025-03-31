@@ -14,12 +14,12 @@ However, this Profile is freely available for any use so anyone may use this Pro
 The figure below, which is the same as the one at the start of this document, shows the envelope of this Profile with ABIS and the other models within it. See https://linked.data.gov.au/def/abis#_models[ABIS' Models Section] for the details of the various models inside ABIS and the models that ABIS, in turn, profiles.
 
 [#intro-models-overview,link="img/models-overview.svg"]
-.Models within the Profile. Contained are ABIS - for scientific content - and Submissions Manifest, Project and Data Release models for data management within the BDR.
+.Models within the Profile. Contained are ABIS - for scientific content - and Project, Data Release and Submission Manifest models for data management within the BDR.
 image::img/models-overview.svg[NSL Model Overview,align="center",width=700]
 
 === Multiple Models
 
-This Profile is centered on ABIS but includes several models not found within ABIS that have been developed specifically for data management within the BDR. These models - the Submissions Manifest, Project and Data Release models as shown in the figure above - are themselves mini-profiles of other, standard, models in that they mostly reuse classes and predicates from rather than inventing new ones.
+This Profile is centered on ABIS but includes several models not found within ABIS that have been developed specifically for data management within the BDR. These models - the Project, Data Release and Submission Manifest models as shown in the figure above - are themselves mini-profiles of other, standard, models in that they mostly reuse classes and predicates from rather than inventing new ones.
 
 The "Background Models" that these models inherit from and themselves profile are also the background models of ABIS - this Profile introduces no new ones. You can see the full list of ABIS', and therefore this Profile's, background models at:
 
@@ -29,19 +29,13 @@ Since ABIS is well describes in the https://linked.data.gov.au/def/abis[ABIS Spe
 
 === Governance
 
-This Profile is goverend by the BDR Team - the team that also operates the BDR.
+This Profile is governed by the BDR Team - the team that also operates the BDR.
 
 ABIS is managed day-to-day by the Department of Climate Change, Energy, the Environment and Water (https://linked.data.gov.au/org/dcceew[DCCEEW]) however many parts of ABIS are maintained externally, such as the <<TERNOntology, TERN Ontology>> which is maintained by https://linked.data.gov.au/org/tern[TERN] and ABIS as a whole is governance by https://linked.data.gov.au/org/ausbigg[AusBIGG], the Australian Biodiversity Information Governance Group, which comprises DCCEEW, State & Territory biodiversity data holders and other organisations in the sector, such as TERN.
 
 Use of this Profile will always require use of ABIS and no changes will be introduced to this profile that conflict with ABIS.
 
 An Issue Tracker for this document and for any other aspects of ABIS is public and online at: https://github.com/AusBIGG/abis/issues. Anyone with an interest in ABIS is invited to submit Issues there to be considered by ABIS management & governance parties.
-
-=== Related Standards
-
-ABIS comprises multiple models and some of them inherit from other models and standards. See the <<Models, Models>> section for details.
-
-Additionally, ABIS exists within a domain that already contains many international and national standards and well-known models. The <<Mappings, Mappings>> section described how ABIS relates to many of them.
 
 === Structure
 
@@ -50,24 +44,17 @@ This specification aims to cover all the information needed to understand ABIS a
 [start=4]
 . <<Introduction, Introduction>>
 ** This section. An informal overview of ABIS
-. <<Patterns, Patterns>>
-** Descriptions of important modelling choices made in ABIS and the models it inherits from
 . <<Models, Models>>
 ** The normative description of the data models used within ABIS
 . <<Vocabularies, Vocabularies>>
 ** Description of, and links to, the vocabularies needed for use with ABIS
-. <<Profiles, Profiles>>
-** A listing of known profiles of ABIS
 . <<Validation, Validation>>
 ** How to validate data according to ABIS and links to the various validators
-. <<Mappings, Mappings>>
-** Human- and machine-readable mappings between ABIS and other standards within ABIS' domain
-. <<Reasoning Rules, Reasoning Rules>>
-** Machine-executable rules that can be applied to ABIS data to infer further information
 
-Two additional models - extensions to ABIS - are defined in this document:
+Four additional models are defined in this Profile and detailed as Annexes in this document:
 
-* <<annex-b, Annex A: Projects Model>>
-* <<annex-c, Annex B: Data Release Model>>
+* <<annex-a, Annex B: Projects Model>>
+* <<annex-b, Annex C: Data Release Model>>
+* <<annex-c, Annex D: Submission Manifest Model>>
 
-Extended examples <<TERNOntology, TERN Ontology>> data, in use within ABIS, are given in <<annex-d, Annex C>>.
+Extended examples are given in <<annex-d, Annex D: Extended Examples>>.
