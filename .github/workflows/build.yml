@@ -21,10 +21,6 @@ jobs:
         cp README.adoc docs/        
         sudo apt-get install asciidoctor ruby -y
         #
-        echo "Add profile to docs/"
-        asciidoctor profile/_profile.adoc -o docs/profile.html
-        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/#' docs/profile.html        
-        #
         echo "Add profile RDF to docs/"
         cp profile/profile.ttl docs/
         #

@@ -31,11 +31,13 @@ include::03-preamble.adoc[]
 
 include::04-intro.adoc[]
 
-include::05-models.adoc[]
+include::05-abis-constraints.adoc[]
 
-include::06-vocabs.adoc[]
+include::06-models.adoc[]
 
-include::07-validation.adoc[]
+include::07-vocabs.adoc[]
+
+include::08-validation.adoc[]
 
 :sectnums!:
 

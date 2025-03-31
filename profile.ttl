@@ -1,0 +1,56 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX role: <http://www.w3.org/ns/dx/prof/role/>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/def/bdr-pr>
+    a prof:Profile ;
+    schema:name "BDR Profile of ABIS" ;
+    schema:description """This Profile is a profile of the Australian Biodiversity Information Standard, ABIS.
+    
+This profile has been created to add additional constraints to the use of ABIS in the form of additional models that must be used to define data management aspects of data destined for absorbtion into the Biodiversity Data Repository, BDR.""" ;
+    schema:dateCreated "2025-03-31"^^xsd:date ;
+    schema:dateModified "2025-03-31"^^xsd:date ;
+    schema:dateIssued "2025-03-31"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/dcceew> ;
+    schema:publisher <https://linked.data.gov.au/org/dcceew> ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:copyrightNotice "(c) Department of Climate Change, Energy, the Environment and Water, 2025" ;
+    prof:isProfileOf <https://linked.data.gov.au/def/abis> ;
+.
+
+<https://linked.data.gov.au/def/bdr-pr>
+    a prof:ResourceDescriptor ;
+    schema:name "Profile Specification" ;
+    dcterms:format "text/html" ;
+    prof:hasArtifact "https://linked.data.gov.au/def/bdr-pr"^^xsd:anyURI ;
+    prof:hasRole 
+        role:profile-definition ,
+        role:specification ;
+.
+
+<https://linked.data.gov.au/def/bdr-pr.ttl>
+    a prof:ResourceDescriptor ;
+    schema:name "Profile Definition - machine-readable" ;
+    dcterms:format "text/turtle" ;
+    prof:hasArtifact "https://linked.data.gov.au/def/bdr-pr.ttl"^^xsd:anyURI ;
+    prof:hasRole role:profile-definition ;
+.
+
+<https://linked.data.gov.au/def/bdr-pr/validator>
+    a prof:ResourceDescriptor ;
+    schema:name "Profile Validator" ;
+    dcterms:format "text/turtle" ;
+    prof:hasArtifact "https://linked.data.gov.au/def/bdr-pr/validator"^^xsd:anyURI ;
+    prof:hasRole role:validation ;
+.
+
+<https://linked.data.gov.au/def/bdr-pr/context.json>
+    a prof:ResourceDescriptor ;
+    schema:name "JSON-LD Context" ;
+    dcterms:format "application/ld+json" ;
+    prof:hasArtifact "https://linked.data.gov.au/def/bdr-pr/context.json"^^xsd:anyURI ;
+    prof:hasRole role:vocabulary ;
+.

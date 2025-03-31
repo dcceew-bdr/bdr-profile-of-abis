@@ -1,0 +1,18 @@
+== Vocabularies
+
+For data to conform to the BDR Profile of ABIS, many vocabularies must be used.
+
+Some of the vocabularies are required for use by ABIS: lists of measurement techniques, feature types etc.
+
+Others must be used for metadata values for ABIS objects, particularly datasets, that may require values, such as "creator" but which the underlying ABIS model or TERN Ontology do not constrain, only requiring that some value be present.
+
+Finally, there are also a few elements of the models defined in this Profile that must be used with vocabularies, such as the Submission Manifest Model's ...
+
+#TODO: Submission Manifest purpose/task vocab#
+
+=== Finding the vocabularies
+
+All of the vocabularies needed for use with this Profile, including ABIS and other background mdoels, are stored within the https://bdr.gov.au[BDR Portal]'s catalogue section:
+
+* https://bdr.gov.au/catalogs
+

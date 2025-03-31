@@ -19,7 +19,7 @@ image::img/models-overview.svg[NSL Model Overview,align="center",width=700]
 
 === Multiple Models
 
-This Profile is centered on ABIS but includes several models not found within ABIS that have been developed specifically for data management within the BDR. These models - the Project, Data Release and Submission Manifest models as shown in the figure above - are themselves mini-profiles of other, standard, models in that they mostly reuse classes and predicates from rather than inventing new ones.
+This Profile is centered on ABIS and provides a number of constraints on the use of ABIS, such as mandating certain metadata for Datasets. It also includes several models not found within ABIS that have been developed specifically for data management within the BDR. These models - the Project, Data Release and Submission Manifest models as shown in the figure above - are themselves mini-profiles of other, standard, models in that they mostly reuse classes and predicates from rather than inventing new ones.
 
 The "Background Models" that these models inherit from and themselves profile are also the background models of ABIS - this Profile introduces no new ones. You can see the full list of ABIS', and therefore this Profile's, background models at:
 
@@ -44,8 +44,10 @@ This specification aims to cover all the information needed to understand ABIS a
 [start=4]
 . <<Introduction, Introduction>>
 ** This section. An informal overview of ABIS
+. <<ABIS Constraints, ABIS Constraints>>
+** Constraints that this profile places on the use of ABIS
 . <<Models, Models>>
-** The normative description of the data models used within ABIS
+** The normative description of the models this profile uses in addition to ABIS
 . <<Vocabularies, Vocabularies>>
 ** Description of, and links to, the vocabularies needed for use with ABIS
 . <<Validation, Validation>>
@@ -53,8 +55,8 @@ This specification aims to cover all the information needed to understand ABIS a
 
 Four additional models are defined in this Profile and detailed as Annexes in this document:
 
-* <<annex-a, Annex B: Projects Model>>
-* <<annex-b, Annex C: Data Release Model>>
-* <<annex-c, Annex D: Submission Manifest Model>>
+* <<annex-a, Annex A: Projects Model>>
+* <<annex-b, Annex B: Data Release Model>>
+* <<annex-c, Annex C: Submission Manifest Model>>
 
 Extended examples are given in <<annex-d, Annex D: Extended Examples>>.
