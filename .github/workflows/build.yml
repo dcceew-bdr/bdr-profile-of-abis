@@ -23,19 +23,18 @@ jobs:
         #
         echo "Add profile to docs/"
         asciidoctor profile/_profile.adoc -o docs/profile.html
-        cp -r profile/img docs/
-        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/abis/#' docs/profile.html        
+        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/#' docs/profile.html        
         #
         echo "Add profile RDF to docs/"
-        cp profile.ttl docs/
+        cp profile/profile.ttl docs/
         #
         echo "Add Specification to docs/"   
         asciidoctor spec/00-master.adoc -o docs/specification.html
         cp -r spec/img docs/
-        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/abis/#' docs/specification.html
+        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/#' docs/specification.html
         #
         echo "Add JSON-LD Context to docs/"
-        cp context.json docs/
+        cp spec/context.json docs/
         #
         echo "Add validator to docs/"
         mkdir docs/validators
