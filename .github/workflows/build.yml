@@ -18,13 +18,13 @@ jobs:
         mkdir docs
         #
         echo "Add README to docs/"
-        cp README.md docs/        
+        cp README.adoc docs/        
         sudo apt-get install asciidoctor ruby -y
         #
         echo "Add profile to docs/"
-        asciidoctor profile/_profile.adoc -o docs/index.html
+        asciidoctor profile/_profile.adoc -o docs/profile.html
         cp -r profile/img docs/
-        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/abis/#' docs/index.html        
+        sed -i 's#img src="#img src="https://dcceew-bdr.github.io/abis/#' docs/profile.html        
         #
         echo "Add profile RDF to docs/"
         cp profile.ttl docs/
