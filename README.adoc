@@ -1,0 +1,32 @@
+= BDR Profile of ABIS
+
+This repository contains the https://www.dcceew.gov.au/environment/environment-information-australia/biodiversity-data-repository[Biodiversity Data Repository (BDR)]'s _profile_ of the https://linked.data.gov.au/def/abis[Australian Biodiversity Information Standard (ABIS)].
+
+* **The BDR** is a system implemented by the https://www.dcceew.gov.au[Department of Climate Change, Energy, the Environment and Water], in collaboration with Australian States and Territories.
+
+* **ABIS** is an Australian national standard for the representation and exchange of biodiversity information.
+
+* A **_profile_** is a "specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specifications" https://www.w3.org/TR/dx-prof/#dfn-data-specification[[W3C]].
+
+The purpose of this profile is to define requirements of data that is to be sent to the BDR, above and beyond those already imposed by ABIS. ABIS essentially defines the scientific information within data set to the BDR but does not define how to package that data, when it can be made available and so on. That is covered by this Profile.
+
+This Profile's specification can be found online at:
+
+* **https://dcceew-bdr.github.com/dcceew-bdr/bdr-profile-of-abis/profile[https://linked.data.gov.au/def/bdr-pr]**
+
+== Status
+
+This Profile is in effect, as of 2024-07-01.
+
+== License
+
+The contents of this repository and the Profile are licensed with the https://creativecommons.org/licenses/by/4.0/[Creative Commons 4.0 International license]. See the LICENSE deed in this repository for details.
+
+&copy; Department of Climate Change, Energy, the Environment and Water, 2025
+
+== Contact
+
+For all enquiries, please contact:
+
+**BDR team**
+<bdr@dcceew.gov.au>   
