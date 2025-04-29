@@ -1,7 +1,7 @@
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX schema: <https://schema.org/>
 PREFIX smm: <https://linked.data.gov.au/def/bdr-pr/smm/>
-PREFIX smrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
+PREFIX smmrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
 
 []
     a smm:SubmissionManifest ;
@@ -10,11 +10,11 @@ PREFIX smrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
             prof:hasArtifact
                 "outputs/dataset.ttl" ,
                 "outputs/survey-metadata.ttl" ;
-            prof:hasRole smrr:NecessaryForValidation ;
+            prof:hasRole smmrr:NecessaryForValidation ;
         ] ,
         [
             prof:hasArtifact "outputs/chunk_*.ttl" ;
-            prof:hasRole smrr:IsolatedContent ;
+            prof:hasRole smmrr:IsolatedContent ;
         ] ,
         [
             # there must be a reference to this content in the RDF:
@@ -22,6 +22,6 @@ PREFIX smrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
             # which we will replace "input/" with an actual BDR archival
             # location, when created
             prof:hasArtifact "inputs/" ;
-            prof:hasRole smrr:SubmissionSourceArchive ;
+            prof:hasRole smmrr:SubmissionSourceArchive ;
         ] ;
 .

@@ -54,7 +54,7 @@ The above information, if in a file called `data.ttl`, could be packaged and sen
     a bdrsm:SubmissionManifest ;
     prof:hasResource [
         prof:hasArtifact "data.ttl" ;
-        prof:hasRole smrr:SufficientForValidation ;
+        prof:hasRole smmrr:SufficientForValidation ;
     ] ;
 .
 ----
