@@ -1,12 +1,12 @@
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
-PREFIX smm: <https://linked.data.gov.au/def/bdr-pr/smm/>
-PREFIX smmrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
+PREFIX sm: <https://linked.data.gov.au/def/bdr-proj/sm/>
+PREFIX smrr: <https://linked.data.gov.au/def/bdr-proj/smrr/>
 
 []
-    a smm:SubmissionManifest ;
+    a sm:SubmissionManifest ;
     prof:hasResource
         [
             prof:hasArtifact "some-rdf-file.ttl" ;
-            prof:hasRole smmrr:SufficientForValidation ;
+            prof:hasRole smrr:SufficientForValidation ;
         ] ;
 .

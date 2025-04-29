@@ -13,7 +13,7 @@ Currently, the Data Release model only handles data embargos, but it is likely t
 ====
 
 [[data-release-metadata]]
-=== B.1. Metadata
+=== B.1 Metadata
 
 [frame=none, grid=none, cols="1,5"]
 |===
@@ -21,42 +21,51 @@ Currently, the Data Release model only handles data embargos, but it is likely t
 |*https://schema.org/name[Name]* | ABIS Data Release Model
 |*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing aspects of data release: to whom, under what circumstances and when data may be released.
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
-|*https://schema.org/dateModified[Modified Date]* | 2023-12-28
+|*https://schema.org/dateModified[Modified Date]* | 2025-04-29
 |*https://schema.org/dateIssued[Issued Date]* | 2023-12-28
-|*https://schema.org/version[Version]* | 1.0
-|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/abis/data-release/2.0[abisdr:2.0]
+|*https://schema.org/version[Version]* | 1.1
+|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/dr/1.1[dr:1.1]
 |*Version History*| *2.0* - 2023 Dec - First release (v2.0 to match ABIS)
 |*https://schema.org/creator[Creator]* | the https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/owner[Owner]* | https://linked.data.gov.au/org/ausbigg[Australian Biodiversity Information Governance Group (AUSBIGG)]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-|*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | AusBIGG is supported by DCCEEW's' Biodiversity Data Repository (BDR) Team. Contact the BDR Team on bdr@dcceew.gov.au +
-Issue tracking of the ABIS standard is managed online at https://github.com/AusBIGG/abis/issues
-|*https://schema.org/codeRepository[Code Repository]* | https://github.com/AusBIGG/abis
+|*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +
+
+Issue tracking for this profile is managed online at https://github.com/dcceew-bdr/bdr-profile-of-abis/issues
+|*https://schema.org/codeRepository[Code Repository]* | https://github.com/dcceew-bdr/bdr-profile-of-abis
 |===
 
-=== B.2. Supporting Assets
+=== B.2 Supporting Assets
 
 * RDF schema:
-** https://linked.data.gov.au/def/abis/data-release.ttl
+** https://linked.data.gov.au/def/bdr-pr/dr.ttl
 * <<SHACL, SHACL>> validation file:
-** https://linked.data.gov.au/def/abis/data-release/validator.ttl
+** https://linked.data.gov.au/def/bdr-pr/dr/validator.ttl
 
-=== B.3. Classes
+=== B.3 Classes
 
 This model defines none of its own classes and only indicates the <<TERNOntology, TERN Ontology>>'s https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset[`tern:Dataset`] class for use with the predicates it does define.
 
-=== B.4. Predicates
+=== B.4 Predicates
 
 [discrete]
-[[embargoedUntil]]
-==== embargoed until
+==== C.4.1 Predicate Index
+
+Predicates defined here:
+
+* <<dr:embargoedUntil, embargoed until>>
+* <<dr:embargoPeriod, embargoed period>>
+
+[discrete]
+[[dr:embargoedUntil]]
+==== C.4.2 embargoed until
 
 [cols="1,5"]
 |===
 | Property | Value
 
-| <<IRI, IRI>> | `abis:embargoedUntil`
+| <<IRI, IRI>> | `dr:embargoedUntil`
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | embargoed until
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | A date after which the is no longer embargoed
 | https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby[Is Defined By] | This model
@@ -86,20 +95,20 @@ This model defines none of its own classes and only indicates the <<TERNOntology
 |===
 
 [discrete]
-[[embargoPeriod]]
-==== embargo period
+[[dr:embargoPeriod]]
+==== C.4.3 embargo period
 
 [cols="1,5"]
 |===
 | Property | Value
 
-| <<IRI, IRI>> | `abis:embargoPeriod`
+| <<IRI, IRI>> | `dr:embargoPeriod`
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | embargo period
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | A temporal duration within which the object is embargoed
 | https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby[Is Defined By] | This model
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset[`tern:Dataset`]
 | https://www.w3.org/TR/rdf12-schema/#ch_range[Range] | https://www.w3.org/TR/owl-time/#time:TemporalDuration[`time:TemporalDuration`]
-| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | This predicate can only be used if the start of the embargo period's duration can be established by a business or system rule. If it cannot, use <<#embargoedUntil, embargoed until>> instead, with a fixed date.
+| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | This predicate can only be used if the start of the embargo period's duration can be established by a business or system rule. If it cannot, use <<dr:embargoedUntil, embargoed until>> instead, with a fixed date.
 | https://www.w3.org/TR/skos-reference/#example[Example] a|
 ----
 # Dataset X is embargoed for a period of 3 months, calculated to start
@@ -111,7 +120,7 @@ This model defines none of its own classes and only indicates the <<TERNOntology
     a tern:Dataset ;
     schema:name "Dataset X" ;
     dcterms:issued "2023-12-25"^^xsd:date ;
-    abis:embargoPeriod [
+    dr:embargoPeriod [
         a time:DurationDescription ;
         time:months 3 ;
     ] ;
@@ -120,6 +129,8 @@ This model defines none of its own classes and only indicates the <<TERNOntology
 ----
 |===
 
-=== B.5. Validator
+=== B.5 Validator
 
-#TODO: list and define validators for this model#
+The validator for this model is linked to in the <<B.2 Supporting Assets, B.2 Supporting Assets>> section above.
+
+This validator only validates manifest content, not the content of the data that the manifest lists - BDR/ABIS data.

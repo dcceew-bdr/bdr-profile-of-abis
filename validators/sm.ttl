@@ -1,15 +1,14 @@
-PREFIX : <https://linked.data.gov.au/def/bdr-pr/smm/validator/>
+PREFIX : <https://linked.data.gov.au/def/bdr-sm/validator/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX smm: <https://linked.data.gov.au/def/bdr-pr/smm/>
-PREFIX smmrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
+PREFIX sm: <https://linked.data.gov.au/def/bdr-pr/sm>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-<https://linked.data.gov.au/def/bdr-pr/smm>
+<https://linked.data.gov.au/def/bdr-pr/sm>
     a owl:Ontology ;
     schema:name "BDR Submission Manifest Model Validator"@en ;
     schema:definition "SHACL validator for the BDR Submission Manifest Model"@en ;
@@ -31,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :shape-01
     a sh:NodeShape ;
-    sh:targetClass smm:SubmissionManifest ;
+    sh:targetClass sm:SubmissionManifest ;
     sh:property [
         sh:path prof:hasResource ;
         sh:minCount 1 ;
@@ -67,7 +66,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sh:targetObjectsOf prof:hasRole ;
     sh:property [
         sh:path skos:inScheme ;
-        sh:value <https://linked.data.gov.au/def/bdr-pr/smmrr> ;
+        sh:value <https://linked.data.gov.au/def/bdr-proj/smrr> ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:message "Each role indicated for a Resource Descriptor a member of the Submission Manifest Model Resource Roles Vocabulary, indicated with the skos:inScheme predicate for the role Concept" ;

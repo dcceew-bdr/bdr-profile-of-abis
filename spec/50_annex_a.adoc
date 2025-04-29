@@ -8,39 +8,40 @@ image::img/proj-hierarchy.svg[Projects Model Class Hierarchy,align="center",widt
 <<abis:Project, `Project`>>s are part of <<abis:Program, `Program`>>s and both are specialised forms of <<PROV, PROV>>'s https://www.w3.org/TR/prov-o/#Activity[`Activity`] class. An `Activity` is "something that occurs over a period of time and acts upon or with entities" which means `Project` & `Program` instances can have all the properties that `Activities` can have, such as temporal extents, `Agents` that have causal relationships to them and so on.
 
 [[projects-metadata]]
-=== A.1. Metadata
+=== A.1 Metadata
 
 [frame=none, grid=none, cols="1,5"]
 |===
-|*<<IRI, IRI>>* | https://linked.data.gov.au/def/abis/projects
+|*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/proj
 |*https://schema.org/name[Name]* | ABIS Data Release Model
 |*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing Projects where Project is defined as "An Activity that requires concerted effort following a Plan in pursuit of an objective".
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
 |*https://schema.org/dateModified[Modified Date]* | 2023-12-28
 |*https://schema.org/dateIssued[Issued Date]* | 2023-12-28
 |*https://schema.org/version[Version]* | 2.0
-|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/abis/projects/2.0[proj:2.0]
+|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-proj/2.0[proj:2.0]
 |*Version History*| *2.0* - 2023 Dec - First release (v2.0 to match ABIS)
 |*https://schema.org/creator[Creator]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/owner[Owner]* | https://linked.data.gov.au/org/ausbigg[Australian Biodiversity Information Governance Group (AUSBIGG)]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-|*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | AusBIGG is supported by DCCEEW's' Biodiversity Data Repository (BDR) Team. Contact the BDR Team on bdr@dcceew.gov.au +
-Issue tracking of the ABIS standard is managed online at https://github.com/AusBIGG/abis/issues
-|*https://schema.org/codeRepository[Code Repository]* | https://github.com/AusBIGG/abis
+|*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +
+
+Issue tracking for this profile is managed online at https://github.com/dcceew-bdr/bdr-profile-of-abis/issues
+|*https://schema.org/codeRepository[Code Repository]* | https://github.com/dcceew-bdr/bdr-profile-of-abis
 |===
 
-=== A.2. Supporting Assets
+=== A.2 Supporting Assets
 
 * RDF schema:
-** https://linked.data.gov.au/def/abis/projects.ttl
+** https://linked.data.gov.au/def/bdr-pr/proj.ttl
 * <<SHACL, SHACL>> validation file:
-** https://linked.data.gov.au/def/abis/projects/validator.ttl
+** https://linked.data.gov.au/def/bdr-proj/validator.ttl
 
-=== A.3. Classes
+=== A.3 Classes
 
 [discrete]
-==== A.3.1. Class Index
+==== A.3.1 Class Index
 
 Classes defined here:
 
@@ -56,7 +57,7 @@ Classes defined elsewhere:
 
 [discrete]
 [[abis:Project]]
-==== A.3.2. Project
+==== A.3.2 Project
 
 [#proj-project,link="img/proj-project.svg"]
 .The Projects Model `Project` Class and its expected predicates
@@ -120,7 +121,7 @@ a|
 
 [discrete]
 [[abis:Program]]
-==== A.3.3. Program
+==== A.3.3 Program
 
 [#proj-program,link="img/proj-program.svg"]
 .The Projects Model `Program` Class and its expected predicates
@@ -160,7 +161,7 @@ image::img/proj-program.svg[Projects Model Program Class,align="center",width=65
 
 [discrete]
 [[prov:Agent]]
-==== A.3.5. Agent
+==== A.3.5 Agent
 
 [cols="3,10"]
 |===
@@ -177,7 +178,7 @@ image::img/proj-program.svg[Projects Model Program Class,align="center",width=65
 
 [discrete]
 [[schema:Organization]]
-==== A.3.6. Organization
+==== A.3.6 Organization
 
 [cols="3,10"]
 |===
@@ -196,7 +197,7 @@ image::img/proj-program.svg[Projects Model Program Class,align="center",width=65
 [discrete]
 [discrete]
 [[schema:Person]]
-==== A.3.7. Person
+==== A.3.7 Person
 
 [cols="3,10"]
 |===
@@ -213,7 +214,7 @@ image::img/proj-program.svg[Projects Model Program Class,align="center",width=65
 
 [discrete]
 [[skos:Concept]]
-==== A.3.8. Concept
+==== A.3.8 Concept
 
 [cols="3,10"]
 |===
@@ -227,7 +228,7 @@ image::img/proj-program.svg[Projects Model Program Class,align="center",width=65
 | Expected Properties | None
 |===
 
-=== A.4. Predicates
+=== A.4 Predicates
 
 This model defines only one predicate - <<abis:purpose, purpose>> - but also requires the use of others defined elsewhere. Definitions for all predicates are copied from source and given here.
 
@@ -448,9 +449,13 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#example[Example] a| See the example for <<abis:Project, Project>>
 |===
 
-=== A.5. Validator
+=== A.5 Validator
 
-#TODO: list and define validators for this model#
+The validator for this model is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
+
+This validator should be used in conjunction with the main validator for the BDR profile of ABIS which is available in the <<Validation, Validation>> section above.
+
+See the <<Validation, Validation>> section above also for information about how to perform validation.
 
 [discrete]
 ==== Shapes Index

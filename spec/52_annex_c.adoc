@@ -11,56 +11,57 @@ This model is for a _manifest_ - a listing of contents - of data submissions to 
 
 [frame=none, grid=none, cols="1,5"]
 |===
-|*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/smm
+|*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/sm
 |*https://schema.org/name[Name]* | BDR Submission Manifest Model
 |*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for a _manifest_ - a listing of contents - of data submissions to the <<BDR>>
 |*https://schema.org/dateCreated[Created Date]* | 2205-02-15
 |*https://schema.org/dateModified[Modified Date]* | 2025-04-29
 |*https://schema.org/dateIssued[Issued Date]* | 2025-03-01
 |*https://schema.org/version[Version]* | 1.0
-|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/smm/2.0[smm:2.0]
+|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/sm/2.0[sm:2.0]
 |*Version History*| *1.0* - 2025 Mar - First release
 |*https://schema.org/creator[Creator]* | the https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/owner[Owner]* | https://linked.data.gov.au/org/ausbigg[DCCEEW]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[DCCEEW]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
 |*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +
-Issue tracking of the ABIS standard is managed online at https://github.com/dcceew-bdr/bdr-profile-of-abis/issues
+
+Issue tracking for this profile is managed online at https://github.com/dcceew-bdr/bdr-profile-of-abis/issues
 |*https://schema.org/codeRepository[Code Repository]* | https://github.com/dcceew-bdr/bdr-profile-of-abis
 |===
 
 === C.2 Supporting Assets
 
 * RDF schema:
-** https://linked.data.gov.au/def/bdr-pr/smm.ttl
+** https://linked.data.gov.au/def/bdr-pr/sm.ttl
 * <<SHACL, SHACL>> validation file:
-** https://linked.data.gov.au/def/bdr-pr/smm/validator.ttl
+** https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl
 * Submission Manifest Model Resource Roles vocabulary:
-** https://linked.data.gov.au/def/bdr-pr/smmrr
-** RDF file: https://linked.data.gov.au/def/bdr-pr/smmrr.ttl
+** https://linked.data.gov.au/def/bdr-pr/smrr
+** RDF file: https://linked.data.gov.au/def/bdr-pr/smrr.ttl
 
 === C.3 Classes
 
 [discrete]
-==== C.3.1. Class Index
+==== C.3.1 Class Index
 
 Classes defined here:
 
-* <<smm:SubmissionManifest, Submission Manifest>>
+* <<sm:SubmissionManifest, Submission Manifest>>
 
 Classes defined elsewhere:
 
 * <<prof:ResourceDescriptor, Resource Descriptor>>
 
 [discrete]
-[[smm:SubmissionManifest]]
-==== C.3.2. Submission Manifest
+[[sm:SubmissionManifest]]
+==== C.3.2 Submission Manifest
 
 [cols="3,10"]
 |===
 | Property | Value
 
-| <<IRI, IRI>> | `smm:SubmissionManifest`
+| <<IRI, IRI>> | `sm:SubmissionManifest`
 | https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby[Is Defined By] | This model
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | Submission Manifest
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | A listing of the content of a data submission to the BDR
@@ -76,7 +77,7 @@ include::examples/annex-c/submission-classes.ttl[]
 
 [discrete]
 [[prof:ResourceDescriptor]]
-==== C.3.3. Resource Descriptor
+==== C.3.3 Resource Descriptor
 
 [cols="3,10"]
 |===
@@ -89,13 +90,13 @@ include::examples/annex-c/submission-classes.ttl[]
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<PROF, PROF>> and reused directly in this model
 | Expected Properties | <<prof:hasArtifact, has artifact>>, <<prof:hasRole, has role>>
 | https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Treat the Submission Manifest as the Profile this class is related to
-| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<smm:SubmissionManifest, Submission Manifest>>_
+| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
 === C.4 Predicates
 
 [discrete]
-==== C.4.1. Predicate Index
+==== C.4.1 Predicate Index
 
 Predicates defined elsewhere:
 
@@ -118,7 +119,7 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<PROF, PROF>> and reused directly in this model
 | https://www.w3.org/TR/rdf12-schema/#ch_range[Range] | <<prof:ResourceDescriptor, Resource Descriptor>>
 | https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Treat the Submission Manifest as the Profile this predicate requires
-| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<smm:SubmissionManifest, Submission Manifest>>_
+| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
 [discrete]
@@ -135,7 +136,7 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<PROF, PROF>> and reused directly in this model
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
 | https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Can be used to indicate multiple files by file paths
-| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<smm:SubmissionManifest, Submission Manifest>>_
+| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
 [discrete]
@@ -151,8 +152,8 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | A description of a resource that defines an aspect - a particular part, feature or role - of a Profile
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<PROF, PROF>> and reused directly in this model
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
-| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate a role from the https://linked.data.gov.au/def/bdr-pr/smmrr[Submission Manifest Model Resource Roles Vocabulary]
-| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<smm:SubmissionManifest, Submission Manifest>>_
+| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate a role from the https://linked.data.gov.au/def/bdr-pr/smrr[Submission Manifest Model Resource Roles Vocabulary]
+| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
 [discrete]
@@ -168,13 +169,13 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | is in scheme
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<SKOS, SKOS>> and reused directly in this model
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
-| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate that a role used as the value for the <<prof:hasRole, has role>> predicate is within the https://linked.data.gov.au/def/bdr-pr/smmrr[Submission Manifest Model Resource Roles Vocabulary]
-| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<smm:SubmissionManifest, Submission Manifest>>_
+| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate that a role used as the value for the <<prof:hasRole, has role>> predicate is within the https://linked.data.gov.au/def/bdr-pr/smrr[Submission Manifest Model Resource Roles Vocabulary]
+| https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
 === C.5 Validator
 
-The validator for this model which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
+The validator for this model is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
 
 This validator only validates manifest content, not the content of the data that the manifest lists - BDR/ABIS data.
 
@@ -182,7 +183,7 @@ This validator only validates manifest content, not the content of the data that
 
 ==== BDR Submission Manifest Resource Roles
 
-This model depends on the https://linked.data.gov.au/def/bdr-pr/smmrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
+This model depends on the https://linked.data.gov.au/def/bdr-pr/smrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
 
 Concepts from this vocabulary MUST be used as values for the <<prof:hasRole, has role>> predicate.
 
