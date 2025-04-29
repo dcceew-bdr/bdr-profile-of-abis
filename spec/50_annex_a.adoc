@@ -450,7 +450,7 @@ Predicates defined elsewhere:
 
 === A.5. Validator
 
-#TODO: list and define validators fro this model#
+#TODO: list and define validators for this model#
 
 [discrete]
 ==== Shapes Index

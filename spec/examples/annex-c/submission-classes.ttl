@@ -1,0 +1,17 @@
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX smm: <https://linked.data.gov.au/def/bdr-pr/smm/>
+PREFIX smrr: <https://linked.data.gov.au/def/bdr-pr/smmrr/>
+
+[]
+    a smm:SubmissionManifest ;
+    prof:hasResource
+        [
+            a prof:ResourceDescriptor ;
+            prof:hasArtifact "some-rdf-file.ttl" ;
+            prof:hasRole smrr:SufficientForValidation ;
+        ] ,
+        [
+            prof:hasArtifact "images/some-image-file.jpg" ;
+            prof:hasRole smrr:SupplimentaryData ;
+        ] ;
+.

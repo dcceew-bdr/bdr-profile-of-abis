@@ -34,6 +34,7 @@ Namespaces are used in shortened form in documents and data by assigning them a 
 |`rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` | <<RDFSSPEC, RDF Schema ontology>> namespace
 |`sosa:` | `http://www.w3.org/ns/sosa/` | <<SOSA, Sensor, Observation, Sample, and Actuator (SOSA) ontology>> namespace
 |`schema:` | `https://schema.org/` | <<SDO, schema.org>> namespace
+|`smm:` | `https://linked.data.gov.au/def/bdr-pr/sm/` | <<#annex-c, BDR Submission Manifest Model>> namespace
 |`skos:` | `http://www.w3.org/2004/02/skos/core#` | <<SKOS, Simple Knowledge Organization System (SKOS) ontology>> namespace
 |`tern:` | `https://w3id.org/tern/ontologies/tern/` | <<TERNOntology, TERN Ontology>> namespace
 |`time:` | `http://www.w3.org/2006/time#` | <<TIME, Time Ontology>> in OWL namespace
