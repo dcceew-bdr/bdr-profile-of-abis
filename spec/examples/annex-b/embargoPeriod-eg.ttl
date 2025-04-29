@@ -1,0 +1,23 @@
+PREFIX : <http://example.com/thing/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dr: <https://linked.data.gov.au/def/bdr-pr/dr/>
+PREFIX schema: <https://schema.org/>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Dataset X is embargoed for a period of 3 months, calculated to start
+# from the issued date.
+# The calculation is defined by a business rule which is not
+# able to be expressed in RDF
+
+:dataset-x
+    a tern:Dataset ;
+    schema:name "Dataset X" ;
+    dcterms:issued "2023-12-25"^^xsd:date ;
+    dr:embargoPeriod [
+        a time:DurationDescription ;
+        time:months 3 ;
+    ] ;
+    # ... other dataset properties
+.
