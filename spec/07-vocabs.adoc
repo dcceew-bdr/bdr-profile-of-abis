@@ -8,5 +8,5 @@ There are also elements of the models defined in this Profile that must be used 
 
 All the vocabularies needed for use with this Profile, including ABIS and its background models, are listed within the https://bdr.gov.au[BDR Portal]'s catalogue section:
 
-* https://bdr.gov.au/catalogs
+* https://bdr.gov.au/catalogues
 

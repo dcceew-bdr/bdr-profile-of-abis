@@ -90,7 +90,7 @@ The following figure illustrates the basic use of this model.
 .How Data Release Model elements relate to ABIS (TERN Ontology) Datasets
 image::img/data-release.svg[How Data Release Model elements relate to ABIS (TERN Ontology) Datasets,align="center",width=350]
 
-=== Submission Manifest Model
+==== Submission Manifest Model
 
 Model location: <<#annex-c, Annex C>>
 
