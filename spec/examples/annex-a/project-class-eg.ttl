@@ -1,0 +1,45 @@
+PREFIX abis: <https://linked.data.gov.au/def/abis/>
+PREFIX ex: <http://example.com/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX role: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX schema: <https://schema.org/>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+ex:project-m
+    a schema:Project ;
+    schema:isPartOf ex:program-n ;
+    schema:name "Project M" ;
+    schema:description "South Australian government Project M-23" ;
+    abis:purpose "To determine extent of koala populations in NE SA" ;
+    schema:keywords ex:koala ;
+    schema:spatial
+        [
+            geo:asWKT "POLYGON ((138.010254 -26.007424, 140.976563 -25.99755, ..., 138.010254 -26.007424))" ;
+        ] ;
+    schema:temporality
+        [
+            time:hasBeginning [ time:inXSDDate "2020-12-01" ] ;
+            time:hasEnd [ time:inXSDDate "2021-03-15" ] ;
+        ] ;
+    prov:qualifiedAttribution
+        [
+            prov:agent <https://linked.data.gov.au/org/dew> ;
+            prov:hadRole role:principalInvestigator ;
+        ] ;
+    prov:generated ex:dataset-x ;
+.
+
+ex:program-n
+    a schema:Project ;
+    schema:hasPart ex:project-m ;
+    schema:name "Programme N" ;
+    # ... other properties
+.
+
+ex:dataset-x
+    a tern:Dataset ;
+    schema:name "Dataset X" ;
+    # ... other properties
+.

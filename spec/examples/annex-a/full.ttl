@@ -1,0 +1,48 @@
+PREFIX ex: <http://example.com/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX proj: <https://linked.data.gov.au/def/bdr-proj/>
+PREFIX schema: <https://schema.org/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+:project-m
+    a schema:Project ;
+    schema:name "Project M" ;
+    schema:description "South Australian government Project M-23" ;
+    abis:purpose "To determine extent of koala populations in NE SA" ;
+    schema:isPartOf :program-n ;
+    schema:keywords ex:koala ;
+
+    # Note TIME/PROV at https://www.w3.org/TR/owl-time/#time-prov
+    # Note temporal range within that of containing Program
+    schema:temporality [
+        a time:ProperInterval ;
+        time:hasBeginning [ time:inXSDDate "2020-12-01"^^xsd:date ] ;
+        time:hasEnd [ time:inXSDDate "2021-03-15"^^xsd:date ] ;
+    ] ;
+    prov:startedAtTime "2023-12-01"^^xsd:date ;
+    prov:endedAtTime "2023-12-15"^^xsd:date ;
+    schema:spatial [
+        geo:asWKT "POLYGON ((138.010254 -26.007424, 140.976563 -25.99755, ..., 138.010254 -26.007424))"
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent ex:dewr ;  # SA Dept Env, e.g. only
+        prov:hadRole role:principalInvestigator ;
+    ] ;
+    prov:generated ex:dataset-x ;
+.
+
+:program-n
+    a schema:Project ;
+    schema:name "Programme N" ;
+    schema:hasPart :project-m ;
+    # Note TIME/PROV at https://www.w3.org/TR/owl-time/#time-prov
+    time:hasTime [
+        time:hasBeginning [
+            time:inXSDDateTime "2023-12-01"^^xsd:date ;
+        ] ;
+        time:hasEnd [
+            time:inXSDDateTime "2023-12-28"^^xsd:date ;
+        ] ;
+    ] ;
+    # ... other properties
+.
