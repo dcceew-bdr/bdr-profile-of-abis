@@ -4,10 +4,11 @@ This Profile is a profile of ABIS and also contains multiple other models used t
 
 === Model Roles
 
+[width="50%", cols="1,3"]
 |===
 | Model | Role
 
-| ABIS | to model scientific content - observations of biodiversity
+| https://linked.data.gov.au/def/abis[ABIS] | to model scientific content - observations of biodiversity
 | <<annex-a, Project>> | to link data to projects and programmes of work
 | <<annex-b, Data Release>> | to record information about data withholding periods and other conditions for release
 | <<annex-c, Submission Manifest>> | to describe packages of data submitted to the BDR for ingestion
@@ -87,7 +88,7 @@ The following figure illustrates the basic use of this model.
 
 [#data-release-join,link="img/data-release-join.svg"]
 .How Data Release Model elements relate to ABIS (TERN Ontology) Datasets
-image::img/data-release-join.svg[How Data Release Model elements relate to ABIS (TERN Ontology) Datasets,align="center",width=350]
+image::img/data-release.svg[How Data Release Model elements relate to ABIS (TERN Ontology) Datasets,align="center",width=350]
 
 === Submission Manifest Model
 
