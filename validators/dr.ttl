@@ -12,7 +12,7 @@ PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-<https://linked.data.gov.au/def/bdr-pr/dr>
+<https://linked.data.gov.au/def/bdr-pr/dr/validator>
     a owl:Ontology ;
     schema:name "BDR Data Release Model Validator"@en ;
     schema:definition "SHACL validator for the BDR Data Release Model"@en ;

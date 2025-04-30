@@ -8,7 +8,7 @@ PREFIX sm: <https://linked.data.gov.au/def/bdr-pr/sm>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-<https://linked.data.gov.au/def/bdr-pr/sm>
+<https://linked.data.gov.au/def/bdr-pr/sm/validator>
     a owl:Ontology ;
     schema:name "BDR Submission Manifest Model Validator"@en ;
     schema:definition "SHACL validator for the BDR Submission Manifest Model"@en ;

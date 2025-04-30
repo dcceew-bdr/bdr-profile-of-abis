@@ -23,6 +23,8 @@ This profile requires data validation according to multiple validators:
 
 * ABIS Validator
 ** as above
+* The BDR Profile of ABIS Core Validator
+** https://linked.data.gov.au/def/bdr-pr/validator/core[validator]
 * Project Model Validator
 ** See <<annex-a, Annex A>>
 * Data Release Model Validator
@@ -32,33 +34,15 @@ This profile requires data validation according to multiple validators:
 
 === Combined Validators
 
-The ABIS, Project Model and Data Release Model validators are combined into a single validator for ease of use:
+The ABIS, BDR Profile of ABIS Core Validator, Project Model and Data Release Model validators are combined into a single validator for ease of use:
 
 * https://linked.data.gov.au/def/bdr-pr/validator[BDR Profile of ABIS Validator]
 
+[NOTE]
 The Submission Manifest Model validator is not included in the BDR Profile of ABIS Validator. This is because BDR Profile of ABIS data is stored within data files which cannot include manifest information and Submission Manifest Model data is stored in files that indicate data files but that do not contain data themselves.
 
 === Performing Validation
 
 All data submitted to the BDR for ingestion will be validated using all the validators listed above within the BDR's _Data Ingestion Pipeline_ software. In addition, all the validators listed above can be selected for individual or combined use on the https://bdr.gov.au[BDR Portal].
 
-Since all the validators above are created using the open and standardised <<SHACL, SHACL>> validation language, data may be validated using them by any one of many open source and commercial tools and not just via the BDR Portal. Some such tools are:
-
-* https://pypi.org/project/pyshacl/[pySHACL]
-** free and open source Python SHACL validator
-** can be used as a command line application or within Python scripting as a library
-* https://shacl.org/playground/[SHACL Playground]
-** free, online Javascript-based validator
-** can be used in a browser
-* http://tools.dev.kurrawong.ai/validator[KurrawongAI SHACL Validator]
-** free, online pySHACL-based validator
-** preloaded with the validators above and many others
-* https://github.com/zazuko/rdf-validate-shacl[rdf-validate-shacl]
-** free, open source Javascript SHACL validation code library
-* https://graphdb.ontotext.com/documentation/10.8/shacl-validation.html[GraphDB's SHACL Validation capability]
-** SHACL validation of data within GraphDB RDF database instances
-** both commercial and free versions of GraphDB exist
-* https://jena.apache.org/documentation/shacl/[Apache Jena's SHACL too]
-** free, open source, Java RDF toolkit validation
-** code library, command line, within database options
-
+See https://linked.data.gov.au/def/abis#_performing_validation[ABIS' _Performing Validation_ section] for information on other SHACL validation tool options.

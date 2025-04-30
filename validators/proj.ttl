@@ -1,1 +1,84 @@
-# BDR Profile of ABIS Validator
+PREFIX : <https://linked.data.gov.au/def/bdr-pr/dr/validator/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/def/bdr-pr/proj/validator>
+    a owl:Ontology ;
+    schema:name "BDR Data Release Model Validator"@en ;
+    schema:definition "SHACL validator for the BDR Project Model"@en ;
+    schema:creator <https://linked.data.gov.au/org/dcceew> ;
+    schema:publisher <https://linked.data.gov.au/org/dcceew> ;
+    schema:dateCreated "2025-04-30"^^xsd:date ;
+    schema:dateModified "2025-04-30"^^xsd:date ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo """1.0 First version""" ;
+.
+
+:1.0 schema:name "1.0" .
+
+<https://linked.data.gov.au/org/dcceew>
+    a schema:Organization ;
+    schema:name "Department of Climate Change, Energy, the Environment and Water" ;
+    schema:url "https://www.dcceew.gov.au"^^xsd:anyURI ;
+.
+
+:shape-01
+    a sh:NodeShape ;
+    sh:targetClass schema:Project ;
+    sh:property [
+        sh:path schema:isPartOf ;
+        sh:class schema:Project ;
+        sh:message "If a Project is indicated as being part of something, the other thing must also be a Project" ;
+    ] ;
+.
+
+:shape-02
+    a sh:NodeShape ;
+    sh:targetClass schema:Project ;
+    sh:property [
+        sh:path schema:hasPart ;
+        sh:class schema:Project ;
+        sh:message "If a Project is indicated as having a part, the other thing must also be a Project" ;
+    ] ;
+.
+
+:shape-03
+    a sh:NodeShape ;
+    sh:targetClass schema:Project ;
+    sh:property [
+        sh:path prov:generated ;
+        sh:class tern:Dataset ;
+        sh:message "If a Project is indicated as having generated something, that thing must be a tern:Dataset" ;
+    ] ;
+.
+
+:shape-03
+    a sh:NodeShape ;
+    sh:targetObjectsOf prov:qualifiedAssociation ;
+    sh:property [
+        sh:path prov:agent ;
+        sh:or (
+            [ sh:class schema:Person ]
+            [ sh:class schema:Organization ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "If a Project indicate a qualified association, the indicated object must further indicate an Agent (Person or Organisation) with the prov:agent predicate" ;
+    ] ;
+.
+
+:shape-04
+    a sh:NodeShape ;
+    sh:targetObjectsOf prov:qualifiedAssociation ;
+    sh:property [
+        sh:path prov:role ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "If a Project indicate a qualified association, the indicated object must further indicate an Role for that association with the prov:role predicate" ;
+    ] ;
+.
