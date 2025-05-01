@@ -22,7 +22,7 @@ jobs:
         sudo apt-get install asciidoctor ruby -y
         #
         echo "Add profile RDF to docs/"
-        cp profile/profile.ttl docs/
+        cp profile.ttl docs/
         #
         echo "Add Specification to docs/"   
         asciidoctor spec/00-master.adoc -o docs/specification.html
