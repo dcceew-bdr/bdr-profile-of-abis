@@ -211,7 +211,7 @@ A multiple file submission from the TERN MONITOR application that includes both 
 include::examples/annex-c/monitor-multi/submission.ttl[]
 ----
 
-The images are indicated as having a role of `SupplimentaryData` meaning they will be handled in some way (stored) but not validated using ABIS validators. These image files must be linked to from within the submitted data.
+The images are indicated as having a role of `SupplementaryData` meaning they will be handled in some way (stored) but not validated using ABIS validators. These image files must be linked to from within the submitted data.
 
 ==== C.7.3 Gaia archival
 
