@@ -12,7 +12,7 @@ The purpose of this profile is to define requirements of data that is to be sent
 
 This Profile's specification can be found online at:
 
-* **https://dcceew-bdr.github.com/dcceew-bdr/bdr-profile-of-abis/profile[https://linked.data.gov.au/def/bdr-pr]**
+* **https://dcceew-bdr.github.io/bdr-profile-of-abis/specification.html[https://linked.data.gov.au/def/bdr-pr]**
 
 == Status
 

@@ -671,44 +671,54 @@ pre.rouge {
 <li><a href="#_structure">4.3. Structure</a></li>
 </ul>
 </li>
-<li><a href="#_models">5. Models</a>
+<li><a href="#_specification">5. Specification</a>
 <ul class="sectlevel2">
-<li><a href="#_model_roles">5.1. Model Roles</a></li>
-<li><a href="#_model_use_example">5.2. Model Use Example</a></li>
-<li><a href="#_models_overview">5.3. Models Overview</a>
+<li><a href="#_required_identifiers">5.1. Required Identifiers</a></li>
+<li><a href="#profile-bdr-mandates">5.2. Model Element Mandates</a></li>
+</ul>
+</li>
+<li><a href="#_models">6. Models</a>
+<ul class="sectlevel2">
+<li><a href="#_model_roles">6.1. Model Roles</a></li>
+<li><a href="#_model_use_example">6.2. Model Use Example</a></li>
+<li><a href="#_models_overview">6.3. Models Overview</a>
 <ul class="sectlevel3">
-<li><a href="#_project_model">5.3.1. Project Model</a></li>
-<li><a href="#_data_release_model">5.3.2. Data Release Model</a></li>
+<li><a href="#_project_model">6.3.1. Project Model</a></li>
+<li><a href="#_data_release_model">6.3.2. Data Release Model</a></li>
+<li><a href="#_submission_manifest_model">6.3.3. Submission Manifest Model</a></li>
 </ul>
 </li>
-<li><a href="#_submission_manifest_model">5.4. Submission Manifest Model</a></li>
 </ul>
 </li>
-<li><a href="#_vocabularies">6. Vocabularies</a></li>
-<li><a href="#_validation">7. Validation</a>
+<li><a href="#_vocabularies">7. Vocabularies</a>
 <ul class="sectlevel2">
-<li><a href="#_abis_validation">7.1. ABIS Validation</a></li>
-<li><a href="#_bdr_profile_of_abis_validation">7.2. BDR Profile of ABIS Validation</a></li>
-<li><a href="#_multiple_validators">7.3. Multiple Validators</a></li>
-<li><a href="#_performing_validation">7.4. Performing Validation</a></li>
+<li><a href="#_finding_the_vocabularies">7.1. Finding the vocabularies</a></li>
+</ul>
+</li>
+<li><a href="#_validation">8. Validation</a>
+<ul class="sectlevel2">
+<li><a href="#_abis_validation">8.1. ABIS Validation</a></li>
+<li><a href="#_bdr_profile_of_abis_validation">8.2. BDR Profile of ABIS Validation</a></li>
+<li><a href="#_combined_validators">8.3. Combined Validators</a></li>
+<li><a href="#_performing_validation">8.4. Performing Validation</a></li>
 </ul>
 </li>
 <li><a href="#annex-a">Annex A: Project Model</a>
 <ul class="sectlevel2">
-<li><a href="#projects-metadata">A.1. Metadata</a></li>
-<li><a href="#_a_2_supporting_assets">A.2. Supporting Assets</a></li>
-<li><a href="#_a_3_classes">A.3. Classes</a></li>
-<li><a href="#_a_4_predicates">A.4. Predicates</a></li>
-<li><a href="#_a_5_validator">A.5. Validator</a></li>
+<li><a href="#projects-metadata">A.1 Metadata</a></li>
+<li><a href="#_a_2_supporting_assets">A.2 Supporting Assets</a></li>
+<li><a href="#_a_3_classes">A.3 Classes</a></li>
+<li><a href="#_a_4_predicates">A.4 Predicates</a></li>
+<li><a href="#_a_5_validator">A.5 Validator</a></li>
 </ul>
 </li>
 <li><a href="#annex-b">Annex B: Data Release Model</a>
 <ul class="sectlevel2">
-<li><a href="#data-release-metadata">B.1. Metadata</a></li>
-<li><a href="#_b_2_supporting_assets">B.2. Supporting Assets</a></li>
-<li><a href="#_b_3_classes">B.3. Classes</a></li>
-<li><a href="#_b_4_predicates">B.4. Predicates</a></li>
-<li><a href="#_b_5_validator">B.5. Validator</a></li>
+<li><a href="#data-release-metadata">B.1 Metadata</a></li>
+<li><a href="#_b_2_supporting_assets">B.2 Supporting Assets</a></li>
+<li><a href="#_b_3_classes">B.3 Classes</a></li>
+<li><a href="#_b_4_predicates">B.4 Predicates</a></li>
+<li><a href="#_b_5_validator">B.5 Validator</a></li>
 </ul>
 </li>
 <li><a href="#annex-c">Annex C: BDR Submission Manifest Model</a>
@@ -785,7 +795,7 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateModified">Modified Date</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2025-03-29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-29</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateIssued">Issued Date</a></strong></p></td>
@@ -809,11 +819,11 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/owner">Owner</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">Department of Climate Change, Energy and the Environment (DCCEEW)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">DCCEEW</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/publisher">Publisher</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">Department of Climate Change, Energy and the Environment (DCCEEW)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">DCCEEW</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/license">License</a></strong></p></td>
@@ -822,7 +832,7 @@ pre.rouge {
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point">Contacts</a></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The BDR Team on <a href="mailto:bdr@dcceew.gov.au">bdr@dcceew.gov.au</a><br></p>
-<p class="tableblock">Issue tracking of the ABIS standard is managed online at <a href="https://github.com/dcceew-bdr/bdr-profile-of-abis/issues" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis/issues</a></p></td>
+<p class="tableblock">Issue tracking for this profile is managed online at <a href="https://github.com/dcceew-bdr/bdr-profile-of-abis/issues" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis/issues</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/codeRepository">Code Repository</a></strong></p></td>
@@ -940,7 +950,7 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dr:</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/abis/data-release/" class="bare">https://linked.data.gov.au/def/abis/data-release/</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-pr/dr/" class="bare">https://linked.data.gov.au/def/bdr-pr/dr/</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#annex-b">BDR Data Release Model</a> namespace</p></td>
 </tr>
 <tr>
@@ -950,7 +960,7 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>proj:</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/abis/projects/" class="bare">https://linked.data.gov.au/def/abis/projects/</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-proj/" class="bare">https://linked.data.gov.au/def/bdr-proj/</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#annex-b">BDR Projects Model</a> namespace</p></td>
 </tr>
 <tr>
@@ -987,6 +997,11 @@ pre.rouge {
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>schema:</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://schema.org/" class="bare">https://schema.org/</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SDO">schema.org</a> namespace</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-proj/" class="bare">https://linked.data.gov.au/def/bdr-proj/</a>:</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-pr/sm/" class="bare">https://linked.data.gov.au/def/bdr-pr/sm/</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#annex-c">BDR Submission Manifest Model</a> namespace</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>skos:</code></p></td>
@@ -1223,7 +1238,7 @@ pre.rouge {
 <div class="sect2">
 <h3 id="_multiple_models"><a class="anchor" href="#_multiple_models"></a>4.1. Multiple Models</h3>
 <div class="paragraph">
-<p>This Profile is centered on ABIS but includes several models not found within ABIS that have been developed specifically for data management within the BDR. These models - the Project, Data Release and Submission Manifest models as shown in the figure above - are themselves mini-profiles of other, standard, models in that they mostly reuse classes and predicates from rather than inventing new ones.</p>
+<p>This Profile is centered on ABIS and provides a number of constraints on the use of ABIS, such as mandating certain metadata for Datasets. It also includes several models not found within ABIS that have been developed specifically for data management within the BDR. These models - the Project, Data Release and Submission Manifest models as shown in the figure above - are themselves mini-profiles of other, standard, models in that they mostly reuse classes and predicates from rather than inventing new ones.</p>
 </div>
 <div class="paragraph">
 <p>The "Background Models" that these models inherit from and themselves profile are also the background models of ABIS - this Profile introduces no new ones. You can see the full list of ABIS', and therefore this Profile&#8217;s, background models at:</p>
@@ -1272,11 +1287,21 @@ pre.rouge {
 </div>
 </li>
 <li>
+<p><a href="#ABIS Constraints">ABIS Constraints</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Constraints that this profile places on the use of ABIS</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
 <p><a href="#_models">Models</a></p>
 <div class="ulist">
 <ul>
 <li>
-<p>The normative description of the data models used within ABIS</p>
+<p>The normative description of the models this profile uses in addition to ABIS</p>
 </li>
 </ul>
 </div>
@@ -1309,13 +1334,13 @@ pre.rouge {
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#annex-a">Annex B: Projects Model</a></p>
+<p><a href="#annex-a">Annex A: Projects Model</a></p>
 </li>
 <li>
-<p><a href="#annex-b">Annex C: Data Release Model</a></p>
+<p><a href="#annex-b">Annex B: Data Release Model</a></p>
 </li>
 <li>
-<p><a href="#annex-c">Annex D: Submission Manifest Model</a></p>
+<p><a href="#annex-c">Annex C: Submission Manifest Model</a></p>
 </li>
 </ul>
 </div>
@@ -1326,17 +1351,183 @@ pre.rouge {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_models"><a class="anchor" href="#_models"></a>5. Models</h2>
+<h2 id="_specification"><a class="anchor" href="#_specification"></a>5. Specification</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following subsections contain the rules of this Profile that go above and beyond those specified for ABIS generally. They form this Profile’s normative specification.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_required_identifiers">Required Identifiers</a></p>
+</li>
+<li>
+<p><a href="#profile-bdr-mandates">Model Element Mandates</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_required_identifiers"><a class="anchor" href="#_required_identifiers"></a>5.1. Required Identifiers</h3>
+<div class="paragraph">
+<p>The BDR requires that certain classes of ABIS object use identifiers from particular systems. Some classes of identifier can be generated by a data submitter, based on a patter, others must be pre-allocated by the BDR Team.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Class</th>
+<th class="tableblock halign-left valign-top">Authority</th>
+<th class="tableblock halign-left valign-top">Pattern / Logic</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Submitter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/dataset/bdr/{UUID}" class="bare">https://linked.data.gov.au/dataset/bdr/{UUID}</a></code> where <code>{UUID}</code> is a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)">UUIDv4</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Most software libraries can generate this e.g. Python can call <code>import uuid</code> and then <code>uuid.uuid4()</code><br>
+<br>
+Alternate IRIs <em>MAY</em> be able to be used, for example for pre-existing datasets, if arranged with the BDR Team</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Site"><code>tern:Site</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submitter or original Site creator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{Dataset-IRI}/</code> + supplier pattern or original IRI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If created by a supplier, the IRI must be based on the IRI of the Dataset that it is part of and must be unique within the Dataset.<br>
+<br>
+Any system may be used to ensure uniqueness, e.g. UUIDs, systematic numbers etc.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Sample"><code>tern:Sample</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submitter or original Sample creator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{Dataset-IRI}/</code> + supplier pattern or original IRI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As per Site</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Observation"><code>tern:Observation</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submitter or original Sample creator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{Dataset-IRI}/</code> + supplier pattern or original IRI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As per Site</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prov:Agent</code>, one of <a href="https://schema.org/Organisation"><code>schema:Organisation</code></a> or <a href="https://schema.org/Person"><code>schema:Person</code></a>, with a role in relation to a Dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BDR Team</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fixed, as registered</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Agents with roles relating to a Dataset <em>MUST</em> be identified by IRIs as registered in the <a href="https://linked.data.gov.au/dataset/bdr/orgs">BDR Submitting Organisations</a> vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prov:Agent</code>, one of <a href="https://schema.org/Organisation"><code>schema:Organisation</code></a> or <a href="https://schema.org/Person"><code>schema:Person</code></a>, other relations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submitter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Any</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Agents other than those with roles relating to Datasets may be identified using any IRI or a Blank Node</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://schema.org/"><code>schema:Datatype</code></a>, as used with the <a href="https://schema.org/identifier"><code>schema:identifier</code></a> predicate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BDR Team</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fixed, as registered</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatypes indicated for literal values by the <a href="https://schema.org/identifier"><code>schema:identifier</code></a> predicate <em>MUST</em> be identified by IRIs as registered in the <a href="https://linked.data.gov.au/dataset/bdr/datatypes">BDR Datatypes</a> vocabulary</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="profile-bdr-mandates"><a class="anchor" href="#profile-bdr-mandates"></a>5.2. Model Element Mandates</h3>
+<div class="paragraph">
+<p>The following table lists the requirements for the presence of classes and predicates assigned to data supplied according to this Profile. These requirements are in addition to those imposed by <a href="https://linked.data.gov.au/def/abis#_component_models">ABIS' Component models</a>, such as the <a href="#TERNOntology">TERN Ontology</a>.</p>
+</div>
+<div class="paragraph">
+<p>A cardinality of <code>1</code> means mandatory. <code>0+</code> means zero or more, <code>1+</code> one more, etc. <code>0-1</code> means zero or one only.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 22.2222%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Class</th>
+<th class="tableblock halign-left valign-top">Predicate</th>
+<th class="tableblock halign-left valign-top">Cardinality</th>
+<th class="tableblock halign-left valign-top">Datatype</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:title</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xsd:string</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xsd:string</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May use simple formatting such as linebreaks</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:created</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xsd:date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">not <code>xsd:dateTime</code> or other date variant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:modified</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xsd:date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">not <code>xsd:dateTime</code> or other date variant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:creator</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IRI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the IRI of the Agent(s) must be listed in the <a href="https://linked.data.gov.au/dataset/bdr/orgs">BDR Submitting Organisations</a> vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:publisher</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IRI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the IRI of the Agent(s) must be listed in the <a href="https://linked.data.gov.au/dataset/bdr/orgs">BDR Submitting Organisations</a> vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_models"><a class="anchor" href="#_models"></a>6. Models</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This Profile is a profile of ABIS and also contains multiple other models used to represent information that ABIS does not address. The list of all models and their purposes is as follows.</p>
 </div>
 <div class="sect2">
-<h3 id="_model_roles"><a class="anchor" href="#_model_roles"></a>5.1. Model Roles</h3>
-<table class="tableblock frame-all grid-all stripes-even stretch">
+<h3 id="_model_roles"><a class="anchor" href="#_model_roles"></a>6.1. Model Roles</h3>
+<table class="tableblock frame-all grid-all stripes-even" style="width: 50%;">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 75%;">
 </colgroup>
 <thead>
 <tr>
@@ -1346,7 +1537,7 @@ pre.rouge {
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ABIS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/abis">ABIS</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">to model scientific content - observations of biodiversity</p></td>
 </tr>
 <tr>
@@ -1365,7 +1556,7 @@ pre.rouge {
 </table>
 </div>
 <div class="sect2">
-<h3 id="_model_use_example"><a class="anchor" href="#_model_use_example"></a>5.2. Model Use Example</h3>
+<h3 id="_model_use_example"><a class="anchor" href="#_model_use_example"></a>6.2. Model Use Example</h3>
 <div class="paragraph">
 <p>The following example data, which is not valida ccording to the BDR Profile of ABIS and is just for illustration purposes, includes elements from some of the models:</p>
 </div>
@@ -1407,7 +1598,7 @@ pre.rouge {
     </span><span class="k">a</span><span class="w"> </span><span class="nn">bdrsm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">prof:</span><span class="n">hasResource</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"data.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">https:</span><span class="n">//linked</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">gov</span><span class="p">.</span><span class="nn">au/def/bdr-proj/rr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
 </span><span class="p">.</span></code></pre>
 </div>
@@ -1417,9 +1608,9 @@ pre.rouge {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_models_overview"><a class="anchor" href="#_models_overview"></a>5.3. Models Overview</h3>
+<h3 id="_models_overview"><a class="anchor" href="#_models_overview"></a>6.3. Models Overview</h3>
 <div class="sect3">
-<h4 id="_project_model"><a class="anchor" href="#_project_model"></a>5.3.1. Project Model</h4>
+<h4 id="_project_model"><a class="anchor" href="#_project_model"></a>6.3.1. Project Model</h4>
 <div class="paragraph">
 <p>Model location: <a href="#annex-a">Annex A</a></p>
 </div>
@@ -1437,7 +1628,7 @@ pre.rouge {
 </div>
 </div>
 <div class="sect3">
-<h4 id="_data_release_model"><a class="anchor" href="#_data_release_model"></a>5.3.2. Data Release Model</h4>
+<h4 id="_data_release_model"><a class="anchor" href="#_data_release_model"></a>6.3.2. Data Release Model</h4>
 <div class="paragraph">
 <p>Model location: <a href="#annex-b">Annex B</a></p>
 </div>
@@ -1452,14 +1643,13 @@ pre.rouge {
 </div>
 <div id="data-release-join" class="imageblock text-center">
 <div class="content">
-<a class="image" href="img/data-release-join.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/data-release-join.svg" alt="How Data Release Model elements relate to ABIS (TERN Ontology) Datasets" width="350"></a>
+<a class="image" href="img/data-release-join.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/data-release.svg" alt="How Data Release Model elements relate to ABIS (TERN Ontology) Datasets" width="350"></a>
 </div>
 <div class="title">Figure 5. How Data Release Model elements relate to ABIS (TERN Ontology) Datasets</div>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_submission_manifest_model"><a class="anchor" href="#_submission_manifest_model"></a>5.4. Submission Manifest Model</h3>
+<div class="sect3">
+<h4 id="_submission_manifest_model"><a class="anchor" href="#_submission_manifest_model"></a>6.3.3. Submission Manifest Model</h4>
 <div class="paragraph">
 <p>Model location: <a href="#annex-c">Annex C</a></p>
 </div>
@@ -1478,35 +1668,33 @@ pre.rouge {
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="_vocabularies"><a class="anchor" href="#_vocabularies"></a>6. Vocabularies</h2>
+<h2 id="_vocabularies"><a class="anchor" href="#_vocabularies"></a>7. Vocabularies</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>ABIS use depends on the use of many vocabularies. For example, the observed <em>growth stage</em> of a plant may be indicated by use of <a href="http://linked.data.gov.au/def/tern-cv/79818c43-e58c-4725-bd3c-070aa683416f">Dead</a>, <a href="http://linked.data.gov.au/def/tern-cv/1419ef01-161f-4265-8cb1-e340726311cb">Regrowth</a> or <a href="https://linked.data.gov.au/def/tern-cv/28cfe080-2bd5-4449-8fe4-cbfa71c3ad15">Senescence</a> taken from <a href="https://www.tern.org.au/">TERN</a>'s <a href="http://linked.data.gov.au/def/tern-cv/d2915c8b-bf46-4a85-ba6d-cbe88c03fce6">Growth Stage vocabulary</a>.</p>
+<p>For data to conform to the BDR Profile of ABIS, many vocabularies must be used. Some of the vocabularies are required for use by ABIS - lists of measurement techniques, feature types etc. - others must be used for metadata values for ABIS objects. ABIS objects' metadata may require values such as "creator" for agent roles which the underlying TERN Ontology do not constrain, only requiring that some value be present and likewise, this profile may require particular values that ABIS does not constrain.</p>
 </div>
 <div class="paragraph">
-<p>Some uses of ABIS, such as for the submission of data to the <a href="#BDR">BDR</a>, require the use of particular vocabularies that aren&#8217;t mandated for general ABIS use, for example the use of the <a href="https://linked.data.gov.au/dataset/bdr/datatypes/"><em>BDR Datatypes</em></a> vocabulary for special forms of identifiers. Mandates for particular vocabulary use are indicated by individual profiles of ABIS - see <a href="#Profiles">Profiles</a>.</p>
+<p>There are also elements of the models defined in this Profile that must be used with vocabularies, such as the <a href="#annex-c">Submission Manifest Model</a>'s <code>hasRole</code> predicate which must indicate a value from the <a href="#_bdr_submission_manifest_resource_roles">Submission Manifest Resource Roles vocabulary</a>.</p>
 </div>
+<div class="sect2">
+<h3 id="_finding_the_vocabularies"><a class="anchor" href="#_finding_the_vocabularies"></a>7.1. Finding the vocabularies</h3>
 <div class="paragraph">
-<p>Some <a href="#Component Models">Component Models</a> of ABIS also require the use of particular vocabularies, for example, the <a href="#annex-b">Projects Model</a> mandates that roles chosen for an attribution&#8217;s <code>hadRole</code> predicate, when used for an instances of the <code>abis:Project</code> class, must come from the <a href="https://data.idnau.org/pid/vocab/idn-role-codes">IDN Role Codes Vocabulary</a></p>
-</div>
-<div class="paragraph">
-<p>All the vocabularies required for use with ABIS and any known profile of ABIS are listed at the <em>BDR Vocabulary Register</em>:</p>
+<p>All the vocabularies needed for use with this Profile, including ABIS and its background models, are listed within the <a href="https://bdr.gov.au">BDR Portal</a>'s catalogue section:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://vocabs.bdr.gov.au/v/vocab">https://vocabs.bdr.gov.au</a></p>
+<p><a href="https://bdr.gov.au/catalogues" class="bare">https://bdr.gov.au/catalogues</a></p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>The profile or Component Model that requires each vocab&#8217;s use is indicated there, along with other metadata to assist with the discovery of vocabs. This register is live and continuously updated with use and vocab updates.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_validation"><a class="anchor" href="#_validation"></a>7. Validation</h2>
+<h2 id="_validation"><a class="anchor" href="#_validation"></a>8. Validation</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Since this profile is a profile of ABIS, all data wanting to conform to this profile must conform to ABIS. Demonstration of conformance to ABIS means passing ABIS validator validation.</p>
@@ -1515,7 +1703,7 @@ pre.rouge {
 <p>Then, to show conformance to this profile and not just ABIS, data must also pass this Profile&#8217;s validators.</p>
 </div>
 <div class="sect2">
-<h3 id="_abis_validation"><a class="anchor" href="#_abis_validation"></a>7.1. ABIS Validation</h3>
+<h3 id="_abis_validation"><a class="anchor" href="#_abis_validation"></a>8.1. ABIS Validation</h3>
 <div class="paragraph">
 <p>ABIS requires data validation according to multiple validators:</p>
 </div>
@@ -1526,7 +1714,7 @@ pre.rouge {
 <div class="ulist">
 <ul>
 <li>
-<p>e.g. the <a href="http://www.opengis.net/def/geosparql/validator/">https://li</a>[GeoSPARQL Validator]</p>
+<p>e.g. the <a href="http://www.opengis.net/def/geosparql/validator/">GeoSPARQL Validator</a></p>
 </li>
 </ul>
 </div>
@@ -1551,28 +1739,69 @@ pre.rouge {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_bdr_profile_of_abis_validation"><a class="anchor" href="#_bdr_profile_of_abis_validation"></a>7.2. BDR Profile of ABIS Validation</h3>
+<h3 id="_bdr_profile_of_abis_validation"><a class="anchor" href="#_bdr_profile_of_abis_validation"></a>8.2. BDR Profile of ABIS Validation</h3>
 <div class="paragraph">
 <p>This profile requires data validation according to multiple validators:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>ABIS Validator - as above</p>
-</li>
+<p>ABIS Validator</p>
+<div class="ulist">
+<ul>
 <li>
-<p>Project Model Validator</p>
-</li>
-<li>
-<p>Data Release Model Validator</p>
-</li>
-<li>
-<p>Submission Manifest Validator</p>
+<p>as above</p>
 </li>
 </ul>
 </div>
+</li>
+<li>
+<p>The BDR Profile of ABIS Core Validator</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/validator/core">validator</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Project Model Validator</p>
+<div class="ulist">
+<ul>
+<li>
+<p>See <a href="#annex-a">Annex A</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Data Release Model Validator</p>
+<div class="ulist">
+<ul>
+<li>
+<p>See <a href="#annex-b">Annex B</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Submission Manifest Validator</p>
+<div class="ulist">
+<ul>
+<li>
+<p>See <a href="#annex-c">Annex C</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_combined_validators"><a class="anchor" href="#_combined_validators"></a>8.3. Combined Validators</h3>
 <div class="paragraph">
-<p>The ABIS, Project Model and Data Release Model validators are combined into a single validator for ease of use:</p>
+<p>The ABIS, BDR Profile of ABIS Core Validator, Project Model and Data Release Model validators are combined into a single validator for ease of use:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1581,149 +1810,26 @@ pre.rouge {
 </li>
 </ul>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre>The Submission Manifest Model validator is not included in the BDR Profile of ABIS Validator since data according to the BDR Profile of ABIS and Submission Manifest Model can never be present in a single file and thus cannot be validated together. This is because BDR Profile of ABIS data is stored within data files which cannot include manifest information and manifest file content only indicates data files in submissions and does not contain ABIS data.</pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_multiple_validators"><a class="anchor" href="#_multiple_validators"></a>7.3. Multiple Validators</h3>
-<div class="paragraph">
-<p>Just as the ABIS model is a collection of models and also inherits model elements from other models (see <a href="#_multiple_models">Multiple Models</a>), so too is the ABIS validator a collection of ABIS-created validators and inherited validation rules. For data to validly conform ABIS, it must also be valid according all these validators. Part use of ABIS may choose to be valid according to only some ABIS validators.</p>
-</div>
-<div class="paragraph">
-<p>The following table lists all the validators relevant to ABIS and describes their roles.</p>
-</div>
-<table class="tableblock frame-all grid-all stripes-even" style="width: 75%;">
-<colgroup>
-<col style="width: 12.5%;">
-<col style="width: 37.5%;">
-<col style="width: 12.5%;">
-<col style="width: 37.5%;">
-</colgroup>
-<thead>
+<div class="admonitionblock note">
+<table>
 <tr>
-<th class="tableblock halign-left valign-top">Validator</th>
-<th class="tableblock halign-left valign-top">Description</th>
-<th class="tableblock halign-left valign-top">Source</th>
-<th class="tableblock halign-left valign-top">Notes</th>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The Submission Manifest Model validator is not included in the BDR Profile of ABIS Validator. This is because BDR Profile of ABIS data is stored within data files which cannot include manifest information and Submission Manifest Model data is stored in files that indicate data files but that do not contain data themselves.
+</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/abis.ttl">ABIS</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validation rules implemented by ABIS only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ABIS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Imports many other validators</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/bdr-profile.ttl">BDR Profile of ABIS</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For data intended for storage in the BDR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#BDR Profile">BDR Profile</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Imports the ABIS validator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/geo.ttl">GeoSPARQL</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For spatial data</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GeoSPARQL">GeoSPARQL</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Presented by the GeoSPARQL standard</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/sosa.ttl">SOSA</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For sampling/observations data</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SOSA">SOSA</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Derived from the SOSA standard</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/tern.ttl">TERN Ontology</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For TERN Ontology data</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ABIS/BDR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The TERN Ontology validator, as presented by TERN</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/abis-tern.ttl">ABIS Profile of TERN Ontology</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For data created according to the <a href="#TERN Ontology">TERN Ontology</a>, but for use in ABIS-based systems</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#TERN Ontology">TERN Ontology</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Imports parts of the TERN validator but not all</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/vocpub.ttl">VocPub</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For data vocabularies</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#VOCPUB">VocPub</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Presented by VocPub</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/bdrm.ttl">Biodiversity Records Model</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For data created according to the <a href="#Biodiversity Record Model">Biodiversity Records Model</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ABIS/BDR</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/bdr-profile.ttl">Project Model</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validation rules implemented by the <a href="#Projects Model">Projects Model</a> only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ABIS</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ausbigg.github.io/abis/validators/bdr-profile.ttl">Data Release Model</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validation rules implemented by the <a href="#_data_release_model">Data Release Model</a> only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ABIS</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
 </table>
 </div>
+</div>
 <div class="sect2">
-<h3 id="_performing_validation"><a class="anchor" href="#_performing_validation"></a>7.4. Performing Validation</h3>
+<h3 id="_performing_validation"><a class="anchor" href="#_performing_validation"></a>8.4. Performing Validation</h3>
 <div class="paragraph">
-<p>The preferred way to validate RDF data using the validators above is to use the <a href="https://portal.bdr.gov.au">ABIS Portal</a> which contains all the validators pre-loaded for use.</p>
+<p>All data submitted to the BDR for ingestion will be validated using all the validators listed above within the BDR&#8217;s <em>Data Ingestion Pipeline</em> software. In addition, all the validators listed above can be selected for individual or combined use on the <a href="https://bdr.gov.au">BDR Portal</a>.</p>
 </div>
 <div class="paragraph">
-<p>However, any one of a number of tools designed for <a href="#SHACL">SHACL</a> validation may be used and some may be more useful than the ABIS Portal for certain scenarios. Some such tools are:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://pypi.org/project/pyshacl/">pySHACL</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>free and open source Python SHACL validator</p>
-</li>
-<li>
-<p>can be used as a command line application or within Python scripting as a library</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="https://shacl.org/playground/">SHACL Playground</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>online Javascript-based validator</p>
-</li>
-<li>
-<p>can be used in a browser</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="http://tools.dev.kurrawong.ai/validator">KurrawongAI SHACL Validator</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>online pySHACL-based validator</p>
-</li>
-<li>
-<p>preloaded with the validators above and many others</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
+<p>See <a href="https://linked.data.gov.au/def/abis#<em>performing_validation">ABIS' _Performing Validation</em> section</a> for information on other SHACL validation tool options.</p>
 </div>
 </div>
 </div>
@@ -1733,15 +1839,24 @@ pre.rouge {
 <div class="sectionbody">
 <div id="proj-overview" class="imageblock text-center">
 <div class="content">
-<a class="image" href="img/proj-hierarchy.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/proj-hierarchy.svg" alt="Projects Model Class Hierarchy" width="400"></a>
+<a class="image" href="img/annex-a/overview.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/annex-a/overview.svg" alt="Projects Model Overview" width="400"></a>
 </div>
-<div class="title">Figure 6. The two classes defined by the Projects Model - Project &amp; Program - and their main relationships.</div>
+<div class="title">Figure 6. Overview of the Project Model: A Project can be part of another Project or have as parts other Projects and can have basic metadata (name, related agents etc.), spatial, temporality and keywords associated with it</div>
 </div>
 <div class="paragraph">
-<p><a href="#abis:Project"><code>Project</code></a>s are part of <a href="#abis:Program"><code>Program</code></a>s and both are specialised forms of <a href="#PROV">PROV</a>'s <a href="https://www.w3.org/TR/prov-o/#Activity"><code>Activity</code></a> class. An <code>Activity</code> is "something that occurs over a period of time and acts upon or with entities" which means <code>Project</code> &amp; <code>Program</code> instances can have all the properties that <code>Activities</code> can have, such as temporal extents, <code>Agents</code> that have causal relationships to them and so on.</p>
+<p><a href="#schema:Project"><code>Project</code></a>s can be part of larger projects are a specialised form of the <a href="#PROV">Provenance Ontology</a>'s <a href="https://www.w3.org/TR/prov-o/#Activity"><code>Activity</code></a> class which is just a general temporal event. <code>Activity</code> instances, typically produce things and <code>Project</code> instances, in the context of the BDR, are expected to produce data held by the BDR.</p>
+</div>
+<div class="paragraph">
+<p><code>Project</code> instances can be part of larger <code>Project</code> instances which may be termed "Programmes".</p>
+</div>
+<div class="paragraph">
+<p><code>Project</code> instances can have simple metadata, such as names, descriptions, related agents and so on.</p>
+</div>
+<div class="paragraph">
+<p>Also, as per PROV, some information about an <code>Entity</code> (data), produced by an <code>Activity</code>, can be inferred from the <code>Activity</code>, for example, the <em>funder</em> of a <code>Project</code> can be assumed to have funded (the production of) a <code>Dataset</code> it produced and the spatial area of the <code>Project</code> must surely contain the spatial area of the <code>Dataset</code>.</p>
 </div>
 <div class="sect2">
-<h3 id="projects-metadata"><a class="anchor" href="#projects-metadata"></a>A.1. Metadata</h3>
+<h3 id="projects-metadata"><a class="anchor" href="#projects-metadata"></a>A.1 Metadata</h3>
 <table class="tableblock frame-none grid-none stripes-even stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -1750,7 +1865,7 @@ pre.rouge {
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="#IRI">IRI</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/abis/projects" class="bare">https://linked.data.gov.au/def/abis/projects</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/proj" class="bare">https://linked.data.gov.au/def/bdr-pr/proj</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/name">Name</a></strong></p></td>
@@ -1766,23 +1881,24 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateModified">Modified Date</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-12-28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023-04-30</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateIssued">Issued Date</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-12-28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-30</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/version">Version</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI">Version IRI</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/abis/projects/2.0">proj:2.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-proj/2.0">proj:2.0</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Version History</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong> - 2023 Dec - First release (v2.0 to match ABIS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/skos-reference/#historyNote">Version History</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.1</strong> - 2025 April - simplification to use schema.org Project</p>
+<p class="tableblock">2.0 - 2023 Dec - First release (v2.0 to match ABIS)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/creator">Creator</a></strong></p></td>
@@ -1790,11 +1906,11 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/owner">Owner</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/ausbigg">Australian Biodiversity Information Governance Group (AUSBIGG)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">DCCEEW</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/publisher">Publisher</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">Department of Climate Change, Energy and the Environment (DCCEEW)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">DCCEEW</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/license">License</a></strong></p></td>
@@ -1802,18 +1918,18 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point">Contacts</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AusBIGG is supported by DCCEEW&#8217;s' Biodiversity Data Repository (BDR) Team. Contact the BDR Team on <a href="mailto:bdr@dcceew.gov.au">bdr@dcceew.gov.au</a><br>
-Issue tracking of the ABIS standard is managed online at <a href="https://github.com/AusBIGG/abis/issues" class="bare">https://github.com/AusBIGG/abis/issues</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The BDR Team on <a href="mailto:bdr@dcceew.gov.au">bdr@dcceew.gov.au</a><br></p>
+<p class="tableblock">Issue tracking for this profile is managed online at <a href="https://github.com/dcceew-bdr/bdr-profile-of-abis/issues" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis/issues</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/codeRepository">Code Repository</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/AusBIGG/abis" class="bare">https://github.com/AusBIGG/abis</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/dcceew-bdr/bdr-profile-of-abis" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_a_2_supporting_assets"><a class="anchor" href="#_a_2_supporting_assets"></a>A.2. Supporting Assets</h3>
+<h3 id="_a_2_supporting_assets"><a class="anchor" href="#_a_2_supporting_assets"></a>A.2 Supporting Assets</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1821,7 +1937,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://linked.data.gov.au/def/abis/projects.ttl" class="bare">https://linked.data.gov.au/def/abis/projects.ttl</a></p>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/proj.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/proj.ttl</a></p>
 </li>
 </ul>
 </div>
@@ -1831,7 +1947,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://linked.data.gov.au/def/abis/projects/validator.ttl" class="bare">https://linked.data.gov.au/def/abis/projects/validator.ttl</a></p>
+<p><a href="https://linked.data.gov.au/def/bdr-proj/validator.ttl" class="bare">https://linked.data.gov.au/def/bdr-proj/validator.ttl</a></p>
 </li>
 </ul>
 </div>
@@ -1840,46 +1956,33 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_3_classes"><a class="anchor" href="#_a_3_classes"></a>A.3. Classes</h3>
-<h4 id="_a_3_1_class_index" class="discrete">A.3.1. Class Index</h4>
-<div class="paragraph">
-<p>Classes defined here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#abis:Project">Project</a></p>
-</li>
-<li>
-<p><a href="#abis:Program">Program</a></p>
-</li>
-</ul>
-</div>
+<h3 id="_a_3_classes"><a class="anchor" href="#_a_3_classes"></a>A.3 Classes</h3>
+<h4 id="_a_3_1_class_index" class="discrete">A.3.1 Class Index</h4>
 <div class="paragraph">
 <p>Classes defined elsewhere:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#prov:Attribution">Attribution</a></p>
+<p><a href="#schema:Project">Project</a></p>
 </li>
 <li>
 <p><a href="#prov:Agent">Agent</a></p>
 </li>
 <li>
-<p><a href="#schema:Organization">Organization</a></p>
+<p><a href="#tern:Dataset">Dataset</a></p>
 </li>
 <li>
-<p><a href="#schema:Person">Person</a></p>
+<p><a href="#skos:Concept">Concept</a></p>
 </li>
 </ul>
 </div>
-<h4 id="abis:Project" class="discrete">A.3.2. Project</h4>
+<h4 id="schema:Project" class="discrete">A.3.2 Project</h4>
 <div id="proj-project" class="imageblock text-center">
 <div class="content">
-<a class="image" href="img/proj-project.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/proj-project.svg" alt="Projects Model Project Class" width="650"></a>
+<a class="image" href="img/annex-a/project-class-eg.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/annex-a/project-class-eg.svg" alt="Projects Model Project Class" width="650"></a>
 </div>
-<div class="title">Figure 7. The Projects Model <code>Project</code> Class and its expected predicates</div>
+<div class="title">Figure 7. The Projects Model <code>Project</code> Class and its main relations</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1895,7 +1998,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>abis:Project</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>schema:Project</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_subclassof">Subclass of</a></p></td>
@@ -1903,7 +2006,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SDO">schema.org</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
@@ -1911,165 +2014,71 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An Activity that requires concerted effort following a Plan in pursuit of an objective</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Defined by BDR Team in 2023 in response to BDR usage needs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Taken directly from schema.org</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#schema:isPartOf">is part of</a>, <a href="#time:hasTime">has time</a>, <a href="#geo:hasGeometry">has geometry</a>, <a href="#prov:generated">generated</a>,</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#schema:isPartOf">is part of</a>, basic metadata predicates, <a href="#schema:spatial">spatial</a>, <a href="#schema:temporality">temporality</a>, <a href="#schema:keywords">keywords</a>, <a href="#prov:generated">generated</a>, <a href="#prov:qualifiedAttribution">qualified attribution</a>,</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre>:project-m
-    a abis:Project ;
-    schema:name "Project M" ;
-    schema:description "South Australian government Project M-23" ;
-    abis:purpose "To determine extent of koala populations in NE SA" ;
-    schema:keywords
-        ex:koala ,
-        &lt;https://linked.data.gov.au/dataset/asgsed3/STE/4&gt; ;   # S.A.
-    schema:isPartOf :program-n ;
-    # Note TIME/PROV at https://www.w3.org/TR/owl-time/#time-prov
-    # Note temporal range within that of containing Program
-    prov:startedAtTime "2023-12-01"^^xsd:date ;
-    prov:endedAtTime "2023-12-15"^^xsd:date ;
-    geo:hasGeometry [
-        a geo:Geometry ;
-        geo:asWKT "POLYGON ((138.010254 -26.007424, 140.976563 -25.99755, ..., 138.010254 -26.007424))"
-    ] ;
-    prov:qualifiedAttribution [
-        prov:agent ex:dewr ;  # SA Dept Env, e.g. only
-        prov:hadRole role:principalInvestigator ;
-    ] ;
-    prov:generated ex:dataset-x ;
-.
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">abis:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/abis/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nl">&lt;http://example.com/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">geo:</span><span class="w"> </span><span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prov:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/prov#&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">role:</span><span class="w"> </span><span class="nl">&lt;http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">time:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span><span class="w">
 
-:program-n
-    a abis:Program ;
-    schema:name "Program N" ;
-    schema:hasPart :project-m ;
-    # Note TIME/PROV at https://www.w3.org/TR/owl-time/#time-prov
-    time:hasTime [
-        time:hasBeginning [
-            time:inXSDDateTime "2023-12-01"^^xsd:date ;
-        ] ;
-        time:hasEnd [
-            time:inXSDDateTime "2023-12-28"^^xsd:date ;
-        ] ;
-    ] ;
-    # ... other properties
-.</pre>
+</span><span class="nn">ex:</span><span class="n">project-m
+</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">schema:</span><span class="n">Project</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">isPartOf</span><span class="w"> </span><span class="nn">ex:</span><span class="n">program-n</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Project M"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">description</span><span class="w"> </span><span class="s">"South Australian government Project M-23"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">abis:</span><span class="n">purpose</span><span class="w"> </span><span class="s">"To determine extent of koala populations in NE SA"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">keywords</span><span class="w"> </span><span class="nn">ex:</span><span class="n">koala</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">spatial
+</span><span class="w">        </span><span class="p">[</span><span class="w">
+            </span><span class="nn">geo:</span><span class="n">asWKT</span><span class="w"> </span><span class="s">"POLYGON ((138.010254 -26.007424, 140.976563 -25.99755, ..., 138.010254 -26.007424))"</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">temporality
+</span><span class="w">        </span><span class="p">[</span><span class="w">
+            </span><span class="nn">time:</span><span class="n">hasBeginning</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nn">time:</span><span class="n">inXSDDate</span><span class="w"> </span><span class="s">"2020-12-01"</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">time:</span><span class="n">hasEnd</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nn">time:</span><span class="n">inXSDDate</span><span class="w"> </span><span class="s">"2021-03-15"</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">prov:</span><span class="n">qualifiedAttribution
+</span><span class="w">        </span><span class="p">[</span><span class="w">
+            </span><span class="nn">prov:</span><span class="n">agent</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/org/dew&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">prov:</span><span class="n">hadRole</span><span class="w"> </span><span class="nn">role:</span><span class="n">principalInvestigator</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">prov:</span><span class="n">generated</span><span class="w"> </span><span class="nn">ex:</span><span class="n">dataset-x</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span><span class="p">.</span><span class="w">
+
+</span><span class="nn">ex:</span><span class="n">program-n
+</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">schema:</span><span class="n">Project</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">hasPart</span><span class="w"> </span><span class="nn">ex:</span><span class="n">project-m</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Programme N"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="c1"># ... other properties</span><span class="w">
+</span><span class="p">.</span><span class="w">
+
+</span><span class="nn">ex:</span><span class="n">dataset-x
+</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="c1"># ... other properties</span><span class="w">
+</span><span class="p">.</span></code></pre>
 </div>
 </div></div></td>
 </tr>
 </tbody>
 </table>
-<h4 id="abis:Program" class="discrete">A.3.3. Program</h4>
-<div id="proj-program" class="imageblock text-center">
-<div class="content">
-<a class="image" href="img/proj-program.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/proj-program.svg" alt="Projects Model Program Class" width="650"></a>
-</div>
-<div class="title">Figure 8. The Projects Model <code>Program</code> Class and its expected predicates</div>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 23.0769%;">
-<col style="width: 76.9231%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>abis:Project</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_subclassof">Subclass of</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/prov-o/#Activity"><code>Activity</code></a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This model</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Project</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An Activity that requires concerted effort following a Plan in pursuit of an objective</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Defined by BDR Team in 2023 in response to BDR usage needs</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#schema:hasPart">has part</a> and all the properties of <a href="#abis:Project">Project</a>, other than <a href="#schema:isPartOf">is part of</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<h4 id="prov:Attribution" class="discrete">A.3.4 Attribution</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 23.0769%;">
-<col style="width: 76.9231%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prov:Attribution</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Attribution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The ascribing of an entity to an agent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use objects of this class to link <a href="#abis:Project">Project</a> or <a href="#abis:Program">Program</a> objects to <a href="#prov:Agent">Agent</a> objects and the roles they played with respect to the Activity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PROV">PROV</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prov:agent">agent</a>, <a href="#prov:hadRole">had role</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the Example for <a href="#abis:Project">Project</a>: the range value for the <code>prov:agent</code> predicate of the <code>Dataset</code></p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<h4 id="prov:Agent" class="discrete">A.3.5. Agent</h4>
+<h4 id="prov:Agent" class="discrete">A.3.5 Agent</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 23.0769%;">
@@ -2096,7 +2105,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use specialised objects of this class - Organisation or Person - that bear some form of responsibility for a <a href="#abis:Project">Project</a> where their role is qualified within a <a href="#prov:Attribution">Attribution</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use specialised objects of this class - Organisation or Person - that bear some form of responsibility for a <a href="#schema:Project">Project</a> where their role is qualified within an <a href="https://www.w3.org/TR/prov-o/#Attribution"><code>prov:Attribution</code></a>. <a href="#SDO">schema.org</a>'s <code><a href="https://schema.org/Person">Person</a></code> &amp; <code><a href="https://schema.org/Organization">Organization</a></code> specialised forms of <code>Agent</code> are expected to be used.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2108,13 +2117,11 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the Example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the Example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
-<h4 id="schema:Organization" class="discrete">A.3.6. Organization</h4>
+<h4 id="tern:Dataset" class="discrete">A.3.8 Dataset</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 23.0769%;">
@@ -2129,84 +2136,39 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>abis:Project</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>skos:Concept</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_subclassof">Subclass of</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/prov-o/#Activity"><code>Activity</code></a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This model</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Project</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/prov-o/#Entity"><code>Entity</code></a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An organization such as a school, NGO, corporation, club, etA.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Defined by <a href="#SDO">schema.org</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">See the Example for <a href="#abis:Project">Project</a></p></td>
-</tr>
-</tbody>
-</table>
-<h4 id="schema:Person" class="discrete">A.3.7. Person</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 23.0769%;">
-<col style="width: 76.9231%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prov:Agent</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Agent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Something that bears some form of responsibility for an activity taking place</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use specialised objects of this class - Organisation or Person - that bear some form of responsibility for a <a href="#abis:Project">Project</a> where their role is qualified within a <a href="#prov:Attribution">Attribution</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used for the outputs of a Project</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PROV">PROV</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#TERNOntology">TERN Ontology</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">None: use the Agent&#8217;s identifier only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">None for this model: all properties are concerns of <a href="#ABIS">ABIS</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the Example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the Example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
-<h4 id="skos:Concept" class="discrete">A.3.8. Concept</h4>
+<h4 id="skos:Concept" class="discrete">A.3.8 Concept</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 23.0769%;">
@@ -2241,27 +2203,21 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">None</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">None - all properties should be stored within the vocab the Concept comes from</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the Example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_a_4_predicates"><a class="anchor" href="#_a_4_predicates"></a>A.4. Predicates</h3>
+<h3 id="_a_4_predicates"><a class="anchor" href="#_a_4_predicates"></a>A.4 Predicates</h3>
 <div class="paragraph">
 <p>This model defines only one predicate - <a href="#abis:purpose">purpose</a> - but also requires the use of others defined elsewhere. Definitions for all predicates are copied from source and given here.</p>
 </div>
 <h4 id="_predicate_index" class="discrete">Predicate Index</h4>
-<div class="paragraph">
-<p>Predicates defined here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#abis:purpose">purpose</a></p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>Predicates defined elsewhere:</p>
 </div>
@@ -2274,6 +2230,9 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <p><a href="#schema:description">description</a></p>
 </li>
 <li>
+<p><a href="#abis:purpose">purpose</a></p>
+</li>
+<li>
 <p><a href="#schema:keywords">keywords</a></p>
 </li>
 <li>
@@ -2283,10 +2242,10 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <p><a href="#schema:isPartOf">is part of</a></p>
 </li>
 <li>
-<p><a href="#time:hasTime">has time</a></p>
+<p><a href="#schema:spatial">spatial</a></p>
 </li>
 <li>
-<p><a href="#geo:hasGeometry">has geometry</a></p>
+<p><a href="#schema:temporality">temporality</a></p>
 </li>
 <li>
 <p><a href="#prov:qualifiedAttribution">qualified attribution</a></p>
@@ -2337,9 +2296,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2378,9 +2335,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2419,9 +2374,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2461,7 +2414,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the Example for <a href="#abis:Project">Project</a></p>
+<p>See the Example for <a href="#schema:Project">Project</a></p>
 </div></div></td>
 </tr>
 </tbody>
@@ -2497,7 +2450,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#abis:Program">Program</a> includes a See the example for <a href="#abis:Project">Project</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#schema:Project">Project</a> includes another <a href="#schema:Project">Project</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2505,9 +2458,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2542,7 +2493,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#abis:Program">Program</a> includes a See the example for <a href="#abis:Project">Project</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#schema:Project">Project</a> is included within another <a href="#schema:Project">Project</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2550,13 +2501,11 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
-<h4 id="time:hasTime" class="discrete">has time</h4>
+<h4 id="schema:spatial" class="discrete">spatial</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 23.0769%;">
@@ -2571,74 +2520,74 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>time:hasTime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>schema:spatial</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">has time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spatial</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supports the association of a temporal entity (instant or interval) to any thing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial coverage</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#abis:Program">Program</a> or a <a href="#abis:Project">Project</a> has a temporal region of concern</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#schema:Project">Project</a> has a spatial area of concern</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#TIME">OWL TIME</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SDO">schema.org</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<h4 id="geo:hasGeometry" class="discrete">hasGeometry</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 23.0769%;">
-<col style="width: 76.9231%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Property</th>
-<th class="tableblock halign-left valign-top">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>geo:hasGeometry</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">is part of</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A spatial representation for a given Feature</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#abis:Program">Program</a> or a <a href="#abis:Project">Project</a> has a spatial area of concern</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GSP">GeoSPARQL</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf11-schema/#ch_range">Range</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html#_geometry_class"><code>Geometry</code></a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="schema:temporality" class="discrete">temporality</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 23.0769%;">
+<col style="width: 76.9231%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>schema:temporality</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">temporality</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporal coverage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to indicate that a <a href="#schema:Project">Project</a> has a temporal region of concern</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SDO">schema.org</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf11-schema/#ch_range">Range</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/owl-time/#time:TemporalEntity"><code>time:TemporalEntity</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2669,17 +2618,19 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link a <a href="#abis:Project">Project</a> or a <a href="#abis:Program">Program</a> to a <a href="#prov:Attribution">Attribution</a> which then links to an <a href="#prov:Agent">Agent</a>, which must be an Organization or a Person, and a <a href="#skos:Concept">Concept</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link a <a href="#schema:Project">Project</a> to a <a href="https://www.w3.org/TR/prov-o/#Attribution"><code>prov:Attribution</code></a> which then links to an <a href="#prov:Agent">Agent</a> with a <a href="https://www.w3.org/TR/prov-o/#Role"><code>prov:Role</code></a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PROV">PROV</a></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf11-schema/#ch_range">Range</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/prov-o/#Attribution"><code>prov:Attribution</code></a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2710,7 +2661,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link an <a href="#abis:Project">Project</a> or a <a href="#abis:Program">Program</a> to an <a href="#prov:Agent">Agent</a>, which must be an Organization or a Person</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link an <a href="https://www.w3.org/TR/prov-o/#Attribution"><code>prov:Attribution</code></a> to an <a href="#prov:Agent">Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2718,9 +2669,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2751,7 +2700,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link an <a href="#abis:Project">Project</a> or a <a href="#abis:Program">Program</a> to a <a href="#skos:Concept">Concept</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link an <a href="https://www.w3.org/TR/prov-o/#Attribution"><code>prov:Attribution</code></a> to an <a href="https://www.w3.org/TR/prov-o/#Role"><code>prov:Role</code></a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2759,9 +2708,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2792,7 +2739,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link a <a href="#abis:Project">Project</a> or a <a href="#abis:Program">Program</a> to data that it produced, in the form of an <a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a> containing ABIS data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this predicate to link a <a href="#schema:Project">Project</a> to data that it produced, in the form of a <a href="https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a> containing ABIS data</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2800,17 +2747,21 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>See the example for <a href="#abis:Project">Project</a></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#schema:Project">Project</a></em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_a_5_validator"><a class="anchor" href="#_a_5_validator"></a>A.5. Validator</h3>
+<h3 id="_a_5_validator"><a class="anchor" href="#_a_5_validator"></a>A.5 Validator</h3>
 <div class="paragraph">
-<p><mark>TODO: list and define validators fro this model</mark></p>
+<p>The validator for this model is linked to in the <a href="#_c_2_supporting_assets">C.2 Supporting Assets</a> section above.</p>
+</div>
+<div class="paragraph">
+<p>This validator should be used in conjunction with the main validator for the BDR profile of ABIS which is available in the <a href="#_validation">Validation</a> section above.</p>
+</div>
+<div class="paragraph">
+<p>See the <a href="#_validation">Validation</a> section above also for information about how to perform validation.</p>
 </div>
 <h4 id="_shapes_index" class="discrete">Shapes Index</h4>
 <div class="ulist">
@@ -2846,7 +2797,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Roles for the predicate <code>prov:role</code> on instances of <code>prov:Attribution</code> linked to an <code>abis:Project</code> must be taken from the <a href="https://data.idnau.org/pid/vocab/idn-role-codes">IDN Role Codes Vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Roles for the predicate <code>prov:role</code> on instances of <a href="https://www.w3.org/TR/prov-o/#Attribution"><code>prov:Attribution</code></a> linked to an <code>schema:Project</code> must be taken from the <a href="https://data.idnau.org/pid/vocab/idn-role-codes">IDN Role Codes Vocabulary</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
@@ -2859,7 +2810,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <pre>abis:idn-roles
     a shacl:Shape ;
     schema:name "IDN Roles" ;
-    schema:description "Roles for the predicate prov:role on instances of prov:Attribution linked to an abis:Project must be taken from the IDN Role Codes Vocabulary (https://data.idnau.org/pid/vocab/idn-role-codes)" ;
+    schema:description "Roles for the predicate prov:role on instances of prov:Attribution linked to an schema:Project must be taken from the IDN Role Codes Vocabulary (https://data.idnau.org/pid/vocab/idn-role-codes)" ;
     sh:path [
 
     ] ;
@@ -2882,7 +2833,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <div class="content">
 <a class="image" href="img/data-release.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/data-release.svg" alt="Overview of the Data Release Model" width="350"></a>
 </div>
-<div class="title">Figure 9. An overview of the Data Release Model</div>
+<div class="title">Figure 8. An overview of the Data Release Model</div>
 </div>
 <div class="paragraph">
 <p>This model is for describing aspects of data release: to whom, under what circumstances and when data may be released.</p>
@@ -2902,7 +2853,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </table>
 </div>
 <div class="sect2">
-<h3 id="data-release-metadata"><a class="anchor" href="#data-release-metadata"></a>B.1. Metadata</h3>
+<h3 id="data-release-metadata"><a class="anchor" href="#data-release-metadata"></a>B.1 Metadata</h3>
 <table class="tableblock frame-none grid-none stripes-even stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -2927,7 +2878,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateModified">Modified Date</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-12-28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-29</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateIssued">Issued Date</a></strong></p></td>
@@ -2935,14 +2886,14 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/version">Version</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI">Version IRI</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/abis/data-release/2.0">abisdr:2.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/dr/1.1">dr:1.1</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Version History</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/skos-reference/#historyNote">Version History</a></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong> - 2023 Dec - First release (v2.0 to match ABIS)</p></td>
 </tr>
 <tr>
@@ -2963,18 +2914,18 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point">Contacts</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AusBIGG is supported by DCCEEW&#8217;s' Biodiversity Data Repository (BDR) Team. Contact the BDR Team on <a href="mailto:bdr@dcceew.gov.au">bdr@dcceew.gov.au</a><br>
-Issue tracking of the ABIS standard is managed online at <a href="https://github.com/AusBIGG/abis/issues" class="bare">https://github.com/AusBIGG/abis/issues</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The BDR Team on <a href="mailto:bdr@dcceew.gov.au">bdr@dcceew.gov.au</a><br></p>
+<p class="tableblock">Issue tracking for this profile is managed online at <a href="https://github.com/dcceew-bdr/bdr-profile-of-abis/issues" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis/issues</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/codeRepository">Code Repository</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/AusBIGG/abis" class="bare">https://github.com/AusBIGG/abis</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/dcceew-bdr/bdr-profile-of-abis" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_b_2_supporting_assets"><a class="anchor" href="#_b_2_supporting_assets"></a>B.2. Supporting Assets</h3>
+<h3 id="_b_2_supporting_assets"><a class="anchor" href="#_b_2_supporting_assets"></a>B.2 Supporting Assets</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2982,7 +2933,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://linked.data.gov.au/def/abis/data-release.ttl" class="bare">https://linked.data.gov.au/def/abis/data-release.ttl</a></p>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/dr.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/dr.ttl</a></p>
 </li>
 </ul>
 </div>
@@ -2992,7 +2943,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://linked.data.gov.au/def/abis/data-release/validator.ttl" class="bare">https://linked.data.gov.au/def/abis/data-release/validator.ttl</a></p>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/dr/validator.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/dr/validator.ttl</a></p>
 </li>
 </ul>
 </div>
@@ -3001,14 +2952,28 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </div>
 </div>
 <div class="sect2">
-<h3 id="_b_3_classes"><a class="anchor" href="#_b_3_classes"></a>B.3. Classes</h3>
+<h3 id="_b_3_classes"><a class="anchor" href="#_b_3_classes"></a>B.3 Classes</h3>
 <div class="paragraph">
 <p>This model defines none of its own classes and only indicates the <a href="#TERNOntology">TERN Ontology</a>'s <a href="https://linkeddata.tern.org.au/viewers/tern-ontology?resource=https://w3id.org/tern/ontologies/tern/Dataset"><code>tern:Dataset</code></a> class for use with the predicates it does define.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_b_4_predicates"><a class="anchor" href="#_b_4_predicates"></a>B.4. Predicates</h3>
-<h4 id="embargoedUntil" class="discrete">embargoed until</h4>
+<h3 id="_b_4_predicates"><a class="anchor" href="#_b_4_predicates"></a>B.4 Predicates</h3>
+<h4 id="_c_4_1_predicate_index" class="discrete">C.4.1 Predicate Index</h4>
+<div class="paragraph">
+<p>Predicates defined here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#dr:embargoedUntil">embargoed until</a></p>
+</li>
+<li>
+<p><a href="#dr:embargoPeriod">embargoed period</a></p>
+</li>
+</ul>
+</div>
+<h4 id="dr:embargoedUntil" class="discrete">C.4.2 embargoed until</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -3023,7 +2988,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>abis:embargoedUntil</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dr:embargoedUntil</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
@@ -3053,29 +3018,34 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre># Dataset X is embargoed until the 5th of May, 2024
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nl">&lt;http://example.com/thing/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/dr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w">
 
-:dataset-x
-    a tern:Dataset ;
-    schema:name "Dataset X" ;
-    dcterms:embargoedUntil "2024-05-11"^^xsd:date ;
-    # ... other dataset properties
-.
 
-# Dataset Y is embargoed until 2025
+</span><span class="c1"># Dataset X is embargoed until the 5th of May, 2024</span><span class="w">
+</span><span class="nn">:</span><span class="n">dataset-x
+</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">dr:</span><span class="n">embargoedUntil</span><span class="w"> </span><span class="s">"2024-05-11"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="c1"># ... other dataset properties</span><span class="w">
+</span><span class="p">.</span><span class="w">
 
-:dataset-y
-    a tern:Dataset ;
-    schema:name "Dataset Y" ;
-    dcterms:embargoedUntil "2025-01-01"^^xsd:date ;
-    # ... other dataset properties
-.</pre>
+</span><span class="c1"># Dataset Y is embargoed until 2025</span><span class="w">
+</span><span class="nn">:</span><span class="n">dataset-y
+</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset Y"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">dr:</span><span class="n">embargoedUntil</span><span class="w"> </span><span class="s">"2025-01-01"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="c1"># ... other dataset properties</span><span class="w">
+</span><span class="p">.</span></code></pre>
 </div>
 </div></div></td>
 </tr>
 </tbody>
 </table>
-<h4 id="embargoPeriod" class="discrete">embargo period</h4>
+<h4 id="dr:embargoPeriod" class="discrete">C.4.3 embargo period</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -3090,7 +3060,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>abis:embargoPeriod</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dr:embargoPeriod</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
@@ -3114,27 +3084,35 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This predicate can only be used if the start of the embargo period&#8217;s duration can be established by a business or system rule. If it cannot, use <a href="#embargoedUntil">embargoed until</a> instead, with a fixed date.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This predicate can only be used if the start of the embargo period&#8217;s duration can be established by a business or system rule. If it cannot, use <a href="#dr:embargoedUntil">embargoed until</a> instead, with a fixed date.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre># Dataset X is embargoed for a period of 3 months, calculated to start
-# from the issued date.
-# The calculation is defined by a business rule which is not
-# expressable in RDF
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nl">&lt;http://example.com/thing/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dcterms:</span><span class="w"> </span><span class="nl">&lt;http://purl.org/dc/terms/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/dr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">time:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w">
 
-:dataset-x
-    a tern:Dataset ;
-    schema:name "Dataset X" ;
-    dcterms:issued "2023-12-25"^^xsd:date ;
-    abis:embargoPeriod [
-        a time:DurationDescription ;
-        time:months 3 ;
-    ] ;
-    # ... other dataset properties
-.</pre>
+</span><span class="c1"># Dataset X is embargoed for a period of 3 months, calculated to start</span><span class="w">
+</span><span class="c1"># from the issued date.</span><span class="w">
+</span><span class="c1"># The calculation is defined by a business rule which is not</span><span class="w">
+</span><span class="c1"># able to be expressed in RDF</span><span class="w">
+
+</span><span class="nn">:</span><span class="n">dataset-x
+</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">dcterms:</span><span class="n">issued</span><span class="w"> </span><span class="s">"2023-12-25"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">dr:</span><span class="n">embargoPeriod</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="k">a</span><span class="w"> </span><span class="nn">time:</span><span class="n">DurationDescription</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">time:</span><span class="n">months</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="c1"># ... other dataset properties</span><span class="w">
+</span><span class="p">.</span></code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -3142,9 +3120,12 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </table>
 </div>
 <div class="sect2">
-<h3 id="_b_5_validator"><a class="anchor" href="#_b_5_validator"></a>B.5. Validator</h3>
+<h3 id="_b_5_validator"><a class="anchor" href="#_b_5_validator"></a>B.5 Validator</h3>
 <div class="paragraph">
-<p><mark>TODO: list and define validators fro this model</mark></p>
+<p>The validator for this model is linked to in the <a href="#_b_2_supporting_assets">B.2 Supporting Assets</a> section above.</p>
+</div>
+<div class="paragraph">
+<p>This validator only validates manifest content, not the content of the data that the manifest lists - BDR/ABIS data.</p>
 </div>
 </div>
 </div>
@@ -3154,38 +3135,474 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 <div class="sectionbody">
 <div id="sub-man-model" class="imageblock text-center">
 <div class="content">
-<a class="image" href="img/sub-main-model.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/sub-main-model.svg" alt="Overview of the BDR Submission Manifest Modelverview of the Data Release Model"></a>
+<a class="image" href="img/sub-man-model.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/sub-man-model.svg" alt="Overview of the BDR Submission Manifest Modelverview of the Data Release Model"></a>
 </div>
-<div class="title">Figure 10. An overview of the BDR Submission Manifest Model</div>
+<div class="title">Figure 9. An overview of the BDR Submission Manifest Model</div>
 </div>
 <div class="paragraph">
-<p>This model is for a <em>manifest</em> - a listing of contents - of data submissions to the <a href="#BDR">[BDR]</a>.</p>
+<p>This model is for a <em>manifest</em> - a listing of contents - of data submissions to the <a href="#BDR">[BDR]</a>. The manifests are supplied as <a href="#RDF">RDF</a> files containing information according to this model within all data submissions to the BDR. The manifest information provides location, role and other information about all the data resources, allowing the BDR to process them correctly and efficiently.</p>
 </div>
 <div class="sect2">
 <h3 id="_c_1_metadata"><a class="anchor" href="#_c_1_metadata"></a>C.1 Metadata</h3>
-
+<table class="tableblock frame-none grid-none stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="#IRI">IRI</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/sm" class="bare">https://linked.data.gov.au/def/bdr-pr/sm</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/name">Name</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BDR Submission Manifest Model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This model is for a <em>manifest</em> - a listing of contents - of data submissions to the <a href="#BDR">[BDR]</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateCreated">Created Date</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2205-02-15</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateModified">Modified Date</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-29</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateIssued">Issued Date</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-03-01</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/version">Version</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI">Version IRI</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/sm/2.0">sm:2.0</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/skos-reference/#historyNote">Version History</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong> - 2025 Mar - First release</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/creator">Creator</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the <a href="https://linked.data.gov.au/org/dcceew">Department of Climate Change, Energy and the Environment (DCCEEW)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/owner">Owner</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/ausbigg">DCCEEW</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/publisher">Publisher</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/org/dcceew">DCCEEW</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/license">License</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point">Contacts</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The BDR Team on <a href="mailto:bdr@dcceew.gov.au">bdr@dcceew.gov.au</a><br></p>
+<p class="tableblock">Issue tracking for this profile is managed online at <a href="https://github.com/dcceew-bdr/bdr-profile-of-abis/issues" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis/issues</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/codeRepository">Code Repository</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/dcceew-bdr/bdr-profile-of-abis" class="bare">https://github.com/dcceew-bdr/bdr-profile-of-abis</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_c_2_supporting_assets"><a class="anchor" href="#_c_2_supporting_assets"></a>C.2 Supporting Assets</h3>
-
+<div class="ulist">
+<ul>
+<li>
+<p>RDF schema:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/sm.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/sm.ttl</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#SHACL">SHACL</a> validation file:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Submission Manifest Model Resource Roles vocabulary:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/smrr" class="bare">https://linked.data.gov.au/def/bdr-pr/smrr</a></p>
+</li>
+<li>
+<p>RDF file: <a href="https://linked.data.gov.au/def/bdr-pr/smrr.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/smrr.ttl</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_c_3_classes"><a class="anchor" href="#_c_3_classes"></a>C.3 Classes</h3>
+<h4 id="_c_3_1_class_index" class="discrete">C.3.1 Class Index</h4>
+<div class="paragraph">
+<p>Classes defined here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#sm:SubmissionManifest">Submission Manifest</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Classes defined elsewhere:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p>
+</li>
+</ul>
+</div>
+<h4 id="sm:SubmissionManifest" class="discrete">C.3.2 Submission Manifest</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 23.0769%;">
+<col style="width: 76.9231%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sm:SubmissionManifest</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission Manifest</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A listing of the content of a data submission to the BDR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defined by BDR Team in 2025 to assist with the accurate and efficient processing of data submissions to the BDR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:hasResource">has resource</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
 
+</span><span class="p">[]</span><span class="w">
+    </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="nn">prof:</span><span class="n">hasResource
+</span><span class="w">        </span><span class="p">[</span><span class="w">
+            </span><span class="k">a</span><span class="w"> </span><span class="nn">prof:</span><span class="n">ResourceDescriptor</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"some-rdf-file.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="p">]</span><span class="w"> </span><span class="p">,</span><span class="w">
+        </span><span class="p">[</span><span class="w">
+            </span><span class="k">a</span><span class="w"> </span><span class="nn">prof:</span><span class="n">ResourceDescriptor</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"images/some-image-file.jpg"</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SupplementaryData</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span><span class="p">.</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="prof:ResourceDescriptor" class="discrete">C.3.3 Resource Descriptor</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 23.0769%;">
+<col style="width: 76.9231%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prof:ResourceDescriptor</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PROF">The Profiles Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resource Descriptor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A resource that defines an aspect - a particular part or feature - of a Profile</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#PROF">PROF</a> and reused directly in this model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expected Properties</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:hasArtifact">has artifact</a>, <a href="#prof:hasRole">has role</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Treat the Submission Manifest as the Profile this class is related to</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#sm:SubmissionManifest">Submission Manifest</a></em></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_c_4_predicates"><a class="anchor" href="#_c_4_predicates"></a>C.4 Predicates</h3>
-
+<h4 id="_c_4_1_predicate_index_2" class="discrete">C.4.1 Predicate Index</h4>
+<div class="paragraph">
+<p>Predicates defined elsewhere:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#prof:hasResource">has resource</a></p>
+</li>
+<li>
+<p><a href="#prof:hasArtifact">has artifact</a></p>
+</li>
+<li>
+<p><a href="#prof:hasRole">has role</a></p>
+</li>
+<li>
+<p><a href="#skos:inScheme">in scheme</a></p>
+</li>
+</ul>
+</div>
+<h4 id="prof:hasResource" class="discrete">C.4.2 has resource</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prof:hasResource</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A resource which describes the nature of an artifact and the role it plays in relation to the Profile</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#PROF">PROF</a> and reused directly in this model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_range">Range</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Treat the Submission Manifest as the Profile this predicate requires</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#sm:SubmissionManifest">Submission Manifest</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="prof:hasArtifact" class="discrete">C.4.3 has artifact</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prof:hasArtifact</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has artifact</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL of a file with particulars such as its format and role indicated by the Resource Descriptor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#PROF">PROF</a> and reused directly in this model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_domain">Domain</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can be used to indicate multiple files by file paths</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#sm:SubmissionManifest">Submission Manifest</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="prof:hasRole" class="discrete">C.4.4 has role</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>prof:hasRole</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has role</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A description of a resource that defines an aspect - a particular part, feature or role - of a Profile</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#PROF">PROF</a> and reused directly in this model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_domain">Domain</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate a role from the <a href="https://linked.data.gov.au/def/bdr-pr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#sm:SubmissionManifest">Submission Manifest</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="skos:inScheme" class="discrete">C.4.5 in scheme</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>skos:inScheme</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in scheme</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is in scheme</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#SKOS">SKOS</a> and reused directly in this model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_domain">Domain</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate that a role used as the value for the <a href="#prof:hasRole">has role</a> predicate is within the <a href="https://linked.data.gov.au/def/bdr-pr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>See the example for <a href="#sm:SubmissionManifest">Submission Manifest</a></em></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_c_5_validator"><a class="anchor" href="#_c_5_validator"></a>C.5 Validator</h3>
-
+<div class="paragraph">
+<p>The validator for this model is linked to in the <a href="#_c_2_supporting_assets">C.2 Supporting Assets</a> section above.</p>
+</div>
+<div class="paragraph">
+<p>This validator only validates manifest content, not the content of the data that the manifest lists - BDR/ABIS data.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_c_6_vocabularies"><a class="anchor" href="#_c_6_vocabularies"></a>C.6 Vocabularies</h3>
 <div class="sect3">
 <h4 id="_bdr_submission_manifest_resource_roles"><a class="anchor" href="#_bdr_submission_manifest_resource_roles"></a>BDR Submission Manifest Resource Roles</h4>
-
+<div class="paragraph">
+<p>This model depends on the <a href="https://linked.data.gov.au/def/bdr-pr/smrr">Submission Manifest Model Resource Roles Vocabulary</a> which is linked to in the <a href="#_c_2_supporting_assets">C.2 Supporting Assets</a> section above.</p>
+</div>
+<div class="paragraph">
+<p>Concepts from this vocabulary MUST be used as values for the <a href="#prof:hasRole">has role</a> predicate.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -3200,13 +3617,13 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">bdr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
 </span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">bdr:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">prof:</span><span class="n">hasResource
 </span><span class="w">        </span><span class="p">[</span><span class="w">
             </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"plant-tissue-lite-protocol-org-uuid-0fb52b7b-29f1-4797-920a-9c88f2180c5e-start-date-2024-12-11T06_53_43.879Z.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -3228,13 +3645,13 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">bdr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
 </span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">bdr:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">prof:</span><span class="n">hasResource
 </span><span class="w">        </span><span class="p">[</span><span class="w">
             </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"plant-tissue-lite-protocol-org-uuid-0fb52b7b-29f1-4797-920a-9c88f2180c5e-start-date-2024-12-11T06_53_43.879Z.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -3250,7 +3667,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </span><span class="w">                </span><span class="s">"images/image-001.jpg"</span><span class="w"> </span><span class="p">,</span><span class="w">
                 </span><span class="s">"images/image-002.jpg"</span><span class="w"> </span><span class="p">,</span><span class="w">
                 </span><span class="s">"images/image-003.jpg"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SupplimentaryData</span><span class="w"> </span><span class="p">;</span><span class="w">
+            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SupplementaryData</span><span class="w"> </span><span class="p">;</span><span class="w">
             </span><span class="nn">schema:</span><span class="n">description</span><span class="w"> </span><span class="s">"Images linked to from this submission's RDF data"</span><span class="w"> </span><span class="p">;</span><span class="w">
             </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Submission Images"</span><span class="w">
         </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -3269,13 +3686,13 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">bdr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
 </span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">bdr:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
+    </span><span class="k">a</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">prof:</span><span class="n">hasResource
 </span><span class="w">        </span><span class="p">[</span><span class="w">
             </span><span class="nn">prof:</span><span class="n">hasArtifact
@@ -3713,7 +4130,7 @@ Issue tracking of the ABIS standard is managed online at <a href="https://github
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-31 05:21:43 UTC
+Last updated 2025-05-01 07:29:31 UTC
 </div>
 </div>
 </body>

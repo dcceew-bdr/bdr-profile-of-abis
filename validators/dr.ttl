@@ -1,0 +1,57 @@
+PREFIX : <https://linked.data.gov.au/def/bdr-pr/dr/validator/>
+PREFIX dr: <https://linked.data.gov.au/def/bdr-pr/dr/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sm: <https://linked.data.gov.au/def/bdr-pr/sm/>
+PREFIX smrr: <https://linked.data.gov.au/def/bdr-pr/smrr/>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/def/bdr-pr/dr/validator>
+    a owl:Ontology ;
+    schema:name "BDR Data Release Model Validator"@en ;
+    schema:definition "SHACL validator for the BDR Data Release Model"@en ;
+    schema:creator <https://linked.data.gov.au/org/dcceew> ;
+    schema:publisher <https://linked.data.gov.au/org/dcceew> ;
+    schema:dateCreated "2025-02-15"^^xsd:date ;
+    schema:dateModified "2025-04-29"^^xsd:date ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo """1.0 First version""" ;
+.
+
+:1.0 schema:name "1.0" .
+
+<https://linked.data.gov.au/org/dcceew>
+    a schema:Organization ;
+    schema:name "Department of Climate Change, Energy, the Environment and Water" ;
+    schema:url "https://www.dcceew.gov.au"^^xsd:anyURI ;
+.
+
+:shape-01
+    a sh:NodeShape ;
+    sh:targetClass tern:Dataset ;
+    sh:property [
+        sh:path dr:embargoedUntil ;
+        sh:or (
+            [ sh:datatype xsd:date ]
+            [ sh:datatype xsd:dateTime ]
+            [ sh:datatype xsd:dateTimeStamp ]
+        ) ;
+        sh:message "A Dataset that uses an embargoed until predicate must use it to indicate a xsd:date, xsd:dateTime or xsd:dateTimeStamp literal value" ;
+    ] ;
+.
+
+:shape-02
+    a sh:NodeShape ;
+    sh:targetClass tern:Dataset ;
+    sh:property [
+        sh:path dr:embargoPeriod ;
+        sh:class time:DurationDescription ;
+        sh:message "A Dataset that uses an embargo period predicate must use it to indicate an instance of the class time:DurationDescription from OWL Time" ;
+    ] ;
+.
