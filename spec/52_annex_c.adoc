@@ -36,8 +36,8 @@ Issue tracking for this profile is managed online at https://github.com/dcceew-b
 ** https://linked.data.gov.au/def/bdr-pr/sm.ttl
 * <<SHACL, SHACL>> validation file:
 ** https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl
-* Submission Manifest Model Resource Roles vocabulary:
-** https://linked.data.gov.au/def/bdr-pr/smrr
+* Submission Manifest Model Resource Roles collection:
+** https://linked.data.gov.au/dataset/bdr/smrr
 ** RDF file: https://linked.data.gov.au/def/bdr-pr/smrr.ttl
 
 === C.3 Classes
@@ -152,7 +152,7 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | A description of a resource that defines an aspect - a particular part, feature or role - of a Profile
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<PROF, PROF>> and reused directly in this model
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
-| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate a role from the https://linked.data.gov.au/def/bdr-pr/smrr[Submission Manifest Model Resource Roles Vocabulary]
+| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate a role from the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary]
 | https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
@@ -169,7 +169,7 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | is in scheme
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<SKOS, SKOS>> and reused directly in this model
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
-| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate that a role used as the value for the <<prof:hasRole, has role>> predicate is within the https://linked.data.gov.au/def/bdr-pr/smrr[Submission Manifest Model Resource Roles Vocabulary]
+| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate that a role used as the value for the <<prof:hasRole, has role>> predicate is within the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary]
 | https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
@@ -183,7 +183,7 @@ This validator only validates manifest content, not the content of the data that
 
 ==== BDR Submission Manifest Resource Roles
 
-This model depends on the https://linked.data.gov.au/def/bdr-pr/smrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
+This model depends on the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
 
 Concepts from this vocabulary MUST be used as values for the <<prof:hasRole, has role>> predicate.
 
