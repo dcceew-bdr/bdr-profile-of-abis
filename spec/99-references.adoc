@@ -13,7 +13,7 @@ DWC:: Darwin Core Maintenance Group, _Darwin Core_, Biodiversity Information Sta
 GSP:: Open Geospatial Consortium, _OGC GeoSPARQL - A Geographic Query Language for RDF Data_, OGC Implementation Standard. Car, N. J., & Homburg, T. (eds.) (2011). http://www.opengis.net/doc/IS/geosparql/1.1
 
 [[ISO19156]]
-ISO19156:: International Organization for Standardization, ISO 19156: Geographic information — Observations and measurements (2011)
+ISO19156:: International Organization for Standardization, _ISO 19156: Geographic information — Observations and measurements_ (2011)
 
 [[JSON-LD]]
 JSON-LD:: World Wide Web Consortium, _JSON-LD 1.1: A JSON-based Serialization for Linked Data_, W3C Recommendation (16 July 2020). https://www.w3.org/TR/json-ld11/

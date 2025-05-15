@@ -1,5 +1,5 @@
 [[annex-b]]
-== Annex B: Data Release Model
+== Annex B: BDR Data Release Model
 
 [#data-release,link="img/data-release.svg"]
 .An overview of the Data Release Model
@@ -18,7 +18,7 @@ Currently, the Data Release model only handles data embargos, but it is likely t
 [frame=none, grid=none, cols="1,5"]
 |===
 |*<<IRI, IRI>>* | https://linked.data.gov.au/def/abis/data-release
-|*https://schema.org/name[Name]* | ABIS Data Release Model
+|*https://schema.org/name[Name]* | BDR Data Release Model
 |*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing aspects of data release: to whom, under what circumstances and when data may be released.
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
 |*https://schema.org/dateModified[Modified Date]* | 2025-04-29

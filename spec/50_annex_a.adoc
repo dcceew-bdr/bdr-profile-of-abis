@@ -1,5 +1,5 @@
 [[annex-a]]
-== Annex A: Project Model
+== Annex A: BDR Project Model
 
 [#proj-overview,link="img/annex-a/overview.svg"]
 .Overview of the Project Model: A Project can be part of another Project or have as parts other Projects and can have basic metadata (name, related agents etc.), spatial, temporality and keywords associated with it
@@ -19,7 +19,7 @@ Also, as per PROV, some information about an `Entity` (data), produced by an `Ac
 [frame=none, grid=none, cols="1,5"]
 |===
 |*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/proj
-|*https://schema.org/name[Name]* | ABIS Data Release Model
+|*https://schema.org/name[Name]* | BDR Project Model
 |*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing Projects where Project is defined as "An Activity that requires concerted effort following a Plan in pursuit of an objective".
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
 |*https://schema.org/dateModified[Modified Date]* | 2023-04-30
