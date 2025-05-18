@@ -1,6 +1,6 @@
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
-PREFIX sm: <https://linked.data.gov.au/def/bdr-proj/sm/>
-PREFIX smrr: <https://linked.data.gov.au/def/bdr-proj/smrr/>
+PREFIX sm: <https://linked.data.gov.au/def/bdr-pr/sm/>
+PREFIX smrr: <https://linked.data.gov.au/dataset/bdr/smrr/>
 
 []
     a sm:SubmissionManifest ;

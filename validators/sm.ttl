@@ -66,7 +66,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sh:targetObjectsOf prof:hasRole ;
     sh:property [
         sh:path skos:inScheme ;
-        sh:value <https://linked.data.gov.au/def/bdr-proj/smrr> ;
+        sh:value <https://linked.data.gov.au/dataset/bdr/smrr> ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:message "Each role indicated for a Resource Descriptor a member of the Submission Manifest Model Resource Roles Vocabulary, indicated with the skos:inScheme predicate for the role Concept" ;
