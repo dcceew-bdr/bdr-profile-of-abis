@@ -6,7 +6,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX sm: <https://linked.data.gov.au/def/bdr-pr/sm/>
-PREFIX smrr: <https://linked.data.gov.au/def/bdr-pr/smrr/>
+PREFIX smrr: <https://linked.data.gov.au/dataset/bdr/smrr/>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>

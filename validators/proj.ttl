@@ -1,4 +1,4 @@
-PREFIX : <https://linked.data.gov.au/def/bdr-pr/dr/validator/>
+PREFIX : <https://linked.data.gov.au/def/bdr-pr/proj/validator/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>

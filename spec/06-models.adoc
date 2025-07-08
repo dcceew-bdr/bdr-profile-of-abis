@@ -51,11 +51,12 @@ The above information, if in a file called `data.ttl`, could be packaged and sen
 
 [source, turtle]
 ----
+@prefix smrr: <https://linked.data.gov.au/dataset/bdr/smrr/> .
 []
     a bdrsm:SubmissionManifest ;
     prof:hasResource [
         prof:hasArtifact "data.ttl" ;
-        prof:hasRole https://linked.data.gov.au/def/bdr-proj/rr:SufficientForValidation ;
+        prof:hasRole smrr:SufficientForValidation ;
     ] ;
 .
 ----
