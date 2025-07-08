@@ -961,7 +961,7 @@ pre.rouge {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>proj:</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-proj/" class="bare">https://linked.data.gov.au/def/bdr-proj/</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-pr/proj/" class="bare">https://linked.data.gov.au/def/bdr-pr/proj/</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#annex-b">BDR Projects Model</a> namespace</p></td>
 </tr>
 <tr>
@@ -1000,7 +1000,7 @@ pre.rouge {
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SDO">schema.org</a> namespace</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-proj/" class="bare">https://linked.data.gov.au/def/bdr-proj/</a>:</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sm:</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-pr/sm/" class="bare">https://linked.data.gov.au/def/bdr-pr/sm/</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#annex-c">BDR Submission Manifest Model</a> namespace</p></td>
 </tr>
@@ -1595,11 +1595,12 @@ Any system may be used to ensure uniqueness, e.g. UUIDs, systematic numbers etc.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="p">[]</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">@prefix</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span><span class="p">[]</span><span class="w">
     </span><span class="k">a</span><span class="w"> </span><span class="nn">bdrsm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="nn">prof:</span><span class="n">hasResource</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"data.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">https:</span><span class="n">//linked</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">gov</span><span class="p">.</span><span class="nn">au/def/bdr-proj/rr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
+        </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
     </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
 </span><span class="p">.</span></code></pre>
 </div>
@@ -1894,7 +1895,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI">Version IRI</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-proj/2.0">proj:2.0</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/proj/2.0">proj:2.0</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/skos-reference/#historyNote">Version History</a></strong></p></td>
@@ -1948,7 +1949,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://linked.data.gov.au/def/bdr-proj/validator.ttl" class="bare">https://linked.data.gov.au/def/bdr-proj/validator.ttl</a></p>
+<p><a href="https://linked.data.gov.au/def/bdr-pr/proj/validator.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/proj/validator.ttl</a></p>
 </li>
 </ul>
 </div>
@@ -3240,11 +3241,11 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 </li>
 <li>
-<p>Submission Manifest Model Resource Roles vocabulary:</p>
+<p>Submission Manifest Model Resource Roles collection:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://linked.data.gov.au/def/bdr-pr/smrr" class="bare">https://linked.data.gov.au/def/bdr-pr/smrr</a></p>
+<p><a href="https://linked.data.gov.au/dataset/bdr/smrr" class="bare">https://linked.data.gov.au/dataset/bdr/smrr</a></p>
 </li>
 <li>
 <p>RDF file: <a href="https://linked.data.gov.au/def/bdr-pr/smrr.ttl" class="bare">https://linked.data.gov.au/def/bdr-pr/smrr.ttl</a></p>
@@ -3320,8 +3321,8 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
     </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -3533,7 +3534,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate a role from the <a href="https://linked.data.gov.au/def/bdr-pr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate a role from the <a href="https://linked.data.gov.au/dataset/bdr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
@@ -3576,7 +3577,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate that a role used as the value for the <a href="#prof:hasRole">has role</a> predicate is within the <a href="https://linked.data.gov.au/def/bdr-pr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate that a role used as the value for the <a href="#prof:hasRole">has role</a> predicate is within the <a href="https://linked.data.gov.au/dataset/bdr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
@@ -3599,7 +3600,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="sect3">
 <h4 id="_bdr_submission_manifest_resource_roles"><a class="anchor" href="#_bdr_submission_manifest_resource_roles"></a>BDR Submission Manifest Resource Roles</h4>
 <div class="paragraph">
-<p>This model depends on the <a href="https://linked.data.gov.au/def/bdr-pr/smrr">Submission Manifest Model Resource Roles Vocabulary</a> which is linked to in the <a href="#_c_2_supporting_assets">C.2 Supporting Assets</a> section above.</p>
+<p>This model depends on the <a href="https://linked.data.gov.au/dataset/bdr/smrr">Submission Manifest Model Resource Roles Vocabulary</a> which is linked to in the <a href="#_c_2_supporting_assets">C.2 Supporting Assets</a> section above.</p>
 </div>
 <div class="paragraph">
 <p>Concepts from this vocabulary MUST be used as values for the <a href="#prof:hasRole">has role</a> predicate.</p>
@@ -3620,8 +3621,8 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="content">
 <pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
 </span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
     </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -3648,8 +3649,8 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="content">
 <pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
 </span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
     </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -3689,8 +3690,8 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="content">
 <pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
 </span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-proj/smrr/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
+</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
 
 </span><span class="p">[]</span><span class="w">
     </span><span class="k">a</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
@@ -4131,7 +4132,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-05-15 01:54:52 UTC
+Last updated 2025-07-08 01:54:42 UTC
 </div>
 </div>
 </body>
