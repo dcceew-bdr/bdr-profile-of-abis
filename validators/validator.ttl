@@ -1,49 +1,54 @@
+PREFIX : <https://linked.data.gov.au/def/abis/bdr-profile/validator/>
+PREFIX default1: <https://linked.data.gov.au/def/bdr-pr/dr/validator/>
+PREFIX default2: <https://linked.data.gov.au/def/abis/validator/>
+PREFIX dr: <https://linked.data.gov.au/def/bdr-pr/dr/>
+PREFIX ds: <https://linked.data.gov.au/def/abis/bdr-profile/validator>
+PREFIX ont: <https://linked.data.gov.au/def/abis/validator>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator>
+ds:
     a owl:Ontology ;
-    owl:versionIRI <https://linked.data.gov.au/def/abis/bdr-profile/validator/1.1> ;
-    owl:versionInfo """1.1 DCCEEW version
+    owl:versionIRI default1:1.2 ;
+    owl:versionInfo """1.2 2025-07: Tidy up for inclusion in the BDR Validators Catalogue
 
-1.0 First version""" ;
+1.1 2025-05: Minor updates
+
+1.0 2025-04: First version""" ;
+    skos:historyNote "Created by the BDR Team in 2025 to validate data bound for the Biodiversity Data Repository" ;
     schema:copyrightNotice "(c) 2025 DCCEES" ;
     schema:creator <https://linked.data.gov.au/org/bdr-team> ;
     schema:dateCreated "2022-05-11"^^xsd:date ;
     schema:dateModified "2024-09-23"^^xsd:date ;
     schema:description "SHACL validator for the Biodiversity Data Repository (BDR)'s profile of Australian Biodiversity Information Standard (ABIS)" ;
     schema:hasPart
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-01> ,
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-02> ,
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-03> ,
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-04> ,
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-05> ,
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-06> ,
-        <https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-07> ;
+        :shape-01 ,
+        :shape-02 ,
+        :shape-03 ,
+        :shape-04 ,
+        :shape-05 ,
+        :shape-06 ,
+        :shape-07 ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:name "BDR Profile of ABIS Core Validator" ;
     schema:publisher <https://linked.data.gov.au/org/dcceew> ;
 .
 
-<https://linked.data.gov.au/def/abis/validator>
+:1.2
+    schema:name "1.2" ;
+.
+
+ont:
     a owl:Ontology ;
-    owl:imports 
-        [
-            schema:identifier "https://w3id.org/tern/shapes/tern/" ;
-            schema:name "TERN Ontology" ;
-            schema:url "file://tern.ttl" ;
-        ] ,
-        [
-            schema:identifier "https://linked.data.gov.au/def/sosa-validator" ;
-            schema:name "SOSA" ;
-            schema:url "file://sosa.ttl" ;
-        ] ,
+    owl:imports
         [
             schema:identifier "http://www.opengis.net/def/geosparql/validator" ;
             schema:name "GeoSPARQL" ;
@@ -52,13 +57,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                 "http://www.opengis.net/def/geosparql/validator" ;
         ] ,
         [
+            schema:identifier "https://linked.data.gov.au/def/sosa-validator" ;
+            schema:name "SOSA" ;
+            schema:url "file://sosa.ttl" ;
+        ] ,
+        [
+            schema:identifier "https://w3id.org/tern/shapes/tern/" ;
+            schema:name "TERN Ontology" ;
+            schema:url "file://tern.ttl" ;
+        ] ,
+        [
             schema:identifier "https://w3id.org/profile/vocpub/validator" ;
             schema:name "VocPub" ;
             schema:url
                 "file://vocpub.ttl" ,
                 "https://w3id.org/profile/vocpub/validator" ;
         ] ;
-    owl:versionIRI <https://linked.data.gov.au/def/abis/validator/1.0> ;
+    owl:versionIRI default2:1.0 ;
     owl:versionInfo "1.0 First version" ;
     schema:copyrightNotice "(c) 2024 AusBIGG" ;
     schema:creator <https://linked.data.gov.au/org/bdr-team> ;
@@ -66,17 +81,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:dateModified "2024-09-23"^^xsd:date ;
     schema:definition "SHACL validator for the Australian Biodiveristy Information Standard, ABIS" ;
     schema:hasPart
-        <https://linked.data.gov.au/def/abis/validator/shape-01> ,
-        <https://linked.data.gov.au/def/abis/validator/shape-02> ,
-        <https://linked.data.gov.au/def/abis/validator/shape-03> ;
+        default2:shape-01 ,
+        default2:shape-02 ,
+        default2:shape-03 ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:name "ABIS Validator" ;
     schema:publisher <https://linked.data.gov.au/org/ausbigg> ;
 .
 
-<https://linked.data.gov.au/def/bdr-pr/dr/validator>
+dr:validator
     a owl:Ontology ;
-    owl:versionIRI <https://linked.data.gov.au/def/bdr-pr/dr/validator/1.0> ;
+    owl:versionIRI default1:1.0 ;
     owl:versionInfo "1.0 First version" ;
     schema:creator <https://linked.data.gov.au/org/dcceew> ;
     schema:dateCreated "2025-02-15"^^xsd:date ;
@@ -86,9 +101,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:publisher <https://linked.data.gov.au/org/dcceew> ;
 .
 
-<https://linked.data.gov.au/def/bdr-pr/dr/validator/shape-01>
+default1:shape-01
     a sh:NodeShape ;
-    sh:property 
+    sh:property
         [
             sh:message "A Dataset that uses an embargoed until predicate must use it to indicate a xsd:date, xsd:dateTime or xsd:dateTimeStamp literal value" ;
             sh:or (
@@ -105,7 +120,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                     sh:datatype xsd:dateTimeStamp ;
                 ]
             ) ;
-            sh:path <https://linked.data.gov.au/def/bdr-pr/dr/embargoedUntil> ;
+            sh:path dr:embargoedUntil ;
         ] ,
         [
             sh:class schema:Project ;
@@ -114,16 +129,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ;
     sh:targetClass
         schema:Project ,
-        <https://w3id.org/tern/ontologies/tern/Dataset> ;
+        tern:Dataset ;
 .
 
-<https://linked.data.gov.au/def/bdr-pr/dr/validator/shape-02>
+default1:shape-02
     a sh:NodeShape ;
-    sh:property 
+    sh:property
         [
             sh:class time:DurationDescription ;
             sh:message "A Dataset that uses an embargo period predicate must use it to indicate an instance of the class time:DurationDescription from OWL Time" ;
-            sh:path <https://linked.data.gov.au/def/bdr-pr/dr/embargoPeriod> ;
+            sh:path dr:embargoPeriod ;
         ] ,
         [
             sh:class schema:Project ;
@@ -132,12 +147,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ;
     sh:targetClass
         schema:Project ,
-        <https://w3id.org/tern/ontologies/tern/Dataset> ;
+        tern:Dataset ;
 .
 
-<https://linked.data.gov.au/def/bdr-pr/dr/validator/shape-03>
+default1:shape-03
     a sh:NodeShape ;
-    sh:property 
+    sh:property
+        [
+            sh:class tern:Dataset ;
+            sh:message "If a Project is indicated as having generated something, that thing must be a tern:Dataset" ;
+            sh:path prov:generated ;
+        ] ,
         [
             sh:maxCount 1 ;
             sh:message "If a Project indicate a qualified association, the indicated object must further indicate an Agent (Person or Organisation) with the prov:agent predicate" ;
@@ -153,17 +173,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                 ]
             ) ;
             sh:path prov:agent ;
-        ] ,
-        [
-            sh:class <https://w3id.org/tern/ontologies/tern/Dataset> ;
-            sh:message "If a Project is indicated as having generated something, that thing must be a tern:Dataset" ;
-            sh:path prov:generated ;
         ] ;
     sh:targetClass schema:Project ;
     sh:targetObjectsOf prov:qualifiedAssociation ;
 .
 
-<https://linked.data.gov.au/def/bdr-pr/dr/validator/shape-04>
+default1:shape-04
     a sh:NodeShape ;
     sh:property
         [
@@ -177,7 +192,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/bdr-pr/proj/validator>
     a owl:Ontology ;
-    owl:versionIRI <https://linked.data.gov.au/def/bdr-pr/dr/validator/1.0> ;
+    owl:versionIRI default1:1.0 ;
     owl:versionInfo "1.0 First version" ;
     schema:creator <https://linked.data.gov.au/org/dcceew> ;
     schema:dateCreated "2025-04-30"^^xsd:date ;
@@ -187,53 +202,49 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:publisher <https://linked.data.gov.au/org/dcceew> ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/1.1>
-    schema:name "1.1" ;
-.
-
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-01>
+:shape-01
     a sh:NodeShape ;
     sh:message "Dataset IRIs must match the BDR Profile of ABIS' proscribed pattern of https://linked.data.gov.au/dataset/bdr/{UUID}" ;
     sh:pattern "^https://linked\\.data\\.gov\\.au/dataset/bdr/[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$" ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/Dataset> ;
+    sh:targetClass tern:Dataset ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-02>
+:shape-02
     a sh:NodeShape ;
     sh:message "Site IRIs must match the BDR Profile of ABIS' proscribed pattern which includes linked.data.gov.au" ;
     sh:pattern "linked\\.data\\.gov\\.au" ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/Site> ;
+    sh:targetClass tern:Site ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-03>
+:shape-03
     a sh:NodeShape ;
     sh:message "Survey IRIs must match the BDR Profile of ABIS' proscribed pattern which includes linked.data.gov.au" ;
     sh:pattern "linked\\.data\\.gov\\.au" ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/Survey> ;
+    sh:targetClass tern:Survey ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-04>
+:shape-04
     a sh:NodeShape ;
     sh:message "SiteVisit IRIs must match the BDR Profile of ABIS' proscribed pattern which includes linked.data.gov.au" ;
     sh:pattern "linked\\.data\\.gov\\.au" ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/SiteVisit> ;
+    sh:targetClass tern:SiteVisit ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-05>
+:shape-05
     a sh:NodeShape ;
     sh:message "Sample IRIs must match the BDR Profile of ABIS' proscribed pattern which includes linked.data.gov.au" ;
     sh:pattern "linked\\.data\\.gov\\.au" ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/Sample> ;
+    sh:targetClass tern:Sample ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-06>
+:shape-06
     a sh:NodeShape ;
     sh:message "Observation IRIs must match the BDR Profile of ABIS' proscribed pattern pattern of https://linked.data.gov.au/dataset/bdr/{UUID}/ + supplier pattern" ;
     sh:pattern "^https://linked\\.data\\.gov\\.au/dataset/bdr/[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}/.+" ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/Observation> ;
+    sh:targetClass tern:Observation ;
 .
 
-<https://linked.data.gov.au/def/abis/bdr-profile/validator/shape-07>
+:shape-07
     a sh:NodeShape ;
     sh:message "Agent (Person and Organization) IRIs must match the BDR Profile of ABIS' proscribed pattern which includes linked.data.gov.au" ;
     sh:pattern "linked\\.data\\.gov\\.au" ;
@@ -242,22 +253,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         schema:Person ;
 .
 
-<https://linked.data.gov.au/def/abis/validator/shape-01>
+default2:shape-01
     a sh:NodeShape ;
     sh:property
         [
-            sh:class <https://w3id.org/tern/ontologies/tern/Observation> ;
+            sh:class tern:Observation ;
             sh:minCount 1 ;
             sh:path sosa:hasMember ;
         ] ;
-    sh:targetClass <https://w3id.org/tern/ontologies/tern/ObservationCollection> ;
+    sh:targetClass tern:ObservationCollection ;
 .
 
-<https://linked.data.gov.au/def/abis/validator/shape-02>
+default2:shape-02
     a sh:NodeShape ;
 .
 
-<https://linked.data.gov.au/def/abis/validator/shape-03>
+default2:shape-03
     a sh:NodeShape ;
 .
 
@@ -267,7 +278,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://github.com/AusBIGG/" ;
 .
 
-<https://linked.data.gov.au/def/bdr-pr/dr/validator/1.0>
+default1:1.0
     schema:name "1.0" ;
 .
 
