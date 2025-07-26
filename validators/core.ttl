@@ -3,6 +3,7 @@ PREFIX ds: <https://linked.data.gov.au/def/abis/bdr-profile/validator>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX tern: <https://w3id.org/tern/ontologies/tern/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -10,6 +11,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ds:
     a owl:Ontology ;
+    owl:versionIRI <https://linked.data.gov.au/def/bdr-pr/dr/validator/1.2> ;
+    owl:versionInfo """1.2 2025-07: Tidy up for inclusion in the BDR Validators Catalogue
+
+1.1 2025-05: Minor updates
+
+1.0 2025-04: First version""" ;
     schema:name "BDR Profile of ABIS Core Validator" ;
     schema:description "SHACL validator for the Biodiversity Data Repository (BDR)'s profile of Australian Biodiversity Information Standard (ABIS)" ;
     schema:creator <https://linked.data.gov.au/org/bdr-team> ;
@@ -18,10 +25,7 @@ ds:
     schema:dateModified "2024-09-23"^^xsd:date ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:copyrightNotice "(c) 2025 DCCEES" ;
-    owl:versionIRI :1.1 ;
-    owl:versionInfo """1.1 DCCEEW version
-
-1.0 First version""" ;
+    skos:historyNote "Created by the BDR Team in 2025 to validate data bound for the Biodiversity Data Repository" ;
     schema:hasPart
         :shape-01 ,
         :shape-02 ,
@@ -40,7 +44,7 @@ ds:
 #        ] ;
 .
 
-:1.1 schema:name "1.1" .
+:1.2 schema:name "1.2" .
 
 <https://linked.data.gov.au/org/dcceew>
     a schema:Organization ;
