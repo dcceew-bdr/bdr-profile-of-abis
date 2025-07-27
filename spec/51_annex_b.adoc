@@ -1,5 +1,5 @@
 [[annex-b]]
-== Annex B: BDR Data Release Model
+== Annex B: Data Release Model
 
 [#data-release,link="img/data-release.svg"]
 .An overview of the Data Release Model
@@ -17,8 +17,8 @@ Currently, the Data Release model only handles data embargos, but it is likely t
 
 [frame=none, grid=none, cols="1,5"]
 |===
-|*<<IRI, IRI>>* | https://linked.data.gov.au/def/abis/data-release
-|*https://schema.org/name[Name]* | BDR Data Release Model
+|*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/dr
+|*https://schema.org/name[Name]* | Data Release Model
 |*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing aspects of data release: to whom, under what circumstances and when data may be released.
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
 |*https://schema.org/dateModified[Modified Date]* | 2025-04-29
@@ -27,7 +27,6 @@ Currently, the Data Release model only handles data embargos, but it is likely t
 |*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/dr/1.1[dr:1.1]
 |*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*| *2.0* - 2023 Dec - First release (v2.0 to match ABIS)
 |*https://schema.org/creator[Creator]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
-|*https://schema.org/owner[Owner]* | https://linked.data.gov.au/org/ausbigg[Australian Biodiversity Information Governance Group (AUSBIGG)]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
 |*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +

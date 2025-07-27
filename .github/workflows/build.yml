@@ -32,7 +32,10 @@ jobs:
         echo "Add JSON-LD Context to docs/"
         cp spec/context.json docs/
         #
-        echo "Add validator to docs/"
+        echo "Add models to docs/"
+        mkdir docs/models
+        cp models/*.ttl docs/models
+        echo "Add validators to docs/"
         mkdir docs/validators
         cp validators/*.ttl docs/validators
     - name: Deploy 🚀

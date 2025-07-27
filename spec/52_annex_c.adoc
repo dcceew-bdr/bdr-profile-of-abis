@@ -1,9 +1,9 @@
 [[annex-c]]
-== Annex C: BDR Submission Manifest Model
+== Annex C: Submission Manifest Model
 
 [#sub-man-model,link="img/sub-man-model.svg"]
-.An overview of the BDR Submission Manifest Model
-image::img/sub-man-model.svg[Overview of the BDR Submission Manifest Modelverview of the Data Release Model,align="center"]
+.An overview of the Submission Manifest Model
+image::img/sub-man-model.svg[Overview of the Submission Manifest Modelverview of the Data Release Model,align="center"]
 
 This model is for a _manifest_ - a listing of contents - of data submissions to the <<BDR>>. The manifests are supplied as <<RDF, RDF>> files containing information according to this model within all data submissions to the BDR. The manifest information provides location, role and other information about all the data resources, allowing the BDR to process them correctly and efficiently.
 
@@ -12,16 +12,15 @@ This model is for a _manifest_ - a listing of contents - of data submissions to 
 [frame=none, grid=none, cols="1,5"]
 |===
 |*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/sm
-|*https://schema.org/name[Name]* | BDR Submission Manifest Model
-|*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for a _manifest_ - a listing of contents - of data submissions to the <<BDR>>
-|*https://schema.org/dateCreated[Created Date]* | 2205-02-15
+|*https://schema.org/name[Name]* | Submission Manifest Model
+|*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for a _manifest_ - a listing of contents - of data submissions to the <<BDR, Biodiversity Data Repository>>
+|*https://schema.org/dateCreated[Created Date]* | 2025-02-15
 |*https://schema.org/dateModified[Modified Date]* | 2025-04-29
 |*https://schema.org/dateIssued[Issued Date]* | 2025-03-01
 |*https://schema.org/version[Version]* | 1.0
 |*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/sm/2.0[sm:2.0]
 |*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*| *1.0* - 2025 Mar - First release
 |*https://schema.org/creator[Creator]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
-|*https://schema.org/owner[Owner]* | https://linked.data.gov.au/org/ausbigg[DCCEEW]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[DCCEEW]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
 |*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +
@@ -181,7 +180,7 @@ This validator only validates manifest content, not the content of the data that
 
 === C.6 Vocabularies
 
-==== BDR Submission Manifest Resource Roles
+==== Submission Manifest Resource Roles
 
 This model depends on the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
 

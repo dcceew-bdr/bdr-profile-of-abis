@@ -24,9 +24,9 @@ Namespaces are used in shortened form in documents and data by assigning them a 
 |*Prefix* | *Namespace* | *Description*
 |*`bdrpr:`* | *`https://linked.data.gov.au/def/bdr-pr/`* | *BDR Profile of ABIS' namespace*
 |`abis:` | `https://linked.data.gov.au/def/abis/` | ABIS namespace
-|`dr:` | `https://linked.data.gov.au/def/bdr-pr/dr/` | <<#annex-b, BDR Data Release Model>> namespace
+|`dr:` | `https://linked.data.gov.au/def/bdr-pr/dr/` | <<#annex-b, Data Release Model>> namespace
 |`bdr:` | `https://linked.data.gov.au/dataset/bdr/` | BDR Dataset Namespace
-|`proj:` | `https://linked.data.gov.au/def/bdr-pr/proj/` | <<#annex-b, BDR Projects Model>> namespace
+|`proj:` | `https://linked.data.gov.au/def/bdr-pr/proj/` | <<#annex-b, Projects Model>> namespace
 |`dcat:`| `http://www.w3.org/ns/dcat#` | <<DCAT, Data Catalogue Vocabulary>> namespace
 |`ex:` | `+http://example.com/+` | Generic examples namespace - _does not resolve_
 |`geo:` | `http://www.opengis.net/ont/geosparql#` | <<GSP, GeoSPARQL Ontology>> namespace
@@ -34,7 +34,7 @@ Namespaces are used in shortened form in documents and data by assigning them a 
 |`rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` | <<RDFSSPEC, RDF Schema ontology>> namespace
 |`sosa:` | `http://www.w3.org/ns/sosa/` | <<SOSA, Sensor, Observation, Sample, and Actuator (SOSA) ontology>> namespace
 |`schema:` | `https://schema.org/` | <<SDO, schema.org>> namespace
-|`sm:` | `https://linked.data.gov.au/def/bdr-pr/sm/` | <<#annex-c, BDR Submission Manifest Model>> namespace
+|`sm:` | `https://linked.data.gov.au/def/bdr-pr/sm/` | <<#annex-c, Submission Manifest Model>> namespace
 |`skos:` | `http://www.w3.org/2004/02/skos/core#` | <<SKOS, Simple Knowledge Organization System (SKOS) ontology>> namespace
 |`tern:` | `https://w3id.org/tern/ontologies/tern/` | <<TERNOntology, TERN Ontology>> namespace
 |`time:` | `http://www.w3.org/2006/time#` | <<TIME, Time Ontology>> in OWL namespace
