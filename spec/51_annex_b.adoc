@@ -19,17 +19,19 @@ Currently, the Data Release model only handles data embargos, but it is likely t
 |===
 |*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/dr
 |*https://schema.org/name[Name]* | Data Release Model
-|*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing aspects of data release: to whom, under what circumstances and when data may be released.
+|*https://schema.org/description[Description]* | This model is for describing aspects of data release: to whom, under what circumstances and when data may be released.
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
 |*https://schema.org/dateModified[Modified Date]* | 2025-04-29
 |*https://schema.org/dateIssued[Issued Date]* | 2023-12-28
 |*https://schema.org/version[Version]* | 1.1
 |*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/dr/1.1[dr:1.1]
-|*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*| *2.0* - 2023 Dec - First release (v2.0 to match ABIS)
+|*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*|
+*1.1* - 2025 July - Moved from ABIS to BDR Profile, simplification to use schema.org Project +
+1.0 - 2023 Oct - First release
 |*https://schema.org/creator[Creator]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-|*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +
+|*https://schema.org/contactPoint[Contact Point]* | The BDR Team on bdr@dcceew.gov.au +
 
 Issue tracking for this profile is managed online at https://github.com/dcceew-bdr/bdr-profile-of-abis/issues
 |*https://schema.org/codeRepository[Code Repository]* | https://github.com/dcceew-bdr/bdr-profile-of-abis

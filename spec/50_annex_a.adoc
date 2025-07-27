@@ -20,19 +20,19 @@ Also, as per PROV, some information about an `Entity` (data), produced by an `Ac
 |===
 |*<<IRI, IRI>>* | https://linked.data.gov.au/def/bdr-pr/proj
 |*https://schema.org/name[Name]* | Project Model
-|*https://www.w3.org/TR/skos-reference/#definition[Definition]* | This model is for describing Projects where Project is defined as "An Activity that requires concerted effort following a Plan in pursuit of an objective".
+|*https://schema.org/description[Description]* | This model is for describing Projects where Project is defined as "An Activity that requires concerted effort following a Plan in pursuit of an objective".
 |*https://schema.org/dateCreated[Created Date]* | 2023-10-15
-|*https://schema.org/dateModified[Modified Date]* | 2023-04-30
-|*https://schema.org/dateIssued[Issued Date]* | 2025-04-30
-|*https://schema.org/version[Version]* | 2.1
+|*https://schema.org/dateModified[Modified Date]* | 2025-07-28
+|*https://schema.org/dateIssued[Issued Date]* | 2024-10-15
+|*https://schema.org/version[Version]* | 1.1
 |*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/proj/2.0[proj:2.0]
-|*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*| *2.1* - 2025 April - simplification to use schema.org Project
-
-2.0 - 2023 Dec - First release (v2.0 to match ABIS)
+|*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*|
+*1.1* - 2025 Jul - Moved from ABIS to BDR Profile, alignment with other models +
+1.0 - 2024 Oct - First release
 |*https://schema.org/creator[Creator]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[DCCEEW]
 |*https://schema.org/license[License]* | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-|*https://www.w3.org/TR/vocab-dcat/#Property:resource_contact_point[Contacts]* | The BDR Team on bdr@dcceew.gov.au +
+|*https://schema.org/contactPoint[Contact Point]* | The BDR Team on bdr@dcceew.gov.au +
 
 Issue tracking for this profile is managed online at https://github.com/dcceew-bdr/bdr-profile-of-abis/issues
 |*https://schema.org/codeRepository[Code Repository]* | https://github.com/dcceew-bdr/bdr-profile-of-abis
