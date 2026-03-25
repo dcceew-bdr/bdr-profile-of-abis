@@ -31,13 +31,14 @@ Issue tracking for this profile is managed online at https://github.com/dcceew-b
 |*https://schema.org/codeRepository[Code Repository]* | https://github.com/dcceew-bdr/bdr-profile-of-abis
 |===
 
+[[annex_c_2_supporting_assets]]
 === C.2 Supporting Assets
 
 * RDF schema:
 ** https://linked.data.gov.au/def/bdr-pr/sm.ttl
 * <<SHACL, SHACL>> validation file:
 ** https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl
-* Submission Manifest Model Resource Roles collection:
+* Submission Manifest Model Resource Roles vocabulary:
 ** https://linked.data.gov.au/dataset/bdr/smrr
 ** RDF file: https://linked.data.gov.au/def/bdr-pr/smrr.ttl
 
