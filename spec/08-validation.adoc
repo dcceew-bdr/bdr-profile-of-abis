@@ -9,7 +9,7 @@ Then, to show conformance to this profile and not just ABIS, data must also pass
 ABIS requires data validation according to multiple validators:
 
 * several background model validators
-** e.g. the http://www.opengis.net/def/geosparql/validator/[GeoSPARQL Validator]
+** e.g. the http://www.opengis.net/def/geosparql/validator[GeoSPARQL Validator]
 * https://w3id.org/tern/shapes/tern/[TERN Ontology Validator]
 * https://linked.data.gov.au/def/brm[Biodiversity Record Model Validator]
 
