@@ -40,9 +40,12 @@ Issue tracking for this profile is managed online at https://github.com/dcceew-b
 === B.2 Supporting Assets
 
 * RDF schema:
-** https://linked.data.gov.au/def/bdr-pr/dr.ttl
+** https://github.com/dcceew-bdr/bdr-profile-of-abis/blob/main/models/dr.ttl
 * <<SHACL, SHACL>> validation file:
-** https://linked.data.gov.au/def/bdr-pr/dr/validator.ttl
+** https://github.com/dcceew-bdr/bdr-profile-of-abis/blob/main/validators/dr.ttl
+** https://resources.bdr.gov.au/catalogues/bdr-cat:validators/collections/bdr-cat:bdr-validators/items/dr:validator[BDR Validators Catalogue entry]
+
+NOTE: The canonical IRIs for these assets remain `https://linked.data.gov.au/def/bdr-pr/dr` and `https://linked.data.gov.au/def/bdr-pr/dr/validator`. Their `linked.data.gov.au` redirects are tracked in https://github.com/dcceew-bdr/bdr-profile-of-abis/issues/8[issue #8].
 
 === B.3 Classes
 
