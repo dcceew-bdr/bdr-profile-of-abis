@@ -34,12 +34,12 @@ Issue tracking for this profile is managed online at https://github.com/dcceew-b
 === C.2 Supporting Assets
 
 * RDF schema:
-** https://linked.data.gov.au/def/bdr-pr/sm.ttl
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/models/sm.ttl[https://linked.data.gov.au/def/bdr-pr/sm.ttl]
 * <<SHACL, SHACL>> validation file:
-** https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/validators/sm.ttl[https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl]
 * Submission Manifest Model Resource Roles collection:
-** https://linked.data.gov.au/dataset/bdr/smrr
-** RDF file: https://linked.data.gov.au/def/bdr-pr/smrr.ttl
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/vocabs/smrr.ttl[https://linked.data.gov.au/dataset/bdr/smrr]
+
 
 === C.3 Classes
 

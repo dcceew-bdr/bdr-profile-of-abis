@@ -41,9 +41,9 @@ Issue tracking for this profile is managed online at https://github.com/dcceew-b
 === A.2 Supporting Assets
 
 * RDF schema:
-** https://linked.data.gov.au/def/bdr-pr/proj.ttl
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/models/proj.ttl[https://linked.data.gov.au/def/bdr-pr/proj.ttl]
 * <<SHACL, SHACL>> validation file:
-** https://linked.data.gov.au/def/bdr-pr/proj/validator.ttl
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/validators/proj.ttl[https://linked.data.gov.au/def/bdr-pr/proj/validator.ttl]
 
 === A.3 Classes
 
