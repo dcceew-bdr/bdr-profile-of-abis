@@ -12,12 +12,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
 This profile has been created to add additional constraints to the use of ABIS in the form of additional models that must be used to define data management aspects of data destined for absorbtion into the Biodiversity Data Repository, BDR.""" ;
     schema:dateCreated "2025-03-31"^^xsd:date ;
-    schema:dateModified "2025-03-31"^^xsd:date ;
+    schema:dateModified "2026-08-10"^^xsd:date ;
     schema:dateIssued "2025-03-31"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/dcceew> ;
     schema:publisher <https://linked.data.gov.au/org/dcceew> ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:copyrightNotice "(c) Department of Climate Change, Energy, the Environment and Water, 2025" ;
+    prof:hasResource <https://linked.data.gov.au/def/bdr-pr/vocabularies/submission-manifest-resource-roles> ;
     prof:isProfileOf <https://linked.data.gov.au/def/abis> ;
 .
 
@@ -52,5 +53,13 @@ This profile has been created to add additional constraints to the use of ABIS i
     schema:name "JSON-LD Context" ;
     dcterms:format "application/ld+json" ;
     prof:hasArtifact "https://linked.data.gov.au/def/bdr-pr/context.json"^^xsd:anyURI ;
+    prof:hasRole role:vocabulary ;
+.
+
+<https://linked.data.gov.au/def/bdr-pr/vocabularies/submission-manifest-resource-roles>
+    a prof:ResourceDescriptor ;
+    schema:name "BDR Submission Manifest Resource Roles vocabulary"@en ;
+    dcterms:format "text/turtle" ;
+    prof:hasArtifact "https://linked.data.gov.au/dataset/bdr/smrr"^^xsd:anyURI ;
     prof:hasRole role:vocabulary ;
 .
