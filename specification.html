@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <title>BDR Profile of ABIS</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -116,7 +116,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -140,7 +139,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -162,6 +161,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -218,6 +218,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -327,7 +328,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -431,221 +432,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
-</style>
-<style>
-pre.rouge table td { padding: 5px; }
-pre.rouge table pre { margin: 0; }
-pre.rouge .cm {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cp {
-  color: #999999;
-  font-weight: bold;
-}
-pre.rouge .c1 {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-pre.rouge .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
-pre.rouge .ge {
-  color: #000000;
-  font-style: italic;
-}
-pre.rouge .gr {
-  color: #aa0000;
-}
-pre.rouge .gh {
-  color: #999999;
-}
-pre.rouge .gi {
-  color: #000000;
-  background-color: #ddffdd;
-}
-pre.rouge .go {
-  color: #888888;
-}
-pre.rouge .gp {
-  color: #555555;
-}
-pre.rouge .gs {
-  font-weight: bold;
-}
-pre.rouge .gu {
-  color: #aaaaaa;
-}
-pre.rouge .gt {
-  color: #aa0000;
-}
-pre.rouge .kc {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kd {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kn {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kp {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kr {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kt {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .k, pre.rouge .kv {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .mf {
-  color: #009999;
-}
-pre.rouge .mh {
-  color: #009999;
-}
-pre.rouge .il {
-  color: #009999;
-}
-pre.rouge .mi {
-  color: #009999;
-}
-pre.rouge .mo {
-  color: #009999;
-}
-pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
-  color: #009999;
-}
-pre.rouge .sa {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .sb {
-  color: #d14;
-}
-pre.rouge .sc {
-  color: #d14;
-}
-pre.rouge .sd {
-  color: #d14;
-}
-pre.rouge .s2 {
-  color: #d14;
-}
-pre.rouge .se {
-  color: #d14;
-}
-pre.rouge .sh {
-  color: #d14;
-}
-pre.rouge .si {
-  color: #d14;
-}
-pre.rouge .sx {
-  color: #d14;
-}
-pre.rouge .sr {
-  color: #009926;
-}
-pre.rouge .s1 {
-  color: #d14;
-}
-pre.rouge .ss {
-  color: #990073;
-}
-pre.rouge .s, pre.rouge .dl {
-  color: #d14;
-}
-pre.rouge .na {
-  color: #008080;
-}
-pre.rouge .bp {
-  color: #999999;
-}
-pre.rouge .nb {
-  color: #0086B3;
-}
-pre.rouge .nc {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .no {
-  color: #008080;
-}
-pre.rouge .nd {
-  color: #3c5d5d;
-  font-weight: bold;
-}
-pre.rouge .ni {
-  color: #800080;
-}
-pre.rouge .ne {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nf, pre.rouge .fm {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nl {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nn {
-  color: #555555;
-}
-pre.rouge .nt {
-  color: #000080;
-}
-pre.rouge .vc {
-  color: #008080;
-}
-pre.rouge .vg {
-  color: #008080;
-}
-pre.rouge .vi {
-  color: #008080;
-}
-pre.rouge .nv, pre.rouge .vm {
-  color: #008080;
-}
-pre.rouge .ow {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .o {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .w {
-  color: #bbbbbb;
-}
-pre.rouge {
-  background-color: #f8f8f8;
-}
 </style>
 </head>
 <body class="book toc2 toc-left">
@@ -1001,6 +787,11 @@ pre.rouge {
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SDO">schema.org</a> namespace</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sh:</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="http://www.w3.org/ns/shacl#" class="bare">http://www.w3.org/ns/shacl#</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#SHACL">Shapes Constraint Language</a> namespace</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>sm:</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="https://linked.data.gov.au/def/bdr-pr/sm/" class="bare">https://linked.data.gov.au/def/bdr-pr/sm/</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#annex-c">Submission Manifest Model</a> namespace</p></td>
@@ -1177,20 +968,20 @@ pre.rouge {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nl">&lt;https://example.com/dataset/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX ex: &lt;https://example.com/dataset/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX tern: &lt;https://w3id.org/tern/ontologies/tern/&gt;
 
-</span><span class="nn">ex:</span><span class="n">x
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">hasPart</span><span class="w"> </span><span class="nl">&lt;https://example.com/dataset/sample/y&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:x
+    a tern:Dataset ;
+    schema:name "Dataset X" ;
+    schema:hasPart &lt;https://example.com/dataset/sample/y&gt; ;
+.
 
-</span><span class="nl">&lt;https://example.com/dataset/sample/y&gt;</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Sample</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Sample Y"</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+&lt;https://example.com/dataset/sample/y&gt;
+    a tern:Sample ;
+    schema:name "Sample Y" ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1564,31 +1355,31 @@ Any system may be used to ensure uniqueness, e.g. UUIDs, systematic numbers etc.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="c1"># An ABIS Dataset...</span><span class="w">
-</span><span class="c1"># containing a Biodiversity Occurrence Model Record</span><span class="w">
-</span><span class="c1"># and with attribution to a Project using the Project Model</span><span class="w">
-</span><span class="c1"># and with an embargo date from the Data Release Model</span><span class="w">
-</span><span class="nn">ex:</span><span class="n">dataset-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">hasPart</span><span class="w"> </span><span class="nn">ex:</span><span class="n">record-a</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prov:</span><span class="n">wasGeneratedBy</span><span class="w"> </span><span class="nn">ex:</span><span class="n">ProjectZ</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">bdrpr:</span><span class="n">embargoedUntil</span><span class="w"> </span><span class="s">"2025-06-30"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle"># An ABIS Dataset...
+# containing a Biodiversity Occurrence Model Record
+# and with attribution to a Project using the Project Model
+# and with an embargo date from the Data Release Model
+ex:dataset-01
+    a tern:Dataset ;
+    schema:hasPart ex:record-a ;
+    prov:wasGeneratedBy ex:ProjectZ ;
+    bdrpr:embargoedUntil "2025-06-30"^^xsd:date ;
+.
 
-</span><span class="c1"># The Record is of a dwc:Occurrence as per standard ABIS modelling</span><span class="w">
-</span><span class="nn">ex:</span><span class="n">record-a
-</span><span class="w">    </span><span class="nn">schema:</span><span class="n">about</span><span class="w"> </span><span class="nn">ex:</span><span class="n">occurrence-x</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+# The Record is of a dwc:Occurrence as per standard ABIS modelling
+ex:record-a
+    schema:about ex:occurrence-x ;
+.
 
-</span><span class="c1"># ABIS facts about the occurrence</span><span class="w">
-</span><span class="nn">ex:</span><span class="n">occurrence-x
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">dwc:</span><span class="n">Occurrence</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">void:</span><span class="n">inDataset</span><span class="w"> </span><span class="nn">ex:</span><span class="n">dataset-01</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">geo:</span><span class="n">hasGeometry</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">geo:</span><span class="n">Geometry</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">geo:</span><span class="n">asWKT</span><span class="w"> </span><span class="s">"POINT(143, -27)"</span><span class="p">^^</span><span class="nn">geo:</span><span class="n">wktLiteral
-</span><span class="w">    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+# ABIS facts about the occurrence
+ex:occurrence-x
+    a dwc:Occurrence ;
+    void:inDataset ex:dataset-01 ;
+    geo:hasGeometry [
+        a geo:Geometry ;
+        geo:asWKT "POINT(143, -27)"^^geo:wktLiteral
+    ] ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1596,14 +1387,14 @@ Any system may be used to ensure uniqueness, e.g. UUIDs, systematic numbers etc.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">@prefix</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w">
-</span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">bdrsm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prof:</span><span class="n">hasResource</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"data.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+<pre class="rouge highlight"><code data-lang="turtle">@prefix smrr: &lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt; .
+[]
+    a bdrsm:SubmissionManifest ;
+    prof:hasResource [
+        prof:hasArtifact "data.ttl" ;
+        prof:hasRole smrr:SufficientForValidation ;
+    ] ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2027,51 +1818,51 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">abis:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/abis/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nl">&lt;http://example.com/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">geo:</span><span class="w"> </span><span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prov:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/prov#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">role:</span><span class="w"> </span><span class="nl">&lt;http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">time:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX abis: &lt;https://linked.data.gov.au/def/abis/&gt;
+PREFIX ex: &lt;http://example.com/&gt;
+PREFIX geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
+PREFIX prov: &lt;http://www.w3.org/ns/prov#&gt;
+PREFIX role: &lt;http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX tern: &lt;https://w3id.org/tern/ontologies/tern/&gt;
+PREFIX time: &lt;http://www.w3.org/2006/time#&gt;
 
-</span><span class="nn">ex:</span><span class="n">project-m
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">schema:</span><span class="n">Project</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">isPartOf</span><span class="w"> </span><span class="nn">ex:</span><span class="n">program-n</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Project M"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">description</span><span class="w"> </span><span class="s">"South Australian government Project M-23"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">abis:</span><span class="n">purpose</span><span class="w"> </span><span class="s">"To determine extent of koala populations in NE SA"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">keywords</span><span class="w"> </span><span class="nn">ex:</span><span class="n">koala</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">spatial
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">geo:</span><span class="n">asWKT</span><span class="w"> </span><span class="s">"POLYGON ((138.010254 -26.007424, 140.976563 -25.99755, ..., 138.010254 -26.007424))"</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">temporality
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">time:</span><span class="n">hasBeginning</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nn">time:</span><span class="n">inXSDDate</span><span class="w"> </span><span class="s">"2020-12-01"</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">time:</span><span class="n">hasEnd</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nn">time:</span><span class="n">inXSDDate</span><span class="w"> </span><span class="s">"2021-03-15"</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prov:</span><span class="n">qualifiedAttribution
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">prov:</span><span class="n">agent</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/org/dew&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prov:</span><span class="n">hadRole</span><span class="w"> </span><span class="nn">role:</span><span class="n">principalInvestigator</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prov:</span><span class="n">generated</span><span class="w"> </span><span class="nn">ex:</span><span class="n">dataset-x</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:project-m
+    a schema:Project ;
+    schema:isPartOf ex:program-n ;
+    schema:name "Project M" ;
+    schema:description "South Australian government Project M-23" ;
+    abis:purpose "To determine extent of koala populations in NE SA" ;
+    schema:keywords ex:koala ;
+    schema:spatial
+        [
+            geo:asWKT "POLYGON ((138.010254 -26.007424, 140.976563 -25.99755, ..., 138.010254 -26.007424))" ;
+        ] ;
+    schema:temporality
+        [
+            time:hasBeginning [ time:inXSDDate "2020-12-01" ] ;
+            time:hasEnd [ time:inXSDDate "2021-03-15" ] ;
+        ] ;
+    prov:qualifiedAttribution
+        [
+            prov:agent &lt;https://linked.data.gov.au/org/dew&gt; ;
+            prov:hadRole role:principalInvestigator ;
+        ] ;
+    prov:generated ex:dataset-x ;
+.
 
-</span><span class="nn">ex:</span><span class="n">program-n
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">schema:</span><span class="n">Project</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">hasPart</span><span class="w"> </span><span class="nn">ex:</span><span class="n">project-m</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Programme N"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="c1"># ... other properties</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:program-n
+    a schema:Project ;
+    schema:hasPart ex:project-m ;
+    schema:name "Programme N" ;
+    # ... other properties
+.
 
-</span><span class="nn">ex:</span><span class="n">dataset-x
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="c1"># ... other properties</span><span class="w">
-</span><span class="p">.</span></code></pre>
+ex:dataset-x
+    a tern:Dataset ;
+    schema:name "Dataset X" ;
+    # ... other properties
+.</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -3014,28 +2805,28 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nl">&lt;http://example.com/thing/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/dr/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX : &lt;http://example.com/thing/&gt;
+PREFIX dr: &lt;https://linked.data.gov.au/def/bdr-pr/dr/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX tern: &lt;https://w3id.org/tern/ontologies/tern/&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
 
-</span><span class="c1"># Dataset X is embargoed until the 5th of May, 2024</span><span class="w">
-</span><span class="nn">:</span><span class="n">dataset-x
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dr:</span><span class="n">embargoedUntil</span><span class="w"> </span><span class="s">"2024-05-11"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="c1"># ... other dataset properties</span><span class="w">
-</span><span class="p">.</span><span class="w">
+# Dataset X is embargoed until the 5th of May, 2024
+:dataset-x
+    a tern:Dataset ;
+    schema:name "Dataset X" ;
+    dr:embargoedUntil "2024-05-11"^^xsd:date ;
+    # ... other dataset properties
+.
 
-</span><span class="c1"># Dataset Y is embargoed until 2025</span><span class="w">
-</span><span class="nn">:</span><span class="n">dataset-y
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset Y"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dr:</span><span class="n">embargoedUntil</span><span class="w"> </span><span class="s">"2025-01-01"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="c1"># ... other dataset properties</span><span class="w">
-</span><span class="p">.</span></code></pre>
+# Dataset Y is embargoed until 2025
+:dataset-y
+    a tern:Dataset ;
+    schema:name "Dataset Y" ;
+    dr:embargoedUntil "2025-01-01"^^xsd:date ;
+    # ... other dataset properties
+.</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -3086,29 +2877,29 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nl">&lt;http://example.com/thing/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dcterms:</span><span class="w"> </span><span class="nl">&lt;http://purl.org/dc/terms/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/dr/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">time:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX : &lt;http://example.com/thing/&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX dr: &lt;https://linked.data.gov.au/def/bdr-pr/dr/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX tern: &lt;https://w3id.org/tern/ontologies/tern/&gt;
+PREFIX time: &lt;http://www.w3.org/2006/time#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
-</span><span class="c1"># Dataset X is embargoed for a period of 3 months, calculated to start</span><span class="w">
-</span><span class="c1"># from the issued date.</span><span class="w">
-</span><span class="c1"># The calculation is defined by a business rule which is not</span><span class="w">
-</span><span class="c1"># able to be expressed in RDF</span><span class="w">
+# Dataset X is embargoed for a period of 3 months, calculated to start
+# from the issued date.
+# The calculation is defined by a business rule which is not
+# able to be expressed in RDF
 
-</span><span class="nn">:</span><span class="n">dataset-x
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Dataset X"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">issued</span><span class="w"> </span><span class="s">"2023-12-25"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dr:</span><span class="n">embargoPeriod</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">time:</span><span class="n">DurationDescription</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">time:</span><span class="n">months</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="c1"># ... other dataset properties</span><span class="w">
-</span><span class="p">.</span></code></pre>
+:dataset-x
+    a tern:Dataset ;
+    schema:name "Dataset X" ;
+    dcterms:issued "2023-12-25"^^xsd:date ;
+    dr:embargoPeriod [
+        a time:DurationDescription ;
+        time:months 3 ;
+    ] ;
+    # ... other dataset properties
+.</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -3131,7 +2922,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="sectionbody">
 <div id="sub-man-model" class="imageblock text-center">
 <div class="content">
-<a class="image" href="img/sub-man-model.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/sub-man-model.svg" alt="Overview of the Submission Manifest Modelverview of the Data Release Model"></a>
+<a class="image" href="img/sub-man-model.svg"><img src="https://dcceew-bdr.github.io/bdr-profile-of-abis/img/sub-man-model.svg" alt="Overview of the Submission Manifest Model"></a>
 </div>
 <div class="title">Figure 9. An overview of the Submission Manifest Model</div>
 </div>
@@ -3164,7 +2955,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateModified">Modified Date</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2025-04-29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-11-09</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/dateIssued">Issued Date</a></strong></p></td>
@@ -3172,15 +2963,16 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://schema.org/version">Version</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI">Version IRI</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/sm/1.1">sm:1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/bdr-pr/sm/1.2">sm:1.2</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="https://www.w3.org/TR/skos-reference/#historyNote">Version History</a></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.1</strong> - 2025 Jul - Moved from ABIS to BDR Profile<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.2</strong> - 2026 Nov - Added model members and SHACL conformance property<br>
+1.1 - 2025 Jul - Moved from ABIS to BDR Profile<br>
 1.0 - 2025 Mar - First release</p></td>
 </tr>
 <tr>
@@ -3212,21 +3004,21 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="ulist">
 <ul>
 <li>
-<p>RDF schema:</p>
+<p>RDF schema (model version 1.2):</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/models/sm.ttl">https://linked.data.gov.au/def/bdr-pr/sm.ttl</a></p>
+<p><a href="https://raw.githubusercontent.com/dcceew-bdr/bdr-resources-data/refs/heads/main/resources/models/items/sm.ttl">Submission Manifest Model RDF</a></p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><a href="#SHACL">SHACL</a> validation file:</p>
+<p><a href="#SHACL">SHACL</a> validation file (validator version 2.1):</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/validators/sm.ttl">https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl</a></p>
+<p><a href="https://raw.githubusercontent.com/dcceew-bdr/bdr-resources-data/refs/heads/main/resources/validators/items/sm.ttl">Submission Manifest Validator RDF</a></p>
 </li>
 </ul>
 </div>
@@ -3242,6 +3034,9 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>The model and validator are versioned independently. The model metadata in C.1 describes model version 1.2; C.5 describes validator version 2.1. Their current catalogue sources are maintained in <a href="https://github.com/dcceew-bdr/bdr-resources-data">bdr-resources-data</a>. The older <code>models/sm.ttl</code> and <code>validators/sm.ttl</code> copies in this specification&#8217;s repository do not describe these current versions.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3308,24 +3103,24 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#example">Example</a></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX prof: &lt;http://www.w3.org/ns/dx/prof/&gt;
+PREFIX sm: &lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;
+PREFIX smrr: &lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;
 
-</span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prof:</span><span class="n">hasResource
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="k">a</span><span class="w"> </span><span class="nn">prof:</span><span class="n">ResourceDescriptor</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"some-rdf-file.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">,</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-            </span><span class="k">a</span><span class="w"> </span><span class="nn">prof:</span><span class="n">ResourceDescriptor</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"images/some-image-file.jpg"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SupplementaryData</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+[]
+    a sm:SubmissionManifest ;
+    prof:hasResource
+        [
+            a prof:ResourceDescriptor ;
+            prof:hasArtifact "some-rdf-file.ttl" ;
+            prof:hasRole smrr:SufficientForValidation ;
+        ] ,
+        [
+            a prof:ResourceDescriptor ;
+            prof:hasArtifact "images/some-image-file.jpg" ;
+            prof:hasRole smrr:SupplementaryData ;
+        ] ;
+.</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -3399,6 +3194,9 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <li>
 <p><a href="#skos:inScheme">in scheme</a></p>
 </li>
+<li>
+<p><a href="#sh:conformsToShapesGraph">conforms to shapes graph</a></p>
+</li>
 </ul>
 </div>
 <h4 id="prof:hasResource" class="discrete">C.4.2 has resource</h4>
@@ -3467,15 +3265,19 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The URL of a file with particulars such as its format and role indicated by the Resource Descriptor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifies the file described by a resource descriptor</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">History Note</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#PROF">PROF</a> and reused directly in this model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adapted from <a href="#PROF">PROF</a> to use string file paths in submission manifests</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_domain">Domain</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_range">Range</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xsd:string</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
@@ -3560,10 +3362,6 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <td class="tableblock halign-left valign-top"><p class="tableblock">Defined in <a href="#SKOS">SKOS</a> and reused directly in this model</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_domain">Domain</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#prof:ResourceDescriptor">Resource Descriptor</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Must be used to indicate that a role used as the value for the <a href="#prof:hasRole">has role</a> predicate is within the <a href="https://linked.data.gov.au/dataset/bdr/smrr">Submission Manifest Model Resource Roles Vocabulary</a></p></td>
 </tr>
@@ -3573,14 +3371,120 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </tr>
 </tbody>
 </table>
+<h4 id="sh:conformsToShapesGraph" class="discrete">C.4.6 conforms to shapes graph</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IRI">IRI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sh:conformsToShapesGraph</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#prefLabel">Preferred Label</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conforms to shapes graph</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#definition">Definition</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates that validation of the subject data graph against the object shapes graph produces no results at disallowed severity levels</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby">Is Defined By</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="http://www.w3.org/ns/shacl#" class="bare">http://www.w3.org/ns/shacl#</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#historyNote">History Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reused from SHACL 1.2, as described in <a href="https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformstoshapesgraph">SHACL 1.2 Profiling</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_domain">Domain</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sh:DataGraph</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf12-schema/#ch_range">Range</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sh:ShapesGraph</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#scopeNote">Scope Note</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates unqualified conformance. Use validation provenance to record conformance at a particular time.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For example, the following statement declares conformance of the data graph identified by <code>&lt;submission.ttl&gt;</code> to the Submission Manifest validator. The statement is a conformance declaration; adding it does not execute validation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX sh: &lt;http://www.w3.org/ns/shacl#&gt;
+
+&lt;submission.ttl&gt;
+    sh:conformsToShapesGraph &lt;https://linked.data.gov.au/def/bdr-pr/sm/validator&gt; ;
+.</code></pre>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_c_5_validator"><a class="anchor" href="#_c_5_validator"></a>C.5 Validator</h3>
 <div class="paragraph">
-<p>The validator for this model is linked to in the <a href="#annex-c-2-supporting-assets">C.2 Supporting Assets</a> section above.</p>
+<p>The validator for this model is linked to in the <a href="#annex-c-2-supporting-assets">C.2 Supporting Assets</a> section above. Its ShapesGraph IRI is <code><a href="https://linked.data.gov.au/def/bdr-pr/sm/validator" class="bare">https://linked.data.gov.au/def/bdr-pr/sm/validator</a></code>, and its version is 2.1. Model and validator version numbers need not match.</p>
 </div>
 <div class="paragraph">
 <p>This validator only validates manifest content, not the content of the data that the manifest lists - BDR/ABIS data.</p>
+</div>
+<div class="paragraph">
+<p>The following table summarises the checks implemented by validator version 2.1. Shape names identify the existing executable checks; they are not specification requirement codes.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 62.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shape</th>
+<th class="tableblock halign-left valign-top">Target</th>
+<th class="tableblock halign-left valign-top">Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shape-01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Instances of <code>sm:SubmissionManifest</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">At least one <code>prof:hasResource</code> value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shape-02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objects of <code>prof:hasResource</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">At least one <code>prof:hasArtifact</code> value; every supplied value is an <code>xsd:string</code> literal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shape-03</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objects of <code>prof:hasResource</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exactly one <code>prof:hasRole</code> value, which is an IRI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shape-04</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objects of <code>prof:hasRole</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exactly one <code>skos:inScheme</code> value, equal to <code><a href="https://linked.data.gov.au/dataset/bdr/smrr/" class="bare">https://linked.data.gov.au/dataset/bdr/smrr/</a></code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shape-05</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subjects of <code>sh:conformsToShapesGraph</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">At most one value for that predicate; every supplied value is an IRI. The predicate is optional.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The five shape IRIs use the existing namespace <code><a href="https://linked.data.gov.au/def/bdr-spr/sm/validator/" class="bare">https://linked.data.gov.au/def/bdr-spr/sm/validator/</a></code>. The validator&#8217;s version IRI is <code><a href="https://linked.data.gov.au/def/bdr-spr/sm/validator/2.1" class="bare">https://linked.data.gov.au/def/bdr-spr/sm/validator/2.1</a></code>. These identifiers retain the published <code>bdr-spr</code> spelling, which differs from the model and ShapesGraph&#8217;s <code>bdr-pr</code> spelling.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3607,21 +3511,21 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX prof: &lt;http://www.w3.org/ns/dx/prof/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX sm: &lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;
+PREFIX smrr: &lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;
 
-</span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prof:</span><span class="n">hasResource
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"plant-tissue-lite-protocol-org-uuid-0fb52b7b-29f1-4797-920a-9c88f2180c5e-start-date-2024-12-11T06_53_43.879Z.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">schema:</span><span class="n">description</span><span class="w"> </span><span class="s">"A single file MONITOR submission"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Submission Data"</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+[]
+    a sm:SubmissionManifest ;
+    prof:hasResource
+        [
+            prof:hasArtifact "plant-tissue-lite-protocol-org-uuid-0fb52b7b-29f1-4797-920a-9c88f2180c5e-start-date-2024-12-11T06_53_43.879Z.ttl" ;
+            prof:hasRole smrr:SufficientForValidation ;
+            schema:description "A single file MONITOR submission" ;
+            schema:name "Submission Data" ;
+        ] ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3635,34 +3539,33 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX prof: &lt;http://www.w3.org/ns/dx/prof/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX sm: &lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;
+PREFIX smrr: &lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;
 
-</span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">sm:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prof:</span><span class="n">hasResource
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"plant-tissue-lite-protocol-org-uuid-0fb52b7b-29f1-4797-920a-9c88f2180c5e-start-date-2024-12-11T06_53_43.879Z.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SufficientForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">schema:</span><span class="n">description</span><span class="w"> </span><span class="s">"A single file MONITOR submission"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Submission Data"</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">,</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-            </span><span class="c1"># every reference (path) to an image in a Submission's RDF data</span><span class="w">
-            </span><span class="c1"># must match a reference here. The DIP will replace local path</span><span class="w">
-            </span><span class="c1"># with paths to the BDR's image store locations</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact
-</span><span class="w">                </span><span class="s">"images/image-001.jpg"</span><span class="w"> </span><span class="p">,</span><span class="w">
-                </span><span class="s">"images/image-002.jpg"</span><span class="w"> </span><span class="p">,</span><span class="w">
-                </span><span class="s">"images/image-003.jpg"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SupplementaryData</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">schema:</span><span class="n">description</span><span class="w"> </span><span class="s">"Images linked to from this submission's RDF data"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">schema:</span><span class="n">name</span><span class="w"> </span><span class="s">"Submission Images"</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
-</span></code></pre>
+[]
+    a sm:SubmissionManifest ;
+    prof:hasResource
+        [
+            prof:hasArtifact "plant-tissue-lite-protocol-org-uuid-0fb52b7b-29f1-4797-920a-9c88f2180c5e-start-date-2024-12-11T06_53_43.879Z.ttl" ;
+            prof:hasRole smrr:SufficientForValidation ;
+            schema:description "A single file MONITOR submission" ;
+            schema:name "Submission Data"
+        ] ,
+        [
+            # every reference (path) to an image in a Submission's RDF data
+            # must match a reference here. The DIP will replace local path
+            # with paths to the BDR's image store locations
+            prof:hasArtifact
+                "images/image-001.jpg" ,
+                "images/image-002.jpg" ,
+                "images/image-003.jpg" ;
+            prof:hasRole smrr:SupplementaryData ;
+            schema:description "Images linked to from this submission's RDF data" ;
+            schema:name "Submission Images"
+        ] ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3676,33 +3579,33 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">prof:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/dx/prof/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nl">&lt;https://schema.org/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sm:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">smrr:</span><span class="w"> </span><span class="nl">&lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX prof: &lt;http://www.w3.org/ns/dx/prof/&gt;
+PREFIX schema: &lt;https://schema.org/&gt;
+PREFIX sm: &lt;https://linked.data.gov.au/def/bdr-pr/sm/&gt;
+PREFIX smrr: &lt;https://linked.data.gov.au/dataset/bdr/smrr/&gt;
 
-</span><span class="p">[]</span><span class="w">
-    </span><span class="k">a</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SubmissionManifest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">prof:</span><span class="n">hasResource
-</span><span class="w">        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact
-</span><span class="w">                </span><span class="s">"outputs/dataset.ttl"</span><span class="w"> </span><span class="p">,</span><span class="w">
-                </span><span class="s">"outputs/survey-metadata.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">NecessaryForValidation</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">,</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"outputs/chunk_*.ttl"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">IsolatedContent</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">,</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-            </span><span class="c1"># there must be a reference to this content in the RDF:</span><span class="w">
-            </span><span class="c1"># {DATASET-IRI} prov:wasDerivedFrom "inputs/"</span><span class="w">
-            </span><span class="c1"># which we will replace "input/" with an actual BDR archival</span><span class="w">
-            </span><span class="c1"># location, when created</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasArtifact</span><span class="w"> </span><span class="s">"inputs/"</span><span class="w"> </span><span class="p">;</span><span class="w">
-            </span><span class="nn">prof:</span><span class="n">hasRole</span><span class="w"> </span><span class="nn">smrr:</span><span class="n">SubmissionSourceArchive</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+[]
+    a smrr:SubmissionManifest ;
+    prof:hasResource
+        [
+            prof:hasArtifact
+                "outputs/dataset.ttl" ,
+                "outputs/survey-metadata.ttl" ;
+            prof:hasRole smrr:NecessaryForValidation ;
+        ] ,
+        [
+            prof:hasArtifact "outputs/chunk_*.ttl" ;
+            prof:hasRole smrr:IsolatedContent ;
+        ] ,
+        [
+            # there must be a reference to this content in the RDF:
+            # {DATASET-IRI} prov:wasDerivedFrom "inputs/"
+            # which we will replace "input/" with an actual BDR archival
+            # location, when created
+            prof:hasArtifact "inputs/" ;
+            prof:hasRole smrr:SubmissionSourceArchive ;
+        ] ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3790,55 +3693,55 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="listingblock">
 <div class="title">TERN Ontology example 01 - valid</div>
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dcterms:</span><span class="w"> </span><span class="nl">&lt;http://purl.org/dc/terms/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nl">&lt;http://example.com/thing/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">geo:</span><span class="w"> </span><span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sosa:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">time:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">void:</span><span class="w"> </span><span class="nl">&lt;http://rdfs.org/ns/void#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX ex: &lt;http://example.com/thing/&gt;
+PREFIX geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX sosa: &lt;http://www.w3.org/ns/sosa/&gt;
+PREFIX tern: &lt;https://w3id.org/tern/ontologies/tern/&gt;
+PREFIX time: &lt;http://www.w3.org/2006/time#&gt;
+PREFIX void: &lt;http://rdfs.org/ns/void#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
-</span><span class="nn">ex:</span><span class="n">dataset-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">description</span><span class="w"> </span><span class="s">"A minimally valid tern:Dataset instance"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">issued</span><span class="w"> </span><span class="s">"2021-11-18"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">title</span><span class="w"> </span><span class="s">"TERN Dataset 01"</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:dataset-01
+    a tern:Dataset ;
+    dcterms:description "A minimally valid tern:Dataset instance" ;
+    dcterms:issued "2021-11-18"^^xsd:date ;
+    dcterms:title "TERN Dataset 01" ;
+.
 
-</span><span class="nn">ex:</span><span class="n">obs-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Observation</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"TERN Observation 01"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">void:</span><span class="n">inDataset</span><span class="w"> </span><span class="nn">ex:</span><span class="n">dataset-01</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">geo:</span><span class="n">hasGeometry</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">geo:</span><span class="n">Geometry</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">geo:</span><span class="n">asWKT</span><span class="w"> </span><span class="s">"POINT(143, -27)"</span><span class="p">^^</span><span class="nn">geo:</span><span class="n">wktLiteral
-</span><span class="w">    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">rdfs:</span><span class="n">comment</span><span class="w"> </span><span class="s">"A minimally valid tern:Observation instance"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">hasFeatureOfInterest</span><span class="w"> </span><span class="nn">ex:</span><span class="n">foi-01</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">hasResult</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Float</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">rdf:</span><span class="n">value</span><span class="w"> </span><span class="s">"42"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">double</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">tern:</span><span class="n">uncertainty</span><span class="w"> </span><span class="s">"0.5"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">double</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">hasSimpleResult</span><span class="w"> </span><span class="s">"42"</span><span class="na">@en</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">observedProperty</span><span class="w"> </span><span class="nl">&lt;https://example.org/op/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">phenomenonTime</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">time:</span><span class="n">Instant</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">time:</span><span class="n">inXSDDateTimeStamp</span><span class="w"> </span><span class="s">"2021-11-18T14:35+10:00"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">dateTimeStamp</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">usedProcedure</span><span class="w"> </span><span class="nl">&lt;https://example.org/proc/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">tern:</span><span class="n">resultDateTime</span><span class="w"> </span><span class="s">"2021-11-18T14:35:00"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">dateTime</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:obs-01
+    a tern:Observation ;
+    rdfs:label "TERN Observation 01" ;
+    void:inDataset ex:dataset-01 ;
+    geo:hasGeometry [
+        a geo:Geometry ;
+        geo:asWKT "POINT(143, -27)"^^geo:wktLiteral
+    ] ;
+    rdfs:comment "A minimally valid tern:Observation instance" ;
+    sosa:hasFeatureOfInterest ex:foi-01 ;
+    sosa:hasResult [
+        a tern:Float ;
+        rdf:value "42"^^xsd:double ;
+        tern:uncertainty "0.5"^^xsd:double ;
+    ] ;
+    sosa:hasSimpleResult "42"@en ;
+    sosa:observedProperty &lt;https://example.org/op/1&gt; ;
+    sosa:phenomenonTime [
+        a time:Instant ;
+        time:inXSDDateTimeStamp "2021-11-18T14:35+10:00"^^xsd:dateTimeStamp ;
+    ] ;
+    sosa:usedProcedure &lt;https://example.org/proc/1&gt; ;
+    tern:resultDateTime "2021-11-18T14:35:00"^^xsd:dateTime ;
+.
 
-</span><span class="nn">ex:</span><span class="n">foi-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">FeatureOfInterest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"TERN FeatureOfInterest 01"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">void:</span><span class="n">inDataset</span><span class="w"> </span><span class="nn">ex:</span><span class="n">dataset-01</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">tern:</span><span class="n">featureType</span><span class="w"> </span><span class="nl">&lt;https://example.org/ft/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+ex:foi-01
+    a tern:FeatureOfInterest ;
+    rdfs:label "TERN FeatureOfInterest 01" ;
+    void:inDataset ex:dataset-01 ;
+    tern:featureType &lt;https://example.org/ft/1&gt; ;
+.</code></pre>
 </div>
 </div>
 </div>
@@ -3850,55 +3753,55 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 <div class="listingblock">
 <div class="title">TERN Ontology example 02 - invalid</div>
 <div class="content">
-<pre class="rouge highlight"><code data-lang="turtle"><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">dcterms:</span><span class="w"> </span><span class="nl">&lt;http://purl.org/dc/terms/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">ex:</span><span class="w"> </span><span class="nl">&lt;http://example.com/thing/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">geo:</span><span class="w"> </span><span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">sosa:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">tern:</span><span class="w"> </span><span class="nl">&lt;https://w3id.org/tern/ontologies/tern/&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">time:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">void:</span><span class="w"> </span><span class="nl">&lt;http://rdfs.org/ns/void#&gt;</span><span class="w">
-</span><span class="kd">PREFIX</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w">
+<pre class="rouge highlight"><code data-lang="turtle">PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX ex: &lt;http://example.com/thing/&gt;
+PREFIX geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX sosa: &lt;http://www.w3.org/ns/sosa/&gt;
+PREFIX tern: &lt;https://w3id.org/tern/ontologies/tern/&gt;
+PREFIX time: &lt;http://www.w3.org/2006/time#&gt;
+PREFIX void: &lt;http://rdfs.org/ns/void#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
-</span><span class="nn">ex:</span><span class="n">dataset-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Dataset</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">description</span><span class="w"> </span><span class="s">"A minimally valid tern:Dataset instance"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">issued</span><span class="w"> </span><span class="s">"2021-11-18"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">date</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">dcterms:</span><span class="n">title</span><span class="w"> </span><span class="s">"TERN Dataset 01"</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:dataset-01
+    a tern:Dataset ;
+    dcterms:description "A minimally valid tern:Dataset instance" ;
+    dcterms:issued "2021-11-18"^^xsd:date ;
+    dcterms:title "TERN Dataset 01" ;
+.
 
-</span><span class="nn">ex:</span><span class="n">obs-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Observation</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"TERN Observation 01"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">void:</span><span class="n">inDataset</span><span class="w"> </span><span class="nn">ex:</span><span class="n">dataset-01</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="c1">#    geo:hasGeometry [</span><span class="w">
-</span><span class="c1">#        a geo:Geometry ;</span><span class="w">
-</span><span class="c1">#        geo:asWKT "POINT(143, -27)"^^geo:wktLiteral</span><span class="w">
-</span><span class="c1">#    ] ;</span><span class="w">
-    </span><span class="nn">rdfs:</span><span class="n">comment</span><span class="w"> </span><span class="s">"A minimally valid tern:Observation instance"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">hasFeatureOfInterest</span><span class="w"> </span><span class="nn">ex:</span><span class="n">foi-01</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">hasResult</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">Float</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">rdf:</span><span class="n">value</span><span class="w"> </span><span class="s">"42"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">double</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">tern:</span><span class="n">uncertainty</span><span class="w"> </span><span class="s">"0.5"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">double</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">hasSimpleResult</span><span class="w"> </span><span class="s">"42"</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">observedProperty</span><span class="w"> </span><span class="nl">&lt;https://example.org/op/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">phenomenonTime</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="k">a</span><span class="w"> </span><span class="nn">time:</span><span class="n">Instant</span><span class="w"> </span><span class="p">;</span><span class="w">
-        </span><span class="nn">time:</span><span class="n">inXSDDateTimeStamp</span><span class="w"> </span><span class="s">"2021-11-18T14:35+10:00"</span><span class="p">^^</span><span class="nn">xsd:</span><span class="n">dateTimeStamp</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">sosa:</span><span class="n">usedProcedure</span><span class="w"> </span><span class="nl">&lt;https://example.org/proc/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">tern:</span><span class="n">resultDateTime</span><span class="w"> </span><span class="s">"2021-11-18T14:35:00"</span><span class="w"> </span><span class="p">;</span><span class="w">  </span><span class="c1"># ^^xsd:dateTime ;</span><span class="w">
-</span><span class="p">.</span><span class="w">
+ex:obs-01
+    a tern:Observation ;
+    rdfs:label "TERN Observation 01" ;
+    void:inDataset ex:dataset-01 ;
+#    geo:hasGeometry [
+#        a geo:Geometry ;
+#        geo:asWKT "POINT(143, -27)"^^geo:wktLiteral
+#    ] ;
+    rdfs:comment "A minimally valid tern:Observation instance" ;
+    sosa:hasFeatureOfInterest ex:foi-01 ;
+    sosa:hasResult [
+        a tern:Float ;
+        rdf:value "42"^^xsd:double ;
+        tern:uncertainty "0.5"^^xsd:double ;
+    ] ;
+    sosa:hasSimpleResult "42" ;
+    sosa:observedProperty &lt;https://example.org/op/1&gt; ;
+    sosa:phenomenonTime [
+        a time:Instant ;
+        time:inXSDDateTimeStamp "2021-11-18T14:35+10:00"^^xsd:dateTimeStamp ;
+    ] ;
+    sosa:usedProcedure &lt;https://example.org/proc/1&gt; ;
+    tern:resultDateTime "2021-11-18T14:35:00" ;  # ^^xsd:dateTime ;
+.
 
-</span><span class="nn">ex:</span><span class="n">foi-01
-</span><span class="w">    </span><span class="k">a</span><span class="w"> </span><span class="nn">tern:</span><span class="n">FeatureOfInterest</span><span class="w"> </span><span class="p">;</span><span class="w">
-    </span><span class="nn">rdfs:</span><span class="n">label</span><span class="w"> </span><span class="s">"TERN FeatureOfInterest 01"</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="c1">#    void:inDataset ex:dataset-01 ;</span><span class="w">
-    </span><span class="nn">tern:</span><span class="n">featureType</span><span class="w"> </span><span class="nl">&lt;https://example.org/ft/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w">
-</span><span class="p">.</span></code></pre>
+ex:foi-01
+    a tern:FeatureOfInterest ;
+    rdfs:label "TERN FeatureOfInterest 01" ;
+#    void:inDataset ex:dataset-01 ;
+    tern:featureType &lt;https://example.org/ft/1&gt; ;
+.</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4120,7 +4023,7 @@ The Submission Manifest Model validator is not included in the BDR Profile of AB
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-10-05 03:30:40 UTC
+Last updated 2026-11-11 01:35:24 UTC
 </div>
 </div>
 </body>
