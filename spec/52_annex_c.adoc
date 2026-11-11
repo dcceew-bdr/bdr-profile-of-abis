@@ -70,7 +70,7 @@ Classes defined elsewhere:
 | https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby[Is Defined By] | This model
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | Submission Manifest
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | A listing of the content of a data submission to the BDR
-| https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined by BDR Team in 2025 to assist with the accurate and efficient processing of data submissions to the BDR
+| https://www.w3.org/TR/skos-reference/#historyNote[History Note] | Defined by BDR Team in 2025 to assist with the accurate and efficient processing of data submissions to the BDR
 | Expected Properties | <<prof:hasResource, has resource>>
 | https://www.w3.org/TR/skos-reference/#example[Example]
 a|
