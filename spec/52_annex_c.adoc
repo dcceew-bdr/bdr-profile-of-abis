@@ -3,7 +3,7 @@
 
 [#sub-man-model,link="img/sub-man-model.svg"]
 .An overview of the Submission Manifest Model
-image::img/sub-man-model.svg[Overview of the Submission Manifest Modelverview of the Data Release Model,align="center"]
+image::img/sub-man-model.svg[Overview of the Submission Manifest Model,align="center"]
 
 This model is for a _manifest_ - a listing of contents - of data submissions to the <<BDR>>. The manifests are supplied as <<RDF, RDF>> files containing information according to this model within all data submissions to the BDR. The manifest information provides location, role and other information about all the data resources, allowing the BDR to process them correctly and efficiently.
 
@@ -15,12 +15,13 @@ This model is for a _manifest_ - a listing of contents - of data submissions to 
 |*https://schema.org/name[Name]* | Submission Manifest Model
 |*https://schema.org/description[Description]* | This model is for a _manifest_ - a listing of contents - of data submissions to the <<BDR, Biodiversity Data Repository>>
 |*https://schema.org/dateCreated[Created Date]* | 2025-02-15
-|*https://schema.org/dateModified[Modified Date]* | 2025-04-29
+|*https://schema.org/dateModified[Modified Date]* | 2026-11-09
 |*https://schema.org/dateIssued[Issued Date]* | 2025-03-01
-|*https://schema.org/version[Version]* | 1.1
-|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/sm/1.1[sm:1.1]
+|*https://schema.org/version[Version]* | 1.2
+|*https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Ontology_IRI_and_Version_IRI[Version IRI]* | https://linked.data.gov.au/def/bdr-pr/sm/1.2[sm:1.2]
 |*https://www.w3.org/TR/skos-reference/#historyNote[Version History]*|
-*1.1* - 2025 Jul - Moved from ABIS to BDR Profile +
+*1.2* - 2026 Nov - Added model members and SHACL conformance property +
+1.1 - 2025 Jul - Moved from ABIS to BDR Profile +
 1.0 - 2025 Mar - First release
 |*https://schema.org/creator[Creator]* | https://linked.data.gov.au/org/dcceew[Department of Climate Change, Energy and the Environment (DCCEEW)]
 |*https://schema.org/publisher[Publisher]* | https://linked.data.gov.au/org/dcceew[DCCEEW]
@@ -34,12 +35,14 @@ Issue tracking for this profile is managed online at https://github.com/dcceew-b
 [[annex-c-2-supporting-assets]]
 === C.2 Supporting Assets
 
-* RDF schema:
-** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/models/sm.ttl[https://linked.data.gov.au/def/bdr-pr/sm.ttl]
-* <<SHACL, SHACL>> validation file:
-** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/validators/sm.ttl[https://linked.data.gov.au/def/bdr-pr/sm/validator.ttl]
+* RDF schema (model version 1.2):
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-resources-data/refs/heads/main/resources/models/items/sm.ttl[Submission Manifest Model RDF]
+* <<SHACL, SHACL>> validation file (validator version 2.1):
+** https://raw.githubusercontent.com/dcceew-bdr/bdr-resources-data/refs/heads/main/resources/validators/items/sm.ttl[Submission Manifest Validator RDF]
 * Submission Manifest Model Resource Roles collection:
 ** https://raw.githubusercontent.com/dcceew-bdr/bdr-profile-of-abis/refs/heads/main/vocabs/smrr.ttl[https://linked.data.gov.au/dataset/bdr/smrr]
+
+The model and validator are versioned independently. The model metadata in C.1 describes model version 1.2; C.5 describes validator version 2.1. Their current catalogue sources are maintained in https://github.com/dcceew-bdr/bdr-resources-data[bdr-resources-data]. The older `models/sm.ttl` and `validators/sm.ttl` copies in this specification's repository do not describe these current versions.
 
 
 === C.3 Classes
@@ -106,6 +109,7 @@ Predicates defined elsewhere:
 * <<prof:hasArtifact, has artifact>>
 * <<prof:hasRole, has role>>
 * <<skos:inScheme, in scheme>>
+* <<sh:conformsToShapesGraph, conforms to shapes graph>>
 
 [discrete]
 [[prof:hasResource]]
@@ -134,9 +138,10 @@ Predicates defined elsewhere:
 
 | <<IRI, IRI>> | `prof:hasArtifact`
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | has artifact
-| https://www.w3.org/TR/skos-reference/#definition[Definition] | The URL of a file with particulars such as its format and role indicated by the Resource Descriptor
-| https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<PROF, PROF>> and reused directly in this model
+| https://www.w3.org/TR/skos-reference/#definition[Definition] | Identifies the file described by a resource descriptor
+| https://www.w3.org/TR/skos-reference/#definition[History Note] | Adapted from <<PROF, PROF>> to use string file paths in submission manifests
 | https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
+| https://www.w3.org/TR/rdf12-schema/#ch_range[Range] | `xsd:string`
 | https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Can be used to indicate multiple files by file paths
 | https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
@@ -170,22 +175,65 @@ Predicates defined elsewhere:
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | in scheme
 | https://www.w3.org/TR/skos-reference/#definition[Definition] | is in scheme
 | https://www.w3.org/TR/skos-reference/#definition[History Note] | Defined in <<SKOS, SKOS>> and reused directly in this model
-| https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | <<prof:ResourceDescriptor, Resource Descriptor>>
 | https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Must be used to indicate that a role used as the value for the <<prof:hasRole, has role>> predicate is within the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary]
 | https://www.w3.org/TR/skos-reference/#example[Example] | _See the example for <<sm:SubmissionManifest, Submission Manifest>>_
 |===
 
+[discrete]
+[[sh:conformsToShapesGraph]]
+==== C.4.6 conforms to shapes graph
+
+[cols="1,5"]
+|===
+| Property | Value
+
+| <<IRI, IRI>> | `sh:conformsToShapesGraph`
+| https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | conforms to shapes graph
+| https://www.w3.org/TR/skos-reference/#definition[Definition] | Indicates that validation of the subject data graph against the object shapes graph produces no results at disallowed severity levels
+| https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby[Is Defined By] | `http://www.w3.org/ns/shacl#`
+| https://www.w3.org/TR/skos-reference/#historyNote[History Note] | Reused from SHACL 1.2, as described in https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformstoshapesgraph[SHACL 1.2 Profiling]
+| https://www.w3.org/TR/rdf12-schema/#ch_domain[Domain] | `sh:DataGraph`
+| https://www.w3.org/TR/rdf12-schema/#ch_range[Range] | `sh:ShapesGraph`
+| https://www.w3.org/TR/skos-reference/#scopeNote[Scope Note] | Indicates unqualified conformance. Use validation provenance to record conformance at a particular time.
+|===
+
+For example, the following statement declares conformance of the data graph identified by `<submission.ttl>` to the Submission Manifest validator. The statement is a conformance declaration; adding it does not execute validation.
+
+[,turtle]
+----
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+<submission.ttl>
+    sh:conformsToShapesGraph <https://linked.data.gov.au/def/bdr-pr/sm/validator> ;
+.
+----
+
 === C.5 Validator
 
-The validator for this model is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
+The validator for this model is linked to in the <<annex-c-2-supporting-assets, C.2 Supporting Assets>> section above. Its ShapesGraph IRI is `https://linked.data.gov.au/def/bdr-pr/sm/validator`, and its version is 2.1. Model and validator version numbers need not match.
 
 This validator only validates manifest content, not the content of the data that the manifest lists - BDR/ABIS data.
+
+The following table summarises the checks implemented by validator version 2.1. Shape names identify the existing executable checks; they are not specification requirement codes.
+
+[cols="1,2,5",options="header"]
+|===
+| Shape | Target | Check
+
+| `shape-01` | Instances of `sm:SubmissionManifest` | At least one `prof:hasResource` value.
+| `shape-02` | Objects of `prof:hasResource` | At least one `prof:hasArtifact` value; every supplied value is an `xsd:string` literal.
+| `shape-03` | Objects of `prof:hasResource` | Exactly one `prof:hasRole` value, which is an IRI.
+| `shape-04` | Objects of `prof:hasRole` | Exactly one `skos:inScheme` value, equal to `https://linked.data.gov.au/dataset/bdr/smrr/`.
+| `shape-05` | Subjects of `sh:conformsToShapesGraph` | At most one value for that predicate; every supplied value is an IRI. The predicate is optional.
+|===
+
+The five shape IRIs use the existing namespace `https://linked.data.gov.au/def/bdr-spr/sm/validator/`. The validator's version IRI is `https://linked.data.gov.au/def/bdr-spr/sm/validator/2.1`. These identifiers retain the published `bdr-spr` spelling, which differs from the model and ShapesGraph's `bdr-pr` spelling.
 
 === C.6 Vocabularies
 
 ==== Submission Manifest Resource Roles
 
-This model depends on the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<C.2 Supporting Assets, C.2 Supporting Assets>> section above.
+This model depends on the https://linked.data.gov.au/dataset/bdr/smrr[Submission Manifest Model Resource Roles Vocabulary] which is linked to in the <<annex-c-2-supporting-assets, C.2 Supporting Assets>> section above.
 
 Concepts from this vocabulary MUST be used as values for the <<prof:hasRole, has role>> predicate.
 
