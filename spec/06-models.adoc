@@ -51,6 +51,7 @@ The above information, if in a file called `data.ttl`, could be packaged and sen
 
 [source, turtle]
 ----
+@prefix bdrsm: <https://linked.data.gov.au/def/bdr-pr/sm/> .
 @prefix smrr: <https://linked.data.gov.au/dataset/bdr/smrr/> .
 []
     a bdrsm:SubmissionManifest ;
