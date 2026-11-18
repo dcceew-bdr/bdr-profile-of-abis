@@ -380,14 +380,14 @@ See the <<Validation, Validation>> section above also for information about how 
 
 | <<IRI, IRI>> | `abis:idn-roles`
 | https://www.w3.org/TR/skos-reference/#prefLabel[Preferred Label] | IDN Roles
-| https://www.w3.org/TR/skos-reference/#definition[Definition] | Roles for the predicate `prov:role` on instances of https://www.w3.org/TR/prov-o/#Attribution[`prov:Attribution`] linked to an `schema:Project` must be taken from the https://data.idnau.org/pid/vocab/idn-role-codes[IDN Role Codes Vocabulary]
+| https://www.w3.org/TR/skos-reference/#definition[Definition] | Roles for the predicate `prov:hadRole` on instances of https://www.w3.org/TR/prov-o/#Attribution[`prov:Attribution`] linked to an `schema:Project` must be taken from the https://data.idnau.org/pid/vocab/idn-role-codes[IDN Role Codes Vocabulary]
 | https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby[Is Defined By] | This model's validator
 | Code a|
 ----
 abis:idn-roles
     a shacl:Shape ;
     schema:name "IDN Roles" ;
-    schema:description "Roles for the predicate prov:role on instances of prov:Attribution linked to an schema:Project must be taken from the IDN Role Codes Vocabulary (https://data.idnau.org/pid/vocab/idn-role-codes)" ;
+    schema:description "Roles for the predicate prov:hadRole on instances of prov:Attribution linked to an schema:Project must be taken from the IDN Role Codes Vocabulary (https://data.idnau.org/pid/vocab/idn-role-codes)" ;
     sh:path [
 
     ] ;
