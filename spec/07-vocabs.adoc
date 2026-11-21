@@ -1,12 +1,12 @@
 == Vocabularies
 
-For data to conform to the BDR Profile of ABIS, many vocabularies must be used. Some of the vocabularies are required for use by ABIS - lists of measurement techniques, feature types etc. - others must be used for metadata values for ABIS objects. ABIS objects' metadata may require values such as "creator" for agent roles which the underlying TERN Ontology do not constrain, only requiring that some value be present and likewise, this profile may require particular values that ABIS does not constrain.
+ABIS and this Profile use controlled vocabularies for values such as measurement techniques, feature types and agent roles. The applicable component model or profile determines which values are required. TERN's http://linked.data.gov.au/def/tern-cv/68af3d25-c801-4089-afff-cf701e2bd61d[Feature Type vocabulary] contains concepts used with `tern:featureType`. The https://linked.data.gov.au/def/abis/vocab-themes/feature-types[ABIS Vocabulary Themes "Feature Types" concept] classifies vocabularies; it is not itself a feature type value.
 
 There are also elements of the models defined in this Profile that must be used with vocabularies, such as the <<annex-c, Submission Manifest Model>>'s `hasRole` predicate which must indicate a value from the <<annex-c-2-supporting-assets, Submission Manifest Resource Roles vocabulary>>.
 
 === Finding the vocabularies
 
-All the vocabularies needed for use with this Profile, including ABIS and its background models, are listed within the https://bdr.gov.au[BDR Portal]'s catalogue section:
+The BDR vocabulary catalogue lists vocabularies known to be used with this Profile, ABIS and its background models. Catalogue membership aids discovery; requirements come from the applicable models and profiles:
 
 * https://linked.data.gov.au/dataset/bdr/catalogues/vocabs
 
