@@ -1468,7 +1468,7 @@ ex:occurrence-x
 <h2 id="_vocabularies"><a class="anchor" href="#_vocabularies"></a>7. Vocabularies</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For data to conform to the BDR Profile of ABIS, many vocabularies must be used. Some of the vocabularies are required for use by ABIS - lists of measurement techniques, feature types etc. - others must be used for metadata values for ABIS objects. ABIS objects' metadata may require values such as "creator" for agent roles which the underlying TERN Ontology do not constrain, only requiring that some value be present and likewise, this profile may require particular values that ABIS does not constrain.</p>
+<p>ABIS and this Profile use controlled vocabularies for values such as measurement techniques, feature types and agent roles. The applicable component model or profile determines which values are required. TERN&#8217;s <a href="http://linked.data.gov.au/def/tern-cv/68af3d25-c801-4089-afff-cf701e2bd61d">Feature Type vocabulary</a> contains concepts used with <code>tern:featureType</code>. The <a href="https://linked.data.gov.au/def/abis/vocab-themes/feature-types">ABIS Vocabulary Themes "Feature Types" concept</a> classifies vocabularies; it is not itself a feature type value.</p>
 </div>
 <div class="paragraph">
 <p>There are also elements of the models defined in this Profile that must be used with vocabularies, such as the <a href="#annex-c">Submission Manifest Model</a>'s <code>hasRole</code> predicate which must indicate a value from the <a href="#annex-c-2-supporting-assets">Submission Manifest Resource Roles vocabulary</a>.</p>
@@ -1476,7 +1476,7 @@ ex:occurrence-x
 <div class="sect2">
 <h3 id="_finding_the_vocabularies"><a class="anchor" href="#_finding_the_vocabularies"></a>7.1. Finding the vocabularies</h3>
 <div class="paragraph">
-<p>All the vocabularies needed for use with this Profile, including ABIS and its background models, are listed within the <a href="https://bdr.gov.au">BDR Portal</a>'s catalogue section:</p>
+<p>The BDR vocabulary catalogue lists vocabularies known to be used with this Profile, ABIS and its background models. Catalogue membership aids discovery; requirements come from the applicable models and profiles:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4024,7 +4024,7 @@ ex:foi-01
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-18 01:13:35 UTC
+Last updated 2026-11-21 01:54:00 UTC
 </div>
 </div>
 </body>
